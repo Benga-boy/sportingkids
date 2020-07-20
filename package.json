@@ -1,0 +1,11 @@
+{
+  "name": "sportingkids",
+  "version": "1.0.0",
+  "description": "Rene and Ola project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benga and Assia",
+  "license": "ISC"
+}
