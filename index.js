@@ -4,8 +4,7 @@ const mongoose = require('mongoose')
 const app = express()
 const router = require('./config/routes')
 const errorHandler = require('./lib/errorHandler')
-const { dbURI, port } = require('./config/\
-')
+const { dbURI, port } = require('./config/environment')
 
 mongoose.connect(
   dbURI,
