@@ -1,6 +1,7 @@
 const router = require('express').Router()
 const event = require('../controllers/event')
 const auth = require('../controllers/auth')
+const sub = require('../controllers/sub')
 const secureRoute = require('../lib/secureRoute')
 
 router.route('/events')
@@ -18,5 +19,11 @@ router.route('/register')
 router.route('/login')
   .post(auth.login)
 
+router.route('/subscribe')
+  .get(sub.subscribeIndex)
+  .post(sub.subscribe)
+
+router.route('/mail')
+  .post(sub.mail)
 
 module.exports = router
