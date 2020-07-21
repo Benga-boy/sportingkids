@@ -60,6 +60,8 @@ async function eventDelete(req, res, next) {
   }
 }
 
+// async function
+
 module.exports = {
   index: eventIndex,
   create: eventCreate,

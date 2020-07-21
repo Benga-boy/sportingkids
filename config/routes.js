@@ -12,6 +12,9 @@ router.route('/events/:id')
   .put(secureRoute, event.update)
   .delete(secureRoute, event.delete)
 
+router.route('/register')
+  .post(auth.register)
+
 router.route('/login')
   .post(auth.login)
 
