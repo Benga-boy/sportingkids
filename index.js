@@ -1,5 +1,3 @@
-//* YOU SHOULD SEE THIS COMMENT
-
 const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
@@ -16,6 +14,12 @@ mongoose.connect(
     console.log('Mongo is connected!')
   }
 )
+
+
+
+
+
+
 
 app.use(bodyParser.json())
 
