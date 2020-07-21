@@ -36,6 +36,7 @@ const upload = multer({
 })
 router.route('/events/image')
   .post(upload.single('image'), (req, res) => {
+    
     res.send()
   }, (error, req, res, next) => {
     res.status(400).send({ error: error.message })

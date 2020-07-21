@@ -23,7 +23,7 @@ async function login (req, res) {
     }
     //* if above passes, make the user a token
     const token = jwt.sign({ sub: user._id }, secret, { expiresIn: '7 days' })
-    // * send the usera token in response
+    // * send the user a token in response
     res.status(202).json({
       message: `Sup ${user.username}`, 
       token
