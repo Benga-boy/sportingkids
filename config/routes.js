@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const router = require('express').Router()
 const event = require('../controllers/event')
 const auth = require('../controllers/auth')
