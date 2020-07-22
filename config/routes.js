@@ -4,6 +4,7 @@ const auth = require('../controllers/auth')
 const secureRoute = require('../lib/secureRoute')
 const multer = require('multer')
 
+const Event = require('../models/event')
 
 router.route('/events')
   .get(event.index)
@@ -23,7 +24,7 @@ router.route('/login')
 
 
 const upload = multer({
-  dest: 'events-image',
+  // dest: 'events-image',
   limits: {
     fileSize: 2000000
   },
@@ -34,15 +35,46 @@ const upload = multer({
     cb(undefined, true)
   }
 })
-router.route('/events/image')
-  .post(upload.single('image'), (req, res) => {
-    
+router.route('/events/:id/image')
+  .post(upload.single('image'), async (req, res) => {
+    const eventId = req.params.id
+    const event = await Event.findById(eventId)
+    event.image = req.file.buffer
+    await event.save()
+    res.send()
+
+
+  }, (error, req, res, next) => {
+    res.status(400).send({ error: error.message })
+  })
+
+router.route('/events/:id/image')
+  .delete( async (req, res) => {
+    const eventId = req.params.id
+    const event = await Event.findById(eventId)
+    event.image = undefined
+    await event.save()
     res.send()
   }, (error, req, res, next) => {
     res.status(400).send({ error: error.message })
   })
 
+router.route('/events/:id/image')
+  .get( async (req, res) => {
+    try {
+      const eventId = req.params.id
+      const event = await Event.findById(eventId)
 
+      if (!event || !event.image) {
+        throw new Error()
+      }
+      res.set('Content-Type', 'image/jpeg')
+      res.send(event.image)
+
+    } catch (err) {
+      res.status(404).send()
+    }
+  })
 
 
 module.exports = router
