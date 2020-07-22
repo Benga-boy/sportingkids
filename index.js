@@ -16,11 +16,6 @@ mongoose.connect(
 )
 
 
-
-
-
-
-
 app.use(bodyParser.json())
 
 app.use('/api', router)

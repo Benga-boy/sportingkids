@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "env-cmd -f ./config2/dev.env nodemon src/index.js"
   },
   "author": "Benga and Assia",
   "license": "ISC",
@@ -20,5 +20,8 @@
     "mongoose-unique-validator": "^2.0.3",
     "multer": "^1.4.2",
     "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
   }
 }

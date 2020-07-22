@@ -1,19 +1,23 @@
 const Subscription = require('../models/subscription')
 const Email = require('../models/emails')
-const subscribers = []
 const sendgrid = require('@sendgrid/mail')
+const { sendWelcomeEmail , sendUnsubscribeEmail } = require('../emails/account')
 
+
+// * New subscriber function with sendgrid email function attached
 async function subscribe(req, res) {
   try {
     const subscriber = await Subscription.create(req.body)
-    await subscribers.push(subscriber)
+    await subscriber.save()
+    sendWelcomeEmail(subscriber.email, subscriber.name)
     res.status(202).json({ message: `Hey ${subscriber.name} thanks for joining` })
-    console.log(subscribers)
   } catch (err) {
     res.status(422).json(err)
   }
 }
 
+
+// * Function to get all subscribers!
 async function subscribeIndex(req, res) {
   try {
     const subscribedUsers = await Subscription.find()
@@ -23,10 +27,26 @@ async function subscribeIndex(req, res) {
   }
 }
 
+// * Function to unsubscribe
+async function unsubscribe(req, res) {
+  const subId = req.params.id
+  try {
+    const userToUnsubscribe = await Subscription.findById(subId)
+    if (!userToUnsubscribe) throw new Error('Not Found')
+    await userToUnsubscribe.remove()
+    sendUnsubscribeEmail(userToUnsubscribe.email, userToUnsubscribe.name)
+    res.status(204)
+  } catch (err) {
+    res.status(404).json({ message: 'Not found' })
+  }
+}
+
+
+// * Function to send email to all subscribers!!
 async function mail(req, res) {
   try {
     const email = await Email.create(req.body)
-    const SENDGRID_API_KEY = 'SG.Aia-sww2Qw64NTff09NUEQ.a1FAd6EEFZICt303ereWEPwcQ1PdGPSF3bQSj-cCbZQ'
+    const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY
     sendgrid.setApiKey(SENDGRID_API_KEY)
     const msg = email
     sendgrid.sendMultiple(msg)
@@ -40,5 +60,6 @@ async function mail(req, res) {
 module.exports = {
   subscribe,
   mail,
-  subscribeIndex
+  subscribeIndex,
+  unsubscribe
 }

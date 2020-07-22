@@ -1,6 +1,6 @@
-const dbURI = 'mongodb://localhost/sportingkids'
-const port = 8000
-const secret = 'Sporting kidssssssss'
+const dbURI = process.env.DBURI
+const port = process.env.PORT
+const secret = process.env.SECRET
 
 module.exports = {
   dbURI,

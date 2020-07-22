@@ -25,6 +25,9 @@ router.route('/subscribe')
   .get(sub.subscribeIndex)
   .post(sub.subscribe)
 
+router.route('/subscribe/:id')
+  .delete(sub.unsubscribe)
+
 router.route('/mail')
   .post(sub.mail)
 
