@@ -5,3 +5,5 @@ export const homeCarousel = [
   {name: 'image1', value: require('../homeCarousel/image1.jpeg')},
   {name: 'image3', value: require('../homeCarousel/image3.jpeg')}
 ]
+
+export const video = require('../others/Video.MOV')
