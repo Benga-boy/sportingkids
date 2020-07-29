@@ -1,5 +1,12 @@
 @import '~bulma/bulma.sass';
-
+.divider{
+  position: relative;
+  min-width:2px;
+  max-width:2px;
+  background-color:#000;
+  display:inline-block;
+  margin:0 25px 0 25px;
+}
 
 // * ABOUT
 .about {
@@ -13,14 +20,34 @@
 //* SCHOOL SERVICES
 .school-services{
   margin-top: 218px;
-  .divider{
-      position: relative;
-      min-width:2px;
-      max-width:2px;
-      background-color:#000;
-      display:inline-block;
-      margin:0 25px 0 25px;
+  .school-services-carousel{
+    width: 50em;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    #image0{
+      background-image: url('./assets//homeCarousel/image0.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #image1{
+      background-image: url('./assets//homeCarousel/image1.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #image3{
+      background-image: url('./assets//homeCarousel/image3.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
+  // .divider{
+  //     position: relative;
+  //     min-width:2px;
+  //     max-width:2px;
+  //     background-color:#000;
+  //     display:inline-block;
+  //     margin:0 25px 0 25px;
+  // }
   .info-and-testimonial{
   display: flex;
   margin: 0 30px 0 30px;
@@ -30,6 +57,22 @@
   }
   .school-services-testimonial{
     width: 30%
+  }
+}
+
+//* WHATS ON
+.whatson{
+  margin-top: 218px;
+  .whatson-info{
+    display: flex;
+    margin: 0 30px 0 30px;
+    padding-top: 50px;
+    .whatson-event{
+      width: 70%;
+    }
+    .whatson-directions{
+      width: 30%;
+    }
   }
 }
 

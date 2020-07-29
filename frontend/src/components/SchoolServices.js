@@ -1,6 +1,7 @@
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
 import { homeCarousel } from '../styles/assets/homeCarousel/homeCarousel-data'
+import Blank from '../styles/assets/logos/blank.png'
 
 const SchoolServices = () => {
   return (
@@ -22,9 +23,10 @@ const SchoolServices = () => {
           infiniteLoop
           centerMode
           dynamicHeight={true}
+          showThumbs={false}
         >
           {homeCarousel.map(image => <div key={image.name} id={image.name} className="carousel-item" >
-            <img src={image.value} className="carousel-image" />
+            <img src={Blank} className="carousel-image" />
           </div>)}
         </Carousel>
       </section>
