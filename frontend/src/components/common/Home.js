@@ -2,7 +2,7 @@ import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
 import Modal from 'react-modal'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import { homeCarousel, video } from '../../styles/assets/homeCarousel/homeCarousel-data'
+import { homeCarousel } from '../../styles/assets/homeCarousel/homeCarousel-data'
 // import {Container, Typography, Button, IconButton, DeleteIcon} from '@material-ui/core'
 import { Player } from 'video-react'
 
@@ -13,15 +13,11 @@ class Home extends React.Component {
   }
   render() {
     console.log(homeCarousel)
+
     return (
       <div>
         <div className="hero">
-          <Player
-            playsInline
-            // poster="/assets/poster.png"
-            src={video}
-            preload="auto"
-          />
+        Video
         </div>
         <Carousel
           infiniteLoop

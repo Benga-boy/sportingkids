@@ -1,18 +1,48 @@
-@import "~video-react/styles/scss/video-react";
+.navbar{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1;
+  background-color: whitesmoke;
+  width: 100%;
+  .nav-top{
+    display: flex;
+    .contact{
+      margin-top: 2%;
+      margin-left: 28%;
+      font-size: 1.4em;
+      .email{
+        display: flex;
+        align-items: center;
+      }
+      .phone-number{
+        display: flex;
+        align-items: center;
+      }
+    }
+    #sk-logo{
+      height: 7em;
+    }
+  }
+  .nav-bottom{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    ul.menu-port{
+      list-style: none;
+      text-decoration: none;
 
-.hero {
-  margin: auto;
-  height: 500px;
-  width: 75%;
-}
-
-.carousel-item {
-  height: 200px;
-  padding: 20px;
-  width: 250px;
-}
-
-.carousel {
-  height: 250px;
-  width: 275px;
-}
+      li.nav-link{
+      display: inline-block;
+      font-size: 20px;
+          margin-left: 60px;
+    margin-right: 60px;
+      // width:200px;
+      }
+      // #home{
+      //   background-color: red;
+      // }
+    }
+    }
+  }
