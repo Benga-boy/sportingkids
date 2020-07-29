@@ -19,16 +19,24 @@ const SchoolServices = () => {
         </div>
       </section>
       <section className="school-services-carousel">
+      <div className="school-carousel">
       <Carousel
-          infiniteLoop
-          centerMode
-          dynamicHeight={true}
-          showThumbs={false}
+            infiniteLoop
+            centerMode
+            autoPlay
+            dynamicHeight={true}
+            showArrows={false}
+            showThumbs={false}
+            interval={5000}
+            showStatus={false}
+            transitionTime={750}
+            centerSlidePercentage={100}
         >
           {homeCarousel.map(image => <div key={image.name} id={image.name} className="carousel-item" >
             <img src={Blank} className="carousel-image" alt={image.name} />
           </div>)}
         </Carousel>
+      </div>
       </section>
       <section className="info-and-testimonial">
         <div className="school-services-info">It's uh, the other end of town, a block past Maple. Why not? Marty, I'm sorry, but the only power source capable of generating one point twenty-one gigawatts of electricity is a bolt of lightning. Who, who? Wait a minute, wait a minute. 1:15 in the morning?

@@ -15,7 +15,7 @@ const Navbar = () => {
           </div>
           <div className="phone-number">
             {/* <img className="phone-number" src={PhoneLogo} alt="phone"/>07930972647 */}
-            <p><ion-icon name="call-outline"></ion-icon>07930972647</p>
+            <p><ion-icon name="call-outline"></ion-icon>07904618138</p>
           </div>
         </div>
       </div>

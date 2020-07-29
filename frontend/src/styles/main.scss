@@ -1,4 +1,30 @@
 @import '~bulma/bulma.sass';
+@import "~video-react/styles/scss/video-react";
+
+// * HOME
+
+.home{
+  margin-top: 218px;
+  .carousel-wrapper{
+    margin: auto;
+    width: 70%;
+    margin-top: 20px;
+    .carousel-image {
+      height: 415px;
+      width: 100%;
+    }
+  }
+  .video-wrapper{
+    margin-bottom: 50px;
+    margin-top: 16px;
+    margin: auto;
+    width: 70%;
+  }
+}
+
+
+
+
 
 // * FOOTER
 .footer {
@@ -6,6 +32,8 @@
   margin-top: 40px;
   height: 260px;
   margin-bottom: 0;
+  position: sticky;
+  padding: 40px;
   .social-links{
     float: center;
   }
@@ -46,7 +74,7 @@
   }
 }
 
-
+// * DIVIDER
 .divider{
   position: relative;
   min-width:2px;

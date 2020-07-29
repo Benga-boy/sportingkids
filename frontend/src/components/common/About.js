@@ -49,7 +49,7 @@ const About = () => {
               <div className="media">
                 <div className="media-content">
                   <p className="title is-4">Ola Williams</p>
-                  <a className="subtitle is-6"><ion-icon name="logo-twitter"></ion-icon>  @olawilliams</a>
+                  <a href="#" className="subtitle is-6"><ion-icon name="logo-twitter"></ion-icon>  @olawilliams</a>
                 </div>
               </div>
               <div className="content">
