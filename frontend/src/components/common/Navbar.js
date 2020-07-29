@@ -2,6 +2,10 @@ import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import PhoneLogo from '../../styles/assets/logos/phone-logo.png'
 import EmailLogo from '../../styles/assets/logos/email-logo.png'
+<<<<<<< HEAD
+=======
+
+>>>>>>> development
 const handleClick = (e) => {
   console.log(e.target)
 }
