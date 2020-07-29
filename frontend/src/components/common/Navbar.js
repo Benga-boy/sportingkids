@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
-// import Breadcrumbs from '@material-ui/core/Breadcrumbs'
 import CallRoundedIcon from '@material-ui/icons/CallRounded'
 import EmailIcon from '@material-ui/icons/Email'
 
@@ -24,71 +23,18 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      
-
       <div className="nav-bottom">
-        {/* <Breadcrumbs separator='' aria-label="breadcrumb"> */}
-        <ul className="menu-port">
-          <li className="nav-link" id="home">
-            <Link 
-              color="inherit" href="/" onClick={handleClick}>
-            Home
-            </Link>
-          </li>
-          
-          <li className="nav-link" id="about">
-            <Link
-              color="inherit" href="/getting-started/installation/" onClick={handleClick}>
-            About
-            </Link>
-          </li>
-          <li className="nav-link" id="multi-sport-services">
-            <Link
-              color="textPrimary"
-              href="/components/breadcrumbs/"
-              onClick={handleClick}
-              aria-current="page"
-            >
-          Multi-sport Services
-            </Link>
-          </li>
-          <li className="nav-link" id="school-services">
-            <Link
-              color="inherit" href="/getting-started/installation/" onClick={handleClick}>
-            School Services
-            </Link>
-          </li>
-          <li className="nav-link" id="whats-on">
-            <Link
-              color="textPrimary"
-              href="/components/breadcrumbs/"
-              onClick={handleClick}
-              aria-current="page"
-            >
-          Whats On
-            </Link>
-          </li>
-          <li className="nav-link" id="contact-us">
-            <Link
-              color="textPrimary"
-              href="/components/breadcrumbs/"
-              onClick={handleClick}
-              aria-current="page"
-            >
-          Contact Us
-            </Link>
-          </li>
-        </ul>
-        
-          
-          
-          
-          
-          
-          
-        {/* </Breadcrumbs> */}
+        <div className ="menu-port">
+          <div className="links">
+            <Link className="nav-link">Home</Link>
+            <Link className="nav-link">About</Link>
+            <Link className="nav-link">Multi-sport Services</Link>
+            <Link className="nav-link">School Services</Link>
+            <Link className="nav-link">Whats On</Link>
+            <Link className="nav-link">Contact Us</Link>
+          </div>
+        </div>
       </div>
-      
     </div>
   )
 }
