@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 // import Breadcrumbs from '@material-ui/core/Breadcrumbs'
+import CallRoundedIcon from '@material-ui/icons/CallRounded'
+import EmailIcon from '@material-ui/icons/Email'
 
 const handleClick = (e) => {
   console.log(e.target)
@@ -14,10 +16,10 @@ const Navbar = () => {
 
         <div className="contact">
           <div className="email">
-            {/* <EmailIcon fontSize="large"/>info@sportingkids.com  */}
+            <EmailIcon fontSize="large"/>info@sportingkids.com 
           </div>
           <div className="phone-number">
-            {/*   */}
+            <CallRoundedIcon fontSize="large"/>07930972647
           </div>
         </div>
       </div>
@@ -28,7 +30,6 @@ const Navbar = () => {
         <ul className="menu-port">
           <li className="nav-link" id="home">
             <Link 
-              to="/"
               color="inherit" href="/" onClick={handleClick}>
             Home
             </Link>
@@ -36,9 +37,8 @@ const Navbar = () => {
           
           <li className="nav-link" id="about">
             <Link
-              to="/about"
               color="inherit" href="/getting-started/installation/" onClick={handleClick}>
-            About Us
+            About
             </Link>
           </li>
           <li className="nav-link" id="multi-sport-services">
