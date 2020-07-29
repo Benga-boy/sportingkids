@@ -1,5 +1,28 @@
 @import '~bulma/bulma.sass';
 
+// * FOOTER
+.footer {
+  background-color: #fbd46d;
+  margin-top: 40px;
+  height: 220px;
+  .social-links{
+    float: center;
+  }
+  .social-links li{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 60px;
+    .facebook:hover,
+    .facebook:active {
+    color: #3b5998;
+    }
+  }
+  .social-links li :last-child {
+    margin-right: 0;
+  }
+}
+
+
 
 // * ABOUT
 .about {
@@ -7,6 +30,9 @@
   .about-rene, .about-ola{
     margin-top: 60px;
     margin-left: 60px;
+  }
+  .about-ola {
+    margin-right: 40px;
   }
 }
 

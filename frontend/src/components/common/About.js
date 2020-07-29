@@ -21,7 +21,7 @@ const About = () => {
           <div className="card">
             <div className="card-image">
               <figure className="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/480x320.png" alt="Placeholder image" />
+                <img src="https://bulma.io/images/placeholders/480x320.png" alt="Rene Steer" />
               </figure>
             </div>
             <div className="card-content">
@@ -42,7 +42,7 @@ const About = () => {
           <div className="card">
             <div className="card-image">
               <figure className="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/480x320.png" alt="Placeholder image" />
+                <img src="https://bulma.io/images/placeholders/480x320.png" alt="Ola Williams" />
               </figure>
             </div>
             <div className="card-content">

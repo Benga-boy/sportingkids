@@ -5,6 +5,7 @@ import Home from './components/common/Home'
 import Navbar from './components/common/Navbar'
 import About from './components/common/About'
 import SchoolServices from './components/SchoolServices'
+import Footer from './components/common/Footer'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/about" component={About} />
         <Route path="/schoolservices" component={SchoolServices} />
       </Switch>
+      <Footer />
     </BrowserRouter>
   )
 }
