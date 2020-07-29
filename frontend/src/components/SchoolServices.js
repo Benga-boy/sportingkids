@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const About = () => {
+const SchoolServices = () => {
   return (
     <div>
       <section className="hero is-primary">
@@ -21,4 +21,4 @@ const About = () => {
   )
 }
 
-export default About
+export default SchoolServices
