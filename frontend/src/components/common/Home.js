@@ -3,16 +3,14 @@ import { Carousel } from 'react-responsive-carousel'
 import Modal from 'react-modal'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { homeCarousel } from '../../styles/assets/homeCarousel/homeCarousel-data'
-
-
 // import {Container, Typography, Button, IconButton, DeleteIcon} from '@material-ui/core'
+import { Player } from 'video-react'
+
 
 class Home extends React.Component {
   state = {
     showModal: false
   }
-  
-
   render() {
     console.log(homeCarousel)
 
@@ -37,5 +35,4 @@ class Home extends React.Component {
     )
   }
 }
-
 export default Home

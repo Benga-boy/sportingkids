@@ -12,14 +12,12 @@ const Navbar = () => {
     <div className ="navbar">
       <div className="nav-top">
         <img id="sk-logo" src="https://static.wixstatic.com/media/1a0189_f6d00781a30642748a8c3de78937a259~mv2_d_2480_1265_s_2.png/v1/crop/x_0,y_244,w_2480,h_785/fill/w_600,h_190,al_c,q_85,usm_0.66_1.00_0.01/Sporting%20Kids%20logo%20PNG.webp" />
-
         <div className="contact">
           <div className="email">
             <EmailIcon fontSize="large"/>info@sportingkids.com 
           </div>
           <div className="phone-number">
             <CallRoundedIcon fontSize="large"/>07930972647
-
           </div>
         </div>
       </div>
