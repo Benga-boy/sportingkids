@@ -1,16 +1,16 @@
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
-import { homeCarousel } from '../styles/assets/homeCarousel/homeCarousel-data'
-import Blank from '../styles/assets/logos/blank.png'
+import { homeCarousel } from '../../styles/assets/homeCarousel/homeCarousel-data'
+import Blank from '../../styles/assets/logos/blank.png'
 
 const SchoolServices = () => {
   return (
     <div className="school-services">
-      <section className="hero is-warning">
+      <section className="hero is-warning has-text-centered">
         <div className="hero-body">
           <div className="container">
             <h1 className="title">
-        School Services
+              School Services
             </h1>
             <h2 className="subtitle">
               something or other
@@ -26,7 +26,7 @@ const SchoolServices = () => {
           showThumbs={false}
         >
           {homeCarousel.map(image => <div key={image.name} id={image.name} className="carousel-item" >
-            <img src={Blank} className="carousel-image" />
+            <img src={Blank} className="carousel-image" alt={image.name} />
           </div>)}
         </Carousel>
       </section>

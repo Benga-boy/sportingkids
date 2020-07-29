@@ -4,21 +4,45 @@
 .footer {
   background-color: #fbd46d;
   margin-top: 40px;
-  height: 220px;
+  height: 260px;
+  margin-bottom: 0;
   .social-links{
     float: center;
   }
   .social-links li{
     display: inline-block;
-    margin-right: 20px;
-    font-size: 60px;
+    margin-right: 24px;
+    font-size: 65px;
+    a {
+      color: #ffffff;
+    }
     .facebook:hover,
     .facebook:active {
     color: #3b5998;
     }
+    .twitter:hover,
+    .twitter:active {
+    color: #55acee;
+    }
+    .instagram:hover,
+    .instagram:active {
+    color: #e95950;
+    }
   }
   .social-links li :last-child {
     margin-right: 0;
+  }
+  .policy {
+    p{
+      display: inline-block;
+      margin-right: 24px;
+      margin-bottom: 20px;
+      text-decoration: underline;
+    }
+    p:last-child{
+      margin-left: 8px;
+      margin-right: 0;
+    }
   }
 }
 
@@ -87,6 +111,8 @@
   }
 }
 
+
+
 //* WHATS ON
 .whatson{
   margin-top: 218px;
@@ -101,6 +127,32 @@
       width: 30%;
     }
   }
+}
+
+// * MULTISPORTS
+.multisports{
+  margin-top: 218px;
+  .infos-and-testimonial{
+    display: flex;
+    margin: 0 30px 0 30px;
+    }
+    .multisports-info{
+      width: 70%;
+      margin: auto;
+      display: flex;
+      img {
+        width: 300px;
+        height: 250px;
+        margin: auto;
+      }
+      p {
+        width: 50%;
+        margin: auto;
+      }
+    }
+    .multisports-services-testimonial{
+      width: 30%
+    }
 }
 
 
@@ -124,11 +176,33 @@
       .email{
         display: flex;
         align-items: center;
+        p {
+          font-size: 28px;
+          line-height: 145%;
+          ion-icon{
+            margin-right: 18px;
+            font-size: 48px;
+            position: relative;
+            top: 14px;
+            left: 9px;
+          }
+        }
       }
       .phone-number{
         display: flex;
         align-items: center;
         margin-top: 5px;
+        p {
+          font-size: 28px;
+          line-height: 145%;
+          ion-icon{
+            margin-right: 18px;
+            font-size: 48px;
+            position: relative;
+            top: 12px;
+            left: 12px;
+          }
+        }
       }
       img{
         margin-right: 10px;

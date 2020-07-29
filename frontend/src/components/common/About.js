@@ -4,7 +4,7 @@ import React from 'react'
 const About = () => {
   return (
     <div className="about">
-      <section className="hero is-primary">
+      <section className="hero is-primary has-text-centered">
         <div className="hero-body">
           <div className="container">
             <h1 className="title">
@@ -28,7 +28,7 @@ const About = () => {
               <div className="media">
                 <div className="media-content">
                   <p className="title is-4">Rene Steer</p>
-                  <p className="subtitle is-6">@renesteer</p>
+                  <a href="https://twitter.com/ReneSteer?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noopener noreferrer" className="subtitle is-6"><ion-icon name="logo-twitter"></ion-icon>  @renesteer</a>
                 </div>
               </div>
               <div className="content">
@@ -49,7 +49,7 @@ const About = () => {
               <div className="media">
                 <div className="media-content">
                   <p className="title is-4">Ola Williams</p>
-                  <p className="subtitle is-6">@olawilliams</p>
+                  <a className="subtitle is-6"><ion-icon name="logo-twitter"></ion-icon>  @olawilliams</a>
                 </div>
               </div>
               <div className="content">

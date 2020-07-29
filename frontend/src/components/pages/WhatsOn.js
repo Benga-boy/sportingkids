@@ -3,11 +3,11 @@ import React from 'react'
 const WhatsOn = () => {
   return(
     <div className="whatson">
-      <section className="hero is-link">
+      <section className="hero is-link has-text-centered">
         <div className="hero-body">
           <div className="container">
             <h1 className="title">
-        Whats on
+              Whats on
             </h1>
             <h2 className="subtitle">
               something or other
