@@ -1,6 +1,17 @@
-
 @import '~bulma/bulma.sass';
 
+
+// * ABOUT
+.about {
+  margin-top: 218px;
+  .about-rene, .about-ola{
+    margin-top: 60px;
+    margin-left: 60px;
+  }
+}
+
+
+// * NAVBAR
 .navbar{
   left: 0;
   top: 0;
