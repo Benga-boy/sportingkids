@@ -48,11 +48,11 @@ const SchoolServices = () => {
         Right. So tell me, Marty, how long have you been in port? His head's gone, it's like it's been erased. Oh, you mean how you're supposed to act on a first date. Jennifer, oh are you a sight for sore eyes. Let me look at you.</div>
         <div className="divider"></div>
         <div className="school-services-testimonial">
-        <article class="message is-success">
-        <div class="message-header">
+        <article className="message is-success">
+        <div className="message-header">
       <p>Derek Junior, Beekeeper</p>
       </div>
-      <div class="message-body">
+      <div className="message-body">
       <em>Why is she gonna get angry with you? Oh honey, he's teasing you, nobody has two television sets. Great good, good, Lorraine, I had a feeling about you two. Marty, will we ever see you again? Hey boy, are you alright?
 
       Marty, you didn't fall asleep, did you? C'mon. Yeah. Silence Earthling. my name is Darth Vader. I'm am an extra-terrestrial from the planet Vulcan. I have to tell you about the future.</em>

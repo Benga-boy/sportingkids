@@ -98,6 +98,9 @@
   .about-ola {
     margin-right: 40px;
   }
+  .coaches {
+    text-align: center;
+  }
 }
 
 
@@ -204,7 +207,7 @@
     justify-content: space-between;
     .contact{
       margin-top: 25px;
-      margin-right: 10em;
+      margin-right: 50px;
       font-size: 1.4em;
       .email{
         display: flex;
@@ -244,6 +247,7 @@
     #sk-logo{
       margin-top: 25px;
       height: 7em;
+      margin-left: 30px;
     }
   }
   .nav-bottom{
@@ -260,6 +264,12 @@
         font-size: 20px;
         .nav-link{
           text-decoration: none;
+        }
+        .nav-link:hover,
+        .nav-link:active {
+          background-color: green;
+          color: ivory;
+          transition: background-color 0.3s;
         }
       }
     }
@@ -324,7 +334,7 @@
   }
 }
 
-// * PRIVACY
+// * PRIVACY POLICY
 
 .privacy {
   margin-top: 220px;
@@ -346,4 +356,11 @@
 
 .h3 {
   width: 80%;
+}
+
+
+// * CONTACT
+
+.contact-us {
+  margin-top: 218px;
 }

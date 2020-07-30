@@ -10,6 +10,7 @@ import WhatsOn from './components/pages/WhatsOn'
 import Multisports from './components/pages/Multisports'
 import ChildProtection from './components/pages/ChildProtection'
 import PrivacyPolicy from './components/pages/PrivacyPolicy'
+import Contact from './components/pages/Contact'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/multisports" component={Multisports} />
         <Route path="/childprotection" component={ChildProtection} />
         <Route path="/privacypolicy" component={PrivacyPolicy} />
+        <Route path="/contact" component={Contact} />
       </Switch>
       <Footer />
     </BrowserRouter>

@@ -16,8 +16,8 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section class="section">
-        <div class="container">
+      <section className="section">
+        <div className="container">
           <div className="columns">
             <div className="column">
               <img src="https://static.wixstatic.com/media/1a0189_8f00a4cd2e9e4684a39c90b603af02db~mv2.jpg/v1/fill/w_680,h_680,al_c,q_85,usm_0.66_1.00_0.01/ABOUT%20US.webp" alt="Rene and Ola Sporting Kids" />
@@ -31,50 +31,57 @@ const About = () => {
         </div>
         <div className="divider"></div>
       </section>
-      <div className="columns">
-        <div className="column about-rene">
-          <div className="card">
-            <div className="card-image">
-              <figure className="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/480x320.png" alt="Rene Steer" />
-              </figure>
-            </div>
-            <div className="card-content">
-              <div className="media">
-                <div className="media-content">
-                  <p className="title is-4">Rene Steer</p>
-                  <a href="https://twitter.com/ReneSteer?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noopener noreferrer" className="subtitle is-6"><ion-icon name="logo-twitter"></ion-icon>  @renesteer</a>
+      <section className="section">
+        <div>
+          <h1 className="title coaches">COACHES</h1>
+        </div>
+        <div className="container">
+          <div className="columns">
+            <div className="column about-rene">
+              <div className="card">
+                <div className="card-image">
+                  <figure className="image is-4by3">
+                    <img src="https://jasonrobertsfoundation.com/wp-content/uploads/2016/10/DSC_0187.jpg" alt="Rene Steer" />
+                  </figure>
+                </div>
+                <div className="card-content">
+                  <div className="media">
+                    <div className="media-content">
+                      <p className="title is-4">Rene Steer</p>
+                      <a href="https://twitter.com/ReneSteer?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noopener noreferrer" className="subtitle is-6"><ion-icon name="logo-twitter"></ion-icon>  @renesteer</a>
+                    </div>
+                  </div>
+                  <div className="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus nec iaculis mauris.
+                  </div>
                 </div>
               </div>
-              <div className="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris.
+            </div>
+            <div className="column about-ola">
+              <div className="card">
+                <div className="card-image">
+                  <figure className="image is-4by3">
+                    <img src="https://www.hamhigh.co.uk/polopoly_fs/1.5742723!/image/image.jpg_gen/derivatives/landscape_630/image.jpg" alt="Ola Williams" />
+                  </figure>
+                </div>
+                <div className="card-content">
+                  <div className="media">
+                    <div className="media-content">
+                      <p className="title is-4">Ola Williams</p>
+                      <a href="#" className="subtitle is-6"><ion-icon name="logo-twitter"></ion-icon>  @olawilliams</a>
+                    </div>
+                  </div>
+                  <div className="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus nec iaculis mauris.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="column about-ola">
-          <div className="card">
-            <div className="card-image">
-              <figure className="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/480x320.png" alt="Ola Williams" />
-              </figure>
-            </div>
-            <div className="card-content">
-              <div className="media">
-                <div className="media-content">
-                  <p className="title is-4">Ola Williams</p>
-                  <a href="#" className="subtitle is-6"><ion-icon name="logo-twitter"></ion-icon>  @olawilliams</a>
-                </div>
-              </div>
-              <div className="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
 
   )
