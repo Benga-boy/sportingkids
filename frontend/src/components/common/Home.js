@@ -48,7 +48,7 @@ class Home extends React.Component {
           </Carousel>
         </div>
         <div className="offerings">
-          <div className="columns">
+          <div className="columns is-multiline">
             <div className="column is-one-third">
               Box
           </div>
@@ -59,7 +59,7 @@ class Home extends React.Component {
               Box
           </div>
           </div>
-          <div className="columns">
+          <div className="columns is-multiline">
             <div className="column is-one-third">
               Box
           </div>

@@ -13,7 +13,7 @@
     width: 70%;
     margin-top: 20px;
     .carousel-image {
-      height: 415px;
+      height: 700px;
       width: 100%;
     }
   }
@@ -173,8 +173,8 @@
       margin: auto;
       display: flex;
       img {
-        width: 300px;
-        height: 250px;
+        width: 400px;
+        height: 300px;
         margin: auto;
       }
       p {
@@ -263,4 +263,86 @@
       }
     }
   }
+}
+
+
+// * CHILD PROTECTION
+
+.childprotection{
+  margin-top: 218px;
+  // * Beliefs
+  .believe{
+    margin-bottom: 20px;
+  }
+  .beliefs ul li {
+    list-style: circle;
+    text-indent: 46px;
+    width: 70%;
+    padding: 2px;
+    span {
+      margin-left: 44px;
+    }
+  }
+  .order-one{
+    margin-top: 20px;
+    ol li {
+      width: 70%;
+    }
+    ol li:last-child{
+      margin-top: 14px;
+    }
+  }
+  // * Staffing policies
+  .staffing-policies {
+    margin-top: 24px;
+    ol {
+      margin-top: 12px;
+      margin-left: 36px;
+    }
+    ol li {
+      padding: 4px;
+    }
+  }
+  // * Conducts
+  .conduct{
+    margin-top: 24px;
+    ol {
+      margin-top: 12px;
+      margin-left: 36px;
+    }
+    ol li {
+      padding: 4px;
+      ul li {
+        list-style: square;
+        margin-left: 36px;
+      }
+      ul li:first-child {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+// * PRIVACY
+
+.privacy {
+  margin-top: 220px;
+  .p-statements p {
+    margin-bottom: 16px;
+    padding: 4px;
+    width: 90%;
+  }
+  .p-statements h3 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
+  .p-statements ul li {
+    list-style: circle;
+    padding: 4px;
+    margin-left: 36px;
+  }
+}
+
+.h3 {
+  width: 80%;
 }
