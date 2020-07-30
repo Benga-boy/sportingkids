@@ -4,7 +4,7 @@ const WhatsOn = () => {
   return(
     <div className="whatson">
       <section className="hero is-link has-text-centered">
-        <div className="hero-body">
+        <div className="change hero-body">
           <div className="container">
             <h1 className="title">
               Whats on

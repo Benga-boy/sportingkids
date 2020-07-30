@@ -34,12 +34,10 @@ const Multisports = () => {
         <div className="multisports-services-testimonial">
         <article class="message is-success">
         <div class="message-header">
-      <p>Derek Junior, Beekeeper</p>
+      <p>Jane Doe, Parent</p>
       </div>
       <div class="message-body">
-      <em>Why is she gonna get angry with you? Oh honey, he's teasing you, nobody has two television sets. Great good, good, Lorraine, I had a feeling about you two. Marty, will we ever see you again? Hey boy, are you alright?
-
-      Marty, you didn't fall asleep, did you? C'mon. Yeah. Silence Earthling. my name is Darth Vader. I'm am an extra-terrestrial from the planet Vulcan. I have to tell you about the future.</em>
+      <em>"Thank you sporting kids Ryan never really liked playing football with his friends and often missed out on sports, its so great to see him enjoying your lunchtime tennis lessons. All schools should introduce lunchtime classes like this!"</em>
     </div>
     </article>
         </div>

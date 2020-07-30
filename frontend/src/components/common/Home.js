@@ -24,9 +24,9 @@ class Home extends React.Component {
           </div>
         </section>
         <div className="video-wrapper">
-          <Player 
-          src={video}
-          playsInline
+          <Player
+            src={video}
+            playsInline
           />
         </div>
         <div className="carousel-wrapper">
@@ -47,8 +47,29 @@ class Home extends React.Component {
             </div>)}
           </Carousel>
         </div>
-        <div>
-          Boxes!
+        <div className="offerings">
+          <div className="columns">
+            <div className="column is-one-third">
+              Box
+          </div>
+            <div className="column is-one-third">
+              Box
+          </div>
+            <div className="column is-one-third">
+              Box
+          </div>
+          </div>
+          <div className="columns">
+            <div className="column is-one-third">
+              Box
+          </div>
+            <div className="column is-one-third">
+              Box
+          </div>
+            <div className="column is-one-third">
+              Box
+          </div>
+          </div>
         </div>
       </div>
     )

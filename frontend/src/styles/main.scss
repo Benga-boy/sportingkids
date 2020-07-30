@@ -1,3 +1,6 @@
+// * OVERRIDE BULMA CLASSES HERE
+
+
 @import '~bulma/bulma.sass';
 @import "~video-react/styles/scss/video-react";
 
@@ -20,10 +23,11 @@
     margin: auto;
     width: 70%;
   }
+  .offerings{
+    margin-left: 30px;
+    width: 100%;
+  }
 }
-
-
-
 
 
 // * FOOTER
