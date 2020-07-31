@@ -27,13 +27,13 @@ const SchoolServices = () => {
             dynamicHeight={true}
             showThumbs={false}
             showArrows={false}
-            interval={2500}
+            interval={4000}
             showStatus={false}
             transitionTime={750}
             centerSlidePercentage={100}
           >
-            {homeCarousel.map(image => <div key={image.name} id={image.name} className="carousel-item" >
-              <img src={Blank} className="carousel-image" alt={image.name} />
+            {homeCarousel.map(image => <div key={image.name} id={image.name} className="carousel-school-services" >
+              <img src={Blank} className="school-carousel-image" alt={image.name} />
             </div>)}
           </Carousel>
         </div>

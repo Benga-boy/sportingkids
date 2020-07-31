@@ -158,6 +158,7 @@
     width: 50em;
     margin: 0 auto;
     padding-bottom: 50px;
+    margin-top: 30px;
     #image0{
       background-image: url('./assets//homeCarousel/image0.jpeg');
       background-repeat: no-repeat;
@@ -172,6 +173,9 @@
       background-image: url('./assets//homeCarousel/image3.jpeg');
       background-repeat: no-repeat;
       background-size: cover;
+    }
+    .school-carousel-image {
+      height: 500px;
     }
   }
   .info-and-testimonial{
