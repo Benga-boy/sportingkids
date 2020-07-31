@@ -5,13 +5,27 @@
 @import "~video-react/styles/scss/video-react";
 
 // * HOME
-
 .home{
   margin-top: 218px;
   .carousel-wrapper{
     margin: auto;
     width: 70%;
     margin-top: 20px;
+    #image0{
+      background-image: url('./assets//homeCarousel/image0.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #image1{
+      background-image: url('./assets//homeCarousel/image1.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #image3{
+      background-image: url('./assets//homeCarousel/image3.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
     .carousel-image {
       height: 700px;
       width: 100%;
@@ -24,8 +38,11 @@
     width: 70%;
   }
   .offerings{
-    margin-left: 30px;
-    width: 100%;
+    margin-left: 100px;
+    // width: 100%;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
   }
 }
 
@@ -42,7 +59,7 @@
     float: center;
   }
   .social-links li{
-    display: inline-block;
+    display: inline-flex;
     margin-right: 24px;
     font-size: 65px;
     a {
@@ -127,14 +144,6 @@
       background-size: cover;
     }
   }
-  // .divider{
-  //     position: relative;
-  //     min-width:2px;
-  //     max-width:2px;
-  //     background-color:#000;
-  //     display:inline-block;
-  //     margin:0 25px 0 25px;
-  // }
   .info-and-testimonial{
   display: flex;
   margin: 0 30px 0 30px;
@@ -278,7 +287,6 @@
 
 
 // * CHILD PROTECTION
-
 .childprotection{
   margin-top: 218px;
   // * Beliefs
@@ -335,7 +343,6 @@
 }
 
 // * PRIVACY POLICY
-
 .privacy {
   margin-top: 220px;
   .p-statements p {
@@ -360,7 +367,6 @@
 
 
 // * CONTACT
-
 .contact-us {
   margin-top: 218px;
 }

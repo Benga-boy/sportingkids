@@ -1,9 +1,11 @@
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
-import "react-responsive-carousel/lib/styles/carousel.min.css"
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { homeCarousel, video } from '../../styles/assets/homeCarousel/homeCarousel-data'
 import { Player } from 'video-react'
+import Blank from '../../styles/assets/logos/blank.png'
 
+import Boxes from '../pages/Boxes'
 
 class Home extends React.Component {
   state = {
@@ -19,7 +21,7 @@ class Home extends React.Component {
             <div className="container">
               <h1 className="title">
                 WELCOME TO SPORTING KIDS
-            </h1>
+              </h1>
             </div>
           </div>
         </section>
@@ -35,41 +37,42 @@ class Home extends React.Component {
             centerMode
             autoPlay
             dynamicHeight={true}
-            showArrows={false}
             showThumbs={false}
-            interval={5000}
+            interval={2500}
             showStatus={false}
+            showArrows={false}
             transitionTime={750}
             centerSlidePercentage={100}
           >
             {homeCarousel.map(image => <div key={image.name} id={image.name} className="carousel-item" >
-              <img src={image.value} className="carousel-image" alt="" />
+              <img src={Blank} className="carousel-image" alt="" />
             </div>)}
           </Carousel>
         </div>
         <div className="offerings">
+          {/* <div className="columns is-multiline">
+            <div className="column is-one-third">
+              Box
+            </div>
+            <div className="column is-one-third">
+              Box
+            </div>
+            <div className="column is-one-third">
+              Box
+            </div>
+          </div>
           <div className="columns is-multiline">
             <div className="column is-one-third">
               Box
-          </div>
+            </div>
             <div className="column is-one-third">
               Box
-          </div>
+            </div>
             <div className="column is-one-third">
               Box
-          </div>
-          </div>
-          <div className="columns is-multiline">
-            <div className="column is-one-third">
-              Box
-          </div>
-            <div className="column is-one-third">
-              Box
-          </div>
-            <div className="column is-one-third">
-              Box
-          </div>
-          </div>
+            </div>
+          </div> */}
+          <Boxes />
         </div>
       </div>
     )
