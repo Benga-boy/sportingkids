@@ -4,6 +4,12 @@
 @import '~bulma/bulma.sass';
 @import "~video-react/styles/scss/video-react";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 // * HOME
 .home{
   margin-top: 218px;
@@ -39,11 +45,9 @@
     width: 70%;
   }
   .offerings{
-    margin-left: 100px;
-    // width: 100%;
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
+    margin: auto;
+    width: 70%;
+    margin-top: 40px;
     article.message#box1:hover{
         background-color: rgba(253, 253, 150, 1);
     }
@@ -71,17 +75,21 @@
 .footer {
   background-color: #fbd46d;
   margin-top: 40px;
-  height: 260px;
-  margin-bottom: 0;
+  height: 170px;
   position: sticky;
-  padding: 40px;
-  .social-links{
-    float: center;
+  padding: 60px;
+  .footer-container {
+    margin: auto;
+    width: 90%;
+    margin-top: 20px;
   }
   .social-links li{
-    display: inline-flex;
+    display: inline-block;
     margin-right: 24px;
     font-size: 65px;
+    position: relative;
+    top: -24px;
+    left: 2px;
     a {
       color: #ffffff;
     }
@@ -98,6 +106,7 @@
     color: #e95950;
     }
   }
+
   .social-links li :last-child {
     margin-right: 0;
   }
@@ -124,6 +133,7 @@
   display:inline-block;
   margin:0 25px 0 25px;
 }
+
 
 // * ABOUT
 .about {
@@ -296,9 +306,9 @@
         }
         .nav-link:hover,
         .nav-link:active {
-          background-color: green;
-          color: ivory;
-          transition: background-color 0.3s;
+          background-color: #ff5722;
+          color: #eeeeee;
+          transition: background-color 0.10s;
         }
       }
     }

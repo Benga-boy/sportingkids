@@ -1,6 +1,6 @@
 import React from 'react'
 
-class BoxThreeCard extends React.Component  {
+class BoxThreeCard extends React.Component {
   state = {
     isActive: 'modal'
   }
@@ -16,31 +16,33 @@ class BoxThreeCard extends React.Component  {
 
     return (
       <>
-              
-              
+
+
         <article onClick={toggleModal} className="message is-dark" id="box3">
           <div className="message-body">
-              BOX 3
+            SMALL GROUP
           </div>
         </article>
-              
+
 
         <div className={this.state.isActive}>
           <div className="modal-background"></div>
           <div className="modal-card">
             <header className="modal-card-head">
-              <p className="modal-card-title">Modal title</p>
-              <button className="delete" aria-label="close"></button>
+              <p className="modal-card-title">SMALL GROUPS</p>
+              <button className="delete" aria-label="close" onClick={toggleModal}></button>
             </header>
             <section className="modal-card-body">
-      stufffy stuff stuff
+              <p>
+              Perfect for a group of siblings or friends! These fun sessions aim to improve skills, confidence and overall performance in a chosen sport or multi sports.
+              </p>
             </section>
             <footer className="modal-card-foot">
-              <button className="button" onClick={toggleModal}>Cancel</button>
+              FOOTER
             </footer>
           </div>
         </div>
-        
+
       </>
     )
   }

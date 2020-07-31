@@ -1,6 +1,6 @@
 import React from 'react'
 
-class BoxFourCard extends React.Component  {
+class BoxFourCard extends React.Component {
   state = {
     isActive: 'modal'
   }
@@ -16,11 +16,11 @@ class BoxFourCard extends React.Component  {
 
     return (
       <>
-              
-              
+
+
         <article onClick={toggleModal} className="message is-success" id="box4">
           <div className="message-body">
-              BOX 4
+            ONE TO ONE
           </div>
         </article>
 
@@ -28,14 +28,16 @@ class BoxFourCard extends React.Component  {
           <div className="modal-background"></div>
           <div className="modal-card">
             <header className="modal-card-head">
-              <p className="modal-card-title">Modal title 444</p>
-              <button className="delete" aria-label="close"></button>
+              <p className="modal-card-title">ONE-TO-ONE SPORTS PERFORMANCE COACHING</p>
+              <button className="delete" aria-label="close" onClick={toggleModal}></button>
             </header>
             <section className="modal-card-body">
-      stufffy stuff stuff
+              <p>
+              One to one sports coaching with Sporting Kids provide personalised sessions which aim to improve skills, confidence and overall performance in a chosen sport.
+              </p>
             </section>
             <footer className="modal-card-foot">
-              <button className="button" onClick={toggleModal}>Cancel</button>
+              FOOTER
             </footer>
           </div>
         </div>

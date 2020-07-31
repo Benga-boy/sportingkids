@@ -1,6 +1,6 @@
 import React from 'react'
 
-class BoxOneCard extends React.Component  {
+class BoxOneCard extends React.Component {
   state = {
     isActive: 'modal'
   }
@@ -17,31 +17,33 @@ class BoxOneCard extends React.Component  {
     return (
       <>
 
-              
-              
+
+
         <article onClick={toggleModal} className="message is-warning" id="box1">
           <div className="message-body">
-              BOX 1
+            AFTER SCHOOL
           </div>
         </article>
-              
+
 
         <div className={this.state.isActive}>
           <div className="modal-background"></div>
           <div className="modal-card">
             <header className="modal-card-head">
-              <p className="modal-card-title">Modal title</p>
-              <button className="delete" aria-label="close"></button>
+              <p className="modal-card-title">AFTER SCHOOL</p>
+              <button className="delete" onClick={toggleModal} aria-label="close"></button>
             </header>
             <section className="modal-card-body">
-      stufffy stuff stuff
+              <p>
+              After school club - normally runs for an hour 3.30pm until 4.30pm. These clubs give pupils the chance to further develop their skills in an activity outside school hours. All pupils participating in After School Clubs receive a medal, and trophies are given out in the final week’s presentation.
+              </p>
             </section>
             <footer className="modal-card-foot">
-              <button className="button" onClick={toggleModal}>Cancel</button>
+              FOOTER
             </footer>
           </div>
         </div>
-              
+
       </>
     )
   }

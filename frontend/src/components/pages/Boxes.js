@@ -10,7 +10,7 @@ import Box6Card from '../pages/boxes/Box6Card'
 const Boxes = () => {
   return (
 
-    <div className="columns is-multiline">
+    <div className="columns is-multiline is-mobile">
       <div className="column is-one-third"><Box1Card /></div>
       <div className="column is-one-third"><Box2Card /></div>
       <div className="column is-one-third"><Box3Card /></div>

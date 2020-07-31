@@ -1,6 +1,6 @@
 import React from 'react'
 
-class BoxSixCard extends React.Component  {
+class BoxSixCard extends React.Component {
   state = {
     isActive: 'modal'
   }
@@ -17,27 +17,29 @@ class BoxSixCard extends React.Component  {
     return (
       <>
 
-              
-              
+
+
         <article onClick={toggleModal} className="message is-primary" id="box6">
           <div className="message-body">
-              BOX 6
+            BREAKFAST CLUB
           </div>
         </article>
-              
+
 
         <div className={this.state.isActive}>
           <div className="modal-background"></div>
           <div className="modal-card">
             <header className="modal-card-head">
-              <p className="modal-card-title">Modal title</p>
-              <button className="delete" aria-label="close"></button>
+              <p className="modal-card-title">BREAKFAST</p>
+              <button className="delete" aria-label="close" onClick={toggleModal}></button>
             </header>
             <section className="modal-card-body">
-      stufffy stuff stuff
+              <p>
+              Normally delivered from 7:30am - 8:50am. Pupils begin the day with Physical Activity, helping to stimulate them ready for the school day ahead. We also offer board games, puzzles a place to read and write in our ‘relaxation areas’.
+              </p>
             </section>
             <footer className="modal-card-foot">
-              <button className="button" onClick={toggleModal}>Cancel</button>
+              FOOTER
             </footer>
           </div>
         </div>
