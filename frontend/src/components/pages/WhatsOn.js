@@ -1,7 +1,8 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 
 const WhatsOn = () => {
-  return(
+  return (
     <div className="whatson">
       <section className="hero is-link has-text-centered">
         <div className="change hero-body">
@@ -17,8 +18,8 @@ const WhatsOn = () => {
       </section>
       <section className="whatson-info">
         <div className="whatson-event">
-        <h1 className="title">Event title</h1>
-        <p>I said the keys are in here. I guarantee it. Its good. Its good. That's Calvin Klein, oh my god, he's a dream.
+          <h1 className="title">Event title</h1>
+          <p>I said the keys are in here. I guarantee it. Its good. Its good. That's Calvin Klein, oh my god, he's a dream.
 
         In that case, I'll tell you strait out. Take care. Huh? Ho, you mean you're gonna touch her on her- Get your meat hooks off of me.
 
@@ -26,14 +27,14 @@ const WhatsOn = () => {
         </div>
         <div className="divider"></div>
         <div className="whatson-directions">
-          <article class="message is-warning">
-  <div class="message-header">
-    <p>Directions</p>
-  </div>
-  <div class="message-body">
+          <article className="message is-warning">
+            <div className="message-header">
+              <p>Directions</p>
+            </div>
+            <div className="message-body">
   map corordinates (if we are using map) and directions sent from the backend here
-  </div>
-</article>
+            </div>
+          </article>
         </div>
       </section>
     </div>
