@@ -43,6 +43,25 @@
     // display: flex;
     // flex-wrap: wrap;
     // justify-content: space-between;
+    article.message#box1:hover{
+        background-color: rgba(253, 253, 150, 1);
+    }
+    article.message#box2:hover{
+        background-color: rgba(104, 171, 247, 0.5);
+    }
+    article.message#box3:hover{
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    article.message#box4:hover{
+        background-color: rgba(119,221,119, 0.5);
+
+    }
+    article.message#box5:hover{
+        background-color: rgba(240, 18, 66, 0.3);
+    }
+    article.message#box6:hover{
+        background-color: rgba(87, 245, 171, 0.4);
+    }
   }
 }
 

@@ -50,28 +50,6 @@ class Home extends React.Component {
           </Carousel>
         </div>
         <div className="offerings">
-          {/* <div className="columns is-multiline">
-            <div className="column is-one-third">
-              Box
-            </div>
-            <div className="column is-one-third">
-              Box
-            </div>
-            <div className="column is-one-third">
-              Box
-            </div>
-          </div>
-          <div className="columns is-multiline">
-            <div className="column is-one-third">
-              Box
-            </div>
-            <div className="column is-one-third">
-              Box
-            </div>
-            <div className="column is-one-third">
-              Box
-            </div>
-          </div> */}
           <Boxes />
         </div>
       </div>

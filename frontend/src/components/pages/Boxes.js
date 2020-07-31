@@ -9,14 +9,16 @@ import Box6Card from '../pages/boxes/Box6Card'
 
 const Boxes = () => {
   return (
-    <>
-      <Box1Card />
-      <Box2Card />
-      <Box3Card />
-      <Box4Card />
-      <Box5Card />
-      <Box6Card />
-    </>
+
+    <div className="columns is-multiline">
+      <div className="column is-one-third"><Box1Card /></div>
+      <div className="column is-one-third"><Box2Card /></div>
+      <div className="column is-one-third"><Box3Card /></div>
+      <div className="column is-one-third"><Box4Card /></div>
+      <div className="column is-one-third"><Box5Card /></div>
+      <div className="column is-one-third"><Box6Card /></div>
+    </div>
+
   )
 }
 

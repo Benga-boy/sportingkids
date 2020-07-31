@@ -16,38 +16,33 @@ class BoxTwoCard extends React.Component  {
 
     return (
       <>
-        <div className="columns is-multiline">
-          <div className="column is-one-third">
               
-            {/* <button onClick={toggleModal}>box 4</button> */}
               
-            <article onClick={toggleModal} className="message is-link">
-              <div className="message-body">
+        <article onClick={toggleModal} className="message is-link" id="box2">
+          <div className="message-body">
               BOX 2
-              </div>
-            </article>
+          </div>
+        </article>
               
 
-            <div className={this.state.isActive}>
-              <div className="modal-background"></div>
-              <div className="modal-card">
-                <header className="modal-card-head">
-                  <p className="modal-card-title">Modal title</p>
-                  <button className="delete" aria-label="close"></button>
-                </header>
-                <section className="modal-card-body">
+        <div className={this.state.isActive}>
+          <div className="modal-background"></div>
+          <div className="modal-card">
+            <header className="modal-card-head">
+              <p className="modal-card-title">Modal title</p>
+              <button className="delete" aria-label="close"></button>
+            </header>
+            <section className="modal-card-body">
       stufffy stuff stuff
-                </section>
-                <footer className="modal-card-foot">
-                  <button className="button" onClick={toggleModal}>Cancel</button>
-                </footer>
-              </div>
-            </div>
-
-
-
+            </section>
+            <footer className="modal-card-foot">
+              <button className="button" onClick={toggleModal}>Cancel</button>
+            </footer>
           </div>
         </div>
+
+
+
       </>
     )
   }
