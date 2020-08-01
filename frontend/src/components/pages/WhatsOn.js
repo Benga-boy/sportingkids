@@ -1,45 +1,66 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 
-const WhatsOn = () => {
-  return (
-    <div className="whatson">
-      <section className="hero is-link has-text-centered">
-        <div className="change hero-body">
-          <div className="container">
-            <h1 className="title">
-              Whats on
-            </h1>
-            <h2 className="subtitle">
-              something or other
-            </h2>
+import {getEvent} from '../../lib/api'
+
+class WhatsOn extends React.Component {
+  state = {
+    event: null
+  }
+
+  // * Get Event at index 0 as they wish to post one at a time - so latest event
+  async componentDidMount(){
+    try {
+      const res = await getEvent()
+      const data = res.data[0]
+      this.setState({event: data})
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
+
+  render() {
+    if (!this.state.event) return <div className="no-event"><h1>No event at this current time</h1></div> 
+    const {event} = this.state
+    console.log(event)
+    return (
+      <div className="whatson">
+        <section className="hero is-link has-text-centered">
+          <div className="change hero-body">
+            <div className="container">
+              <h1 className="title">
+                Whats on
+              </h1>
+              <h2 className="subtitle">
+                something or other
+              </h2>
+            </div>
           </div>
-        </div>
-      </section>
-      <section className="whatson-info">
-        <div className="whatson-event">
-          <h1 className="title">Event title</h1>
-          <p>I said the keys are in here. I guarantee it. Its good. Its good. That's Calvin Klein, oh my god, he's a dream.
-
-        In that case, I'll tell you strait out. Take care. Huh? Ho, you mean you're gonna touch her on her- Get your meat hooks off of me.
-
-        Well, aren't you going up to the lake tonight, you've been planning it for two weeks. Lorraine. That Biff, what a character. Always trying to get away with something. Been on top of Biff ever since high school. Although, if it wasn't for him- That's a great idea. I'd love to park. Okay.</p>
-        </div>
-        <div className="divider"></div>
-        <div className="whatson-directions">
-          <article className="message is-warning">
-            <div className="message-header">
-              <p>Directions</p>
-            </div>
-            <div className="message-body">
-  map corordinates (if we are using map) and directions sent from the backend here
-            </div>
-          </article>
-        </div>
-      </section>
-    </div>
-    
-  )
+        </section>
+        <section className="whatson-info">
+          <div className="whatson-event">
+            <h1 className="title">{event.title}</h1>
+            <p>{event.description} </p>
+          <p>{event.date} </p>
+          <p>{event.time} </p>
+          </div>
+          <div className="divider"></div>
+          <div className="whatson-directions">
+            <article className="message is-warning">
+              <div className="message-header">
+                <p>Directions</p>
+              </div>
+              <div className="message-body">
+                map corordinates (if we are using map) and directions sent from the backend here
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+      
+    )
+  }
 }
 
 export default WhatsOn
