@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 
-import {getEvent} from '../../lib/api'
+import { getEvent } from '../../lib/api'
 
 class WhatsOn extends React.Component {
   state = {
@@ -9,11 +9,12 @@ class WhatsOn extends React.Component {
   }
 
   // * Get Event at index 0 as they wish to post one at a time - so latest event
-  async componentDidMount(){
+  async componentDidMount() {
     try {
       const res = await getEvent()
       const data = res.data[0]
-      this.setState({event: data})
+      console.log(data)
+      this.setState({ event: data })
     } catch (err) {
       console.log(err)
     }
@@ -21,8 +22,8 @@ class WhatsOn extends React.Component {
 
 
   render() {
-    if (!this.state.event) return <div className="no-event"><h1>No event at this current time</h1></div> 
-    const {event} = this.state
+    if (!this.state.event) return <div className="no-event"><h1>No event at this current time</h1></div>
+    const { event } = this.state
     console.log(event)
     return (
       <div className="whatson">
@@ -41,21 +42,29 @@ class WhatsOn extends React.Component {
         <section className="whatson-info">
           <div className="whatson-event">
             <h1 className="title">{event.title}</h1>
-            <p>{event.description} </p>
-          <p>{event.date} </p>
-          <p>{event.time} </p>
+            <figure className="image is-16by9">
+              <img className="has-ratio" width="640" height="360" src="https://www.golfchannel.com/sites/default/files/2020/03/22/olympics_1920_sign.jpg" alt="Sporting Kids Events" frameBorder="0" allowFullScreen/>
+            </figure> <br/>
+            <div className="content is-medium">
+              <h5 className="title">Description</h5>
+              <p>{event.description} </p>
+              <h5 className="title">Date</h5>
+              <p>{event.date} </p>
+              <h5 className="title">Date</h5>
+              <p>{event.time} </p>
+            </div>
           </div>
-          <div className="divider"></div>
-          <div className="whatson-directions">
-            <article className="message is-warning">
-              <div className="message-header">
-                <p>Directions</p>
+            <div className="divider"></div>
+            <div className="whatson-directions">
+              <article className="message is-warning">
+                <div className="message-header">
+                  <p>Directions</p>
+                </div>
+                <div className="message-body">
+                  map corordinates (if we are using map) and directions sent from the backend here
               </div>
-              <div className="message-body">
-                map corordinates (if we are using map) and directions sent from the backend here
-              </div>
-            </article>
-          </div>
+              </article>
+            </div>
         </section>
       </div>
       
