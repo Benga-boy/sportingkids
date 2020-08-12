@@ -15,7 +15,7 @@ const Contact = () => {
       <section className="section">
         <div className="container">
           <div className="columns is-mobile">
-            <div className="column is-half">
+            <div className="column is-one-third">
               <form method="POST" action="https://formspree.io/mknqkgww">
                 <div className="field">
                   <label className="label">Name</label>
@@ -43,6 +43,10 @@ const Contact = () => {
                 </div>
                 <button className="button is-medium is-link">SEND</button>
               </form>
+            </div>
+            <div className="divider"></div>
+            <div className="column is-half">
+            <iframe src="https://cdn.forms-content.sg-form.com/3f77d55f-cc14-11ea-833a-7e3deb42604a"/>
             </div>
           </div>
         </div>
