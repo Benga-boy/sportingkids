@@ -1,6 +1,7 @@
 import React from 'react'
 import { loginUser } from '../../lib/api'
 import { setToken } from '../../lib/auth'
+import { toast } from '../../lib/notifications'
 
 class Login extends React.Component {
   state = {
@@ -11,6 +12,22 @@ class Login extends React.Component {
     error: ''
   }
 
+  handleChange = event => {
+    const formData = { ...this.state.formData, [event.target.name]: event.target.value }
+    this.setState({ formData, error: '' })
+  }
+  handleSubmit = async event => {
+    event.preventDefault()
+    try {
+      const res = await loginUser(this.state.formData)
+      setToken(res.data.token)
+      // toast(res.data.message)
+      this.props.history.push('/')
+    } catch (err) {
+      this.setState({ error: 'Invalid Credentials' })
+    }
+  }
+
   render() {
     const { formData, error } = this.state
     return (
@@ -19,11 +36,14 @@ class Login extends React.Component {
           <div className="container">
             <div className="columns">
               <form
+              onSubmit={this.handleSubmit}
                 className="column is-half is-offset-one-quarter box">
                 <div className="field">
                   <label className="label">Email</label>
                   <div className="control">
                     <input
+                    onChange={this.handleChange}
+                    value={formData.email}
                       className={`input ${error ? 'is-danger' : ''}`}
                       placeholder="Email"
                       name="email"
@@ -35,6 +55,8 @@ class Login extends React.Component {
                   <label className="label">Password</label>
                   <div className="control">
                     <input
+                    onChange={this.handleChange}
+                    value={formData.password}
                       type="password"
                       className={`input ${error ? 'is-danger' : ''}`}
                       placeholder='Password'

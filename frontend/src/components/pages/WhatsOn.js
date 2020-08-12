@@ -1,7 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-import { getEvent } from '../../lib/api'
+
+import { getEvent, deleteEvent } from '../../lib/api'
+import { isAuthenticated } from '../../lib/auth'
 
 class WhatsOn extends React.Component {
   state = {
@@ -17,12 +20,24 @@ class WhatsOn extends React.Component {
       this.setState({ event: data })
     } catch (err) {
       console.log(err)
+      this.props.history.push('/notfound')
     }
   }
 
+  handleDelete = async () => {
+    try {
+      const eventId = this.state.event._id
+      await deleteEvent(eventId)
+      this.props.history.push('/')
+    } catch (err) {
+      console.log(err.response)
+    }
+  }
 
   render() {
-    if (!this.state.event) return <div className="no-event"><h1>No event at this current time</h1></div>
+    if (!this.state.event) return <div className="no-event"><h1>No event at this current time</h1>
+    {isAuthenticated && <Link to={`/whatson/create`} className="button is-link">Create Event</Link>}</div>
+    
     const { event } = this.state
     console.log(event)
     return (
@@ -42,6 +57,7 @@ class WhatsOn extends React.Component {
         <section className="whatson-info">
           <div className="whatson-event">
             <h1 className="title">{event.title}</h1>
+            <h2 className="subtitle">{event.subtitle}</h2>
             <figure className="image is-16by9">
               <img className="has-ratio" width="640" height="360" src="https://www.golfchannel.com/sites/default/files/2020/03/22/olympics_1920_sign.jpg" alt="Sporting Kids Events" frameBorder="0" allowFullScreen/>
             </figure> <br/>
@@ -53,6 +69,8 @@ class WhatsOn extends React.Component {
               <h5 className="title">Date</h5>
               <p>{event.time} </p>
             </div>
+            {isAuthenticated && <Link to={`/whatson/${event._id}/edit`} className="button is-link">Edit</Link>}
+            {isAuthenticated && <button onClick={this.handleDelete} className="button is-danger">Delete</button>}
           </div>
             <div className="divider"></div>
             <div className="whatson-directions">
