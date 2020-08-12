@@ -16,7 +16,6 @@ class WhatsOn extends React.Component {
     try {
       const res = await getEvent()
       const data = res.data[0]
-      console.log(data)
       this.setState({ event: data })
     } catch (err) {
       console.log(err)
@@ -24,6 +23,8 @@ class WhatsOn extends React.Component {
     }
   }
 
+
+  // * Function to handle deleting an event!
   handleDelete = async () => {
     try {
       const eventId = this.state.event._id
@@ -56,21 +57,20 @@ class WhatsOn extends React.Component {
         </section>
         <section className="whatson-info">
           <div className="whatson-event">
-            <h1 className="title">{event.title}</h1>
-            <h2 className="subtitle">{event.subtitle}</h2>
+            <h1 className="title">{event.title}</h1> <br/>
             <figure className="image is-16by9">
               <img className="has-ratio" width="640" height="360" src="https://www.golfchannel.com/sites/default/files/2020/03/22/olympics_1920_sign.jpg" alt="Sporting Kids Events" frameBorder="0" allowFullScreen/>
             </figure> <br/>
-            <div className="content is-medium">
+            <div className="content is-small">
               <h5 className="title">Description</h5>
               <p>{event.description} </p>
               <h5 className="title">Date</h5>
               <p>{event.date} </p>
-              <h5 className="title">Date</h5>
+              <h5 className="title">Time</h5>
               <p>{event.time} </p>
             </div>
-            {isAuthenticated && <Link to={`/whatson/${event._id}/edit`} className="button is-link">Edit</Link>}
-            {isAuthenticated && <button onClick={this.handleDelete} className="button is-danger">Delete</button>}
+            {isAuthenticated() && <Link to={`/whatson/${event._id}/edit`} className="button is-link">Edit</Link>}
+            {isAuthenticated() && <button onClick={this.handleDelete} className="button is-danger">Delete</button>}
           </div>
             <div className="divider"></div>
             <div className="whatson-directions">

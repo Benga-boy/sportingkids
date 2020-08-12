@@ -34,7 +34,6 @@ class EventEdit extends React.Component {
   handleSubmit = async event => {
     event.preventDefault()
     const eventId = this.props.match.params.id
-    console.log(eventId)
     try {
       await editEvent(eventId, this.state.formData)
       this.props.history.push('/whatson')

@@ -20,8 +20,8 @@ class BoxOneCard extends React.Component {
 
 
         <article onClick={toggleModal} className="message is-warning" id="box1">
-          <div className="message-body">
-            AFTER SCHOOL
+          <div className="after-school message-body">
+            <p><strong>AFTER SCHOOL</strong></p>
           </div>
         </article>
 

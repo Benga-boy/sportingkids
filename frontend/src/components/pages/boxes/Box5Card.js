@@ -20,8 +20,8 @@ class BoxFiveCard extends React.Component {
 
 
         <article onClick={toggleModal} className="message is-danger" id="box5">
-          <div className="message-body">
-            BIRTHDAY PARTIES
+          <div className="birthday-parties message-body">
+            <p><strong>BIRTHDAY PARTIES</strong></p>
           </div>
         </article>
 

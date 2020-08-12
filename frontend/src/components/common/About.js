@@ -6,7 +6,7 @@ import {rene, ola} from '../../styles/assets/homeCarousel/homeCarousel-data'
 const About = () => {
   return (
     <div className="about">
-      <section className="hero is-primary has-text-centered">
+      <section className="about-background  hero is-link has-text-centered">
         <div className="hero-body">
           <div className="container">
             <h1 className="title">
@@ -54,8 +54,9 @@ const About = () => {
                     </div>
                   </div>
                   <div className="content">
+                    <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris.
+                    Phasellus nec iaculis mauris <button>more...</button></p> 
                   </div>
                 </div>
               </div>
@@ -75,8 +76,9 @@ const About = () => {
                     </div>
                   </div>
                   <div className="content">
+                  <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris.
+                    Phasellus nec iaculis mauris <button>more...</button></p> 
                   </div>
                 </div>
               </div>

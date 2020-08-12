@@ -11,11 +11,14 @@
 
 // * HOME
 .home{
-  margin-top: 218px;
+  margin-top: 230px;
+  .home-section {
+    margin-bottom: 50px;
+  }
   .carousel-wrapper{
-    margin: auto;
-    width: 70%;
-    margin-top: 20px;
+    // margin: auto;
+    width: 100%;
+    // height: inherit;
     #image0{
       background-image: url('./assets//homeCarousel/image0.jpeg');
       background-repeat: no-repeat;
@@ -32,16 +35,17 @@
       background-size: cover;
     }
     .carousel-image {
-      height: 700px;
+      height: 350px;
       width: 100%;
     }
   }
   .video-wrapper{
     margin-bottom: 50px;
-    margin-top: 16px;
+    // margin-top: 24px;
     margin: auto;
-    // padding: 30px;
-    width: 70%;
+    padding: 10px;
+    width: 50%;
+    border: 2px solid black;
   }
   .offerings{
     margin: auto;
@@ -187,6 +191,13 @@
   .school-services-testimonial{
     width: 30%
   }
+  .school-services-background {
+    background-image: url('https://images.myguide-cdn.com/algarve/events/large/multi-sports-activities-for-the-kids-at-the-campus-608635.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    padding: 40px;
+  }
 }
 
 
@@ -235,6 +246,13 @@
     .multisports-services-testimonial{
       width: 30%
     }
+    .multi-sports-background {
+      background-image: url('https://sportforlife.ca/wp-content/uploads/2018/09/Multisport.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 24px;
+      height: 300px;
+    }
 }
 
 
@@ -252,14 +270,15 @@
     display: flex;
     justify-content: space-between;
     .contact{
-      margin-top: 25px;
+      margin-top: 20px;
       margin-right: 50px;
       font-size: 1.4em;
+      padding: 0 8px;
       .email{
         display: flex;
         align-items: center;
         p {
-          font-size: 28px;
+          font-size: 24px;
           line-height: 145%;
           ion-icon{
             margin-right: 18px;
@@ -286,14 +305,11 @@
           }
         }
       }
-      img{
-        margin-right: 10px;
-      }
     }
     #sk-logo{
-      margin-top: 25px;
+      margin: 30px 0 0 30px;
       height: 7em;
-      margin-left: 30px;
+      padding: 6px 10px;
     }
   }
   .nav-bottom{
@@ -313,8 +329,8 @@
         }
         .nav-link:hover,
         .nav-link:active {
-          background-color: #ff5722;
-          color: #eeeeee;
+          background-color: #f5efef;
+          color: #cf1b1b;
           transition: background-color 0.10s;
         }
       }
@@ -348,7 +364,7 @@
       margin-top: 14px;
     }
   }
-  // * Staffing policies
+  // * STAFFING POLICIES
   .staffing-policies {
     margin-top: 24px;
     ol {
@@ -359,7 +375,7 @@
       padding: 4px;
     }
   }
-  // * Conducts
+  // * CONDUCTS
   .conduct{
     margin-top: 24px;
     ol {
@@ -403,7 +419,25 @@
 
 // * CONTACT
 .contact-us {
-  margin-top: 218px;
+  margin-top: 225px;
+  .sub-form iframe {
+    width: 570px;
+    height: 550px;
+    margin: auto;
+    padding: 12px;
+  }
+  .contact-form {
+    margin: auto;
+    padding: 12px;
+    width: 100%;
+  }
+  .contact-background {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url('https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/cloud/cumulus-cloud.jpg/cumulus-cloud.jpg/metofficegovuk%3AheroMedium');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    opacity: 1;
+  }
 }
 
 
@@ -415,4 +449,102 @@ margin-top: 300px;
 //* EVENT EDIT
 .event-edit{
   margin-top: 200px;
+}
+
+// * BOX CARDS
+
+.after-school {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://thelittlesandme.com/wp-content/uploads/2018/04/ChalkPromptsCards-8-of-7.jpg');
+  height: 150px;
+  background-size: cover;
+  text-align: center;
+  opacity: 0.8;
+  p {
+    margin-top: 30px;
+    color: white;
+  }
+}
+.after-school:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.sports-coaching {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://arkpriory.org/sites/default/files/shutterstock_1396798973.jpg');
+  height: 150px;
+  background-size: cover;
+  text-align: center;
+  opacity: 0.8;
+  p {
+    margin-top: 30px;
+    color: white;
+  }
+}
+.sports-coaching:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.small-groups {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://www.cbc.ca/kidscbc2/content/contests/kids-colouring-Twenty20.jpg');
+  height: 150px;
+  background-size: cover;
+  text-align: center;
+  opacity: 0.8;
+  p {
+    margin-top: 30px;
+    color: white;
+  }
+}
+.small-groups:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.one-to-one {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://ak.picdn.net/shutterstock/videos/12246446/thumb/7.jpg');
+  height: 150px;
+  background-size: cover;
+  text-align: center;
+  opacity: 0.8;
+  p {
+    margin-top: 30px;
+    color: white;
+  }
+}
+.one-to-one:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.birthday-parties {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://media.socastsrm.com/wordpress/wp-content/blogs.dir/1050/files/2019/08/082619-1.jpg');
+  height: 150px;
+  background-size: cover;
+  text-align: center;
+  opacity: 0.8;
+  p {
+    margin-top: 30px;
+    color: white;
+  }
+}
+.birthday-parties:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.breakfast-club {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://paisleyprimaryschool.org.uk/wp-content/uploads/2015/07/o-SMILEY-BREAKFAST-facebook.jpg');
+  height: 150px;
+  background-size: cover;
+  text-align: center;
+  opacity: 0.8;
+  p {
+    margin-top: 30px;
+    color: white;
+  }
+}
+.breakfast-club:hover {
+  opacity: 1;
+  cursor: pointer;
 }

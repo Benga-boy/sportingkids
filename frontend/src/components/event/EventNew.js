@@ -23,7 +23,6 @@ class EventNew extends React.Component {
     event.preventDefault()
     try {
       const res = await createEvent(this.state.formData)
-      console.log(res)
       this.props.history.push(`/whatson`)
     } catch (err) {
       console.log(err)
@@ -31,8 +30,6 @@ class EventNew extends React.Component {
   }
 
   render() {
-
-    console.log(this.state)
     return (
       <div className="event-new">
         <section className="section">

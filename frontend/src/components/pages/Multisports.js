@@ -3,7 +3,7 @@ import React from 'react'
 const Multisports = () => {
   return (
     <div className="multisports">
-      <section className="hero is-danger has-text-centered">
+      <section className="multi-sports-background hero is-danger has-text-centered">
         <div className="hero-body">
           <div className="container">
             <h1 className="title">
@@ -32,8 +32,8 @@ const Multisports = () => {
         </div>
         <div className="divider"></div>
         <div className="multisports-services-testimonial">
-          <article class="message is-success">
-            <div class="message-header">
+          <article className="message is-success">
+            <div className="message-header">
               <p>Jane Doe, Parent</p>
             </div>
             <div class="message-body">

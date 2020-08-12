@@ -19,8 +19,8 @@ class BoxTwoCard extends React.Component {
 
 
         <article onClick={toggleModal} className="message is-link" id="box2">
-          <div className="message-body">
-            SPORTS COACHING
+          <div className="sports-coaching message-body">
+            <p><strong>SPORTS COACHING</strong></p>
           </div>
         </article>
 

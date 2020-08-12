@@ -16,38 +16,35 @@ class Home extends React.Component {
 
     return (
       <div className="home">
-        <section className="hero is-primary has-text-centered">
-          <div className="hero-body">
-            <div className="container">
-              <h1 className="title">
-                WELCOME TO SPORTING KIDS
-              </h1>
-            </div>
-          </div>
+        <section className="home-section hero is-primary has-text-centered">
+          {/* <div className="hero-body">
+            <div className="container"> */}
+              <div className="carousel-wrapper">
+                <Carousel
+                  infiniteLoop
+                  centerMode
+                  autoPlay
+                  dynamicHeight={true}
+                  showThumbs={false}
+                  interval={3500}
+                  showStatus={false}
+                  showArrows={false}
+                  transitionTime={750}
+                  centerSlidePercentage={100}
+                >
+                  {homeCarousel.map(image => <div key={image.name} id={image.name} className="carousel-item" >
+                  <img src={Blank} className="carousel-image" alt="" />
+                  </div>)}
+                </Carousel>
+              </div>
+            {/* </div> */}
+          {/* </div> */}
         </section>
         <div className="video-wrapper">
           <Player
             src={video}
             playsInline
           />
-        </div>
-        <div className="carousel-wrapper">
-          <Carousel
-            infiniteLoop
-            centerMode
-            autoPlay
-            dynamicHeight={true}
-            showThumbs={false}
-            interval={3500}
-            showStatus={false}
-            showArrows={false}
-            transitionTime={750}
-            centerSlidePercentage={100}
-          >
-            {homeCarousel.map(image => <div key={image.name} id={image.name} className="carousel-item" >
-              <img src={Blank} className="carousel-image" alt="" />
-            </div>)}
-          </Carousel>
         </div>
         <div className="offerings">
           <Boxes />

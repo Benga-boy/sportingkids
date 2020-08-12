@@ -8,10 +8,10 @@ const Navbar = () => {
           <img id="sk-logo" src="https://static.wixstatic.com/media/1a0189_f6d00781a30642748a8c3de78937a259~mv2_d_2480_1265_s_2.png/v1/crop/x_0,y_244,w_2480,h_785/fill/w_600,h_190,al_c,q_85,usm_0.66_1.00_0.01/Sporting%20Kids%20logo%20PNG.webp" alt="Sporting Kids" />
         <div className="contact">
           <div className="email">
-            <p><ion-icon name="mail-outline"></ion-icon>admin@sportingkids.com</p>
+            <p><strong><ion-icon name="mail-outline"></ion-icon></strong>admin@sportingkids.com</p>
           </div>
           <div className="phone-number">
-            <p><ion-icon name="call-outline"></ion-icon>07904618138</p>
+            <p><strong><ion-icon name="call-outline"></ion-icon></strong>07904618138</p>
           </div>
         </div>
       </div>
