@@ -11,6 +11,7 @@ import Multisports from './components/pages/Multisports'
 import ChildProtection from './components/pages/ChildProtection'
 import PrivacyPolicy from './components/pages/PrivacyPolicy'
 import Contact from './components/pages/Contact'
+import Login from './components/authentication/Login'
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/childprotection" component={ChildProtection} />
         <Route path="/privacypolicy" component={PrivacyPolicy} />
         <Route path="/contact" component={Contact} />
+        <Route path='/admin' component={Login} />
       </Switch>
       <Footer />
     </BrowserRouter>

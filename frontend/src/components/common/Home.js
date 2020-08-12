@@ -38,7 +38,7 @@ class Home extends React.Component {
             autoPlay
             dynamicHeight={true}
             showThumbs={false}
-            interval={4000}
+            interval={3500}
             showStatus={false}
             showArrows={false}
             transitionTime={750}

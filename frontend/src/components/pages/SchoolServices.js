@@ -27,7 +27,7 @@ const SchoolServices = () => {
             dynamicHeight={true}
             showThumbs={false}
             showArrows={false}
-            interval={4000}
+            interval={3500}
             showStatus={false}
             transitionTime={750}
             centerSlidePercentage={100}
