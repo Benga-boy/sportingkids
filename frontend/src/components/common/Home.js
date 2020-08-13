@@ -19,25 +19,25 @@ class Home extends React.Component {
         <section className="home-section hero is-primary has-text-centered">
           {/* <div className="hero-body">
             <div className="container"> */}
-              <div className="carousel-wrapper">
-                <Carousel
-                  infiniteLoop
-                  centerMode
-                  autoPlay
-                  dynamicHeight={true}
-                  showThumbs={false}
-                  interval={3500}
-                  showStatus={false}
-                  showArrows={false}
-                  transitionTime={750}
-                  centerSlidePercentage={100}
-                >
-                  {homeCarousel.map(image => <div key={image.name} id={image.name} className="carousel-item" >
-                  <img src={Blank} className="carousel-image" alt="" />
-                  </div>)}
-                </Carousel>
-              </div>
-            {/* </div> */}
+          <div className="carousel-wrapper">
+            <Carousel
+              infiniteLoop
+              centerMode
+              autoPlay
+              dynamicHeight={true}
+              showThumbs={false}
+              interval={3500}
+              showStatus={false}
+              showArrows={false}
+              transitionTime={750}
+              centerSlidePercentage={100}
+            >
+              {homeCarousel.map(image => <div key={image.name} id={image.name} className="carousel-item" >
+                <img src={Blank} className="carousel-image" alt="" />
+              </div>)}
+            </Carousel>
+          </div>
+          {/* </div> */}
           {/* </div> */}
         </section>
         <div className="video-wrapper">
