@@ -313,7 +313,7 @@
     }
     #sk-logo{
       margin: 10px 0 0 40px;
-      height: 6em;
+      height: 7em;
       padding: 6px 10px;
     }
   }
@@ -351,19 +351,21 @@
         //   color: #cf1b1b;
         //   transition: background-color 0.10s;
         // }
-        //* what is the nav-lonk:active doing?
+        //* Removed the is:active and Ive also commented out the bits that arent having an effect.
         .nav-link-home{
           display: flex;
           justify-content: center;
           align-items: center;
           width:16%;
           height: 50px;
+          // a.nav-link{
+          //   color: #404040;
+          // }
         }
-        .nav-link-home:hover,
-        .nav-link:active{
+        .nav-link-home:hover{
           background-color: rgba(241, 120, 55, 0.6);
           border-left: rgba(241, 120, 55, 1) solid 3px;
-          color: white;
+          // color: white;
           transition: background-color 0.80s;
           .nav-link{
             margin-left: -3px;
@@ -376,11 +378,10 @@
           width:16%;
           height: 50px;
         }
-        .nav-link-about:hover,
-        .nav-link:active{
+        .nav-link-about:hover{
           background-color: rgba(255, 239, 0, 0.4);
           border-left: rgba(255, 239, 0, 1) solid 3px;
-          color: white;
+          // color: white;
           transition: background-color 0.80s;
           .nav-link{
             margin-left: -3px;
@@ -393,11 +394,10 @@
           width:16%;
           height: 50px;
         }
-        .nav-link-multi-sport-services:hover,
-        .nav-link:active{
+        .nav-link-multi-sport-services:hover{
           background-color: rgba(22, 227, 40, 0.4);
           border-left: rgba(22, 227, 40, 1) solid 3px;
-          color: white;
+          // color: white;
           transition: background-color 0.80s;
           .nav-link{
             margin-left: -3px;
@@ -410,10 +410,10 @@
           width:16%;
           height: 50px;
         }
-        .nav-link-school-services:hover, .nav-link:active{
+        .nav-link-school-services:hover{
           background-color: rgba(23, 124, 232, 0.5);
           border-left: rgba(23, 124, 232, 1) solid 3px;
-          color: white;
+          // color: white;
           transition: background-color 0.80s;
           .nav-link{
             margin-left: -3px;
@@ -426,10 +426,10 @@
           width:16%;
           height: 50px;
         }
-        .nav-link-whats-on:hover, .nav-link:active{
+        .nav-link-whats-on:hover{
           background-color: rgba(232, 107, 23, 0.6);
           border-left: rgba(232, 107, 23, 1) solid 3px;
-          color: white;
+          // color: white;
           transition: background-color 0.80s;
           .nav-link{
             margin-left: -3px;
@@ -442,14 +442,14 @@
           width:16%;
           height: 50px;
         }
-        .nav-link-contact-us:hover, .nav-link:active{
+        .nav-link-contact-us:hover{
           background-color: rgba(176, 125, 242, 0.7);
           border-left: rgba(119, 32, 233, 1) solid 3px;
+          // color: white;
+          transition: background-color 0.80s;
           .nav-link{
             margin-left: -3px;
           }
-          color: white;
-          transition: background-color 0.80s;
         }
       }
     }
