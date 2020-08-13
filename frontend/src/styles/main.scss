@@ -258,6 +258,7 @@
 
 // * NAVBAR
 .navbar{
+  font-family: 'Work Sans', sans-serif;
   left: 0;
   top: 0;
   // height: 150px;
@@ -330,10 +331,10 @@
         // padding-bottom: 0.5em;
         // font-size: 20px;
         display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
+	      flex-direction: row;
+	      flex-wrap: nowrap;
+	      justify-content: center;
+	      align-items: center;
         // .nav-link{
         //   text-decoration: none;
         // }
@@ -353,7 +354,7 @@
         }
         .nav-link-home:hover,
         .nav-link:active{
-          background-color: rgba(241, 120, 55, 0.8);
+          background-color: rgba(241, 120, 55, 0.6);
           border-left: rgba(241, 120, 55, 1) solid 3px;
           color: white;
           transition: background-color 0.80s;
@@ -370,8 +371,8 @@
         }
         .nav-link-about:hover,
         .nav-link:active{
-          background-color: rgba(241, 204, 55, 0.7);
-          border-left: rgba(241, 204, 55, 1) solid 3px;
+          background-color: rgba(255, 239, 0, 0.4);
+          border-left: rgba(255, 239, 0, 1) solid 3px;
           color: white;
           transition: background-color 0.80s;
           .nav-link{
@@ -387,7 +388,7 @@
         }
         .nav-link-multi-sport-services:hover,
         .nav-link:active{
-          background-color: rgba(22, 227, 40, 0.6);
+          background-color: rgba(22, 227, 40, 0.4);
           border-left: rgba(22, 227, 40, 1) solid 3px;
           color: white;
           transition: background-color 0.80s;
@@ -403,7 +404,7 @@
           height: 50px;
         }
         .nav-link-school-services:hover, .nav-link:active{
-          background-color: rgba(23, 124, 232, 0.7);
+          background-color: rgba(23, 124, 232, 0.5);
           border-left: rgba(23, 124, 232, 1) solid 3px;
           color: white;
           transition: background-color 0.80s;
@@ -419,7 +420,7 @@
           height: 50px;
         }
         .nav-link-whats-on:hover, .nav-link:active{
-          background-color: rgba(232, 107, 23, 0.7);
+          background-color: rgba(232, 107, 23, 0.6);
           border-left: rgba(232, 107, 23, 1) solid 3px;
           color: white;
           transition: background-color 0.80s;
@@ -435,7 +436,7 @@
           height: 50px;
         }
         .nav-link-contact-us:hover, .nav-link:active{
-          background-color: rgba(176, 125, 242, 0.8);
+          background-color: rgba(176, 125, 242, 0.7);
           border-left: rgba(119, 32, 233, 1) solid 3px;
           .nav-link{
             margin-left: -3px;
