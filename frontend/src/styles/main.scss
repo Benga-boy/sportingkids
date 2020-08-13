@@ -17,8 +17,8 @@
   }
   .carousel-wrapper{
     // margin: auto;
-    width: 100%;
-    // height: inherit;
+    // width: 100%;
+    // height: 150%;
     #image0{
       background-image: url('./assets//homeCarousel/image0.jpeg');
       background-repeat: no-repeat;
@@ -36,7 +36,7 @@
     }
     .carousel-image {
       height: 350px;
-      width: 100%;
+      // width: 100%;
     }
   }
   .video-wrapper{
@@ -274,33 +274,38 @@
 
 // * NAVBAR
 .navbar{
+  font-family: 'Work Sans', sans-serif;
   left: 0;
   top: 0;
+  // height: 150px;
   display: flex;
   flex-direction: column;
   position: fixed;
   z-index: 1;
-  background-color: whitesmoke;
+  // background-color: whitesmoke;
   width: 100%;
   .nav-top{
+    // height: 100px;
     display: flex;
     justify-content: space-between;
     .contact{
+      display: flex;
       margin-top: 20px;
-      margin-right: 50px;
-      font-size: 1.4em;
+      margin-right: 100px;
+      // font-size: 1.4em;
       padding: 0 8px;
       .email{
         display: flex;
         align-items: center;
+        padding-right: 20px;
         p {
-          font-size: 24px;
-          line-height: 145%;
+          // font-size: 24px;
+          // line-height: 145%;
           ion-icon{
             margin-right: 18px;
-            font-size: 48px;
+            font-size: 68px;
             position: relative;
-            top: 14px;
+            // top: 14px;
             left: 9px;
           }
         }
@@ -308,46 +313,159 @@
       .phone-number{
         display: flex;
         align-items: center;
-        margin-top: 5px;
+        // margin-top: 5px;
         p {
-          font-size: 28px;
-          line-height: 145%;
+          // font-size: 28px;
+          // line-height: 145%;
           ion-icon{
             margin-right: 18px;
-            font-size: 48px;
+            font-size: 68px;
             position: relative;
-            top: 12px;
+            // top: 12px;
             left: 12px;
           }
         }
       }
     }
     #sk-logo{
-      margin: 30px 0 0 30px;
+      margin: 10px 0 0 40px;
       height: 7em;
       padding: 6px 10px;
     }
   }
+  hr.nav-divider{
+    margin:0;
+    width:96%;
+    margin-left: 2%;
+  }
   .nav-bottom{
     .menu-port{
       position: fixed;
-      background-color: whitesmoke;
+      background-color: white;
+      // height: 50px;
       width: 100%;
       margin-top: 0;
       .links{
+        // display: flex;
+        // justify-content: space-around;
+        // margin-top:0.2em;
+        // padding-bottom: 0.5em;
+        // font-size: 20px;
         display: flex;
-        justify-content: space-around;
-        margin-top: 2em;
-        padding-bottom: 0.5em;
-        font-size: 20px;
-        .nav-link{
-          text-decoration: none;
+	      flex-direction: row;
+	      flex-wrap: nowrap;
+	      justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: large;
+        // .nav-link{
+        //   text-decoration: none;
+        // }
+        // .nav-link:hover,
+        // .nav-link:active {
+        //   background-color: #f5efef;
+        //   color: #cf1b1b;
+        //   transition: background-color 0.10s;
+        // }
+        //* Removed the is:active and Ive also commented out the bits that arent having an effect.
+        .nav-link-home{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width:16%;
+          height: 50px;
+          // a.nav-link{
+          //   color: #404040;
+          // }
         }
-        .nav-link:hover,
-        .nav-link:active {
-          background-color: #f5efef;
-          color: #cf1b1b;
-          transition: background-color 0.10s;
+        .nav-link-home:hover{
+          background-color: rgba(241, 120, 55, 0.6);
+          border-left: rgba(241, 120, 55, 1) solid 3px;
+          // color: white;
+          transition: background-color 0.80s;
+          .nav-link{
+            margin-left: -3px;
+          }
+        }
+        .nav-link-about{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width:16%;
+          height: 50px;
+        }
+        .nav-link-about:hover{
+          background-color: rgba(255, 239, 0, 0.4);
+          border-left: rgba(255, 239, 0, 1) solid 3px;
+          // color: white;
+          transition: background-color 0.80s;
+          .nav-link{
+            margin-left: -3px;
+          }
+        }
+        .nav-link-multi-sport-services{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width:16%;
+          height: 50px;
+        }
+        .nav-link-multi-sport-services:hover{
+          background-color: rgba(22, 227, 40, 0.4);
+          border-left: rgba(22, 227, 40, 1) solid 3px;
+          // color: white;
+          transition: background-color 0.80s;
+          .nav-link{
+            margin-left: -3px;
+          }
+        }
+        .nav-link-school-services{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width:16%;
+          height: 50px;
+        }
+        .nav-link-school-services:hover{
+          background-color: rgba(23, 124, 232, 0.5);
+          border-left: rgba(23, 124, 232, 1) solid 3px;
+          // color: white;
+          transition: background-color 0.80s;
+          .nav-link{
+            margin-left: -3px;
+          }
+        }
+        .nav-link-whats-on{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width:16%;
+          height: 50px;
+        }
+        .nav-link-whats-on:hover{
+          background-color: rgba(232, 107, 23, 0.6);
+          border-left: rgba(232, 107, 23, 1) solid 3px;
+          // color: white;
+          transition: background-color 0.80s;
+          .nav-link{
+            margin-left: -3px;
+          }
+        }
+        .nav-link-contact-us{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width:16%;
+          height: 50px;
+        }
+        .nav-link-contact-us:hover{
+          background-color: rgba(176, 125, 242, 0.7);
+          border-left: rgba(119, 32, 233, 1) solid 3px;
+          // color: white;
+          transition: background-color 0.80s;
+          .nav-link{
+            margin-left: -3px;
+          }
         }
       }
     }
