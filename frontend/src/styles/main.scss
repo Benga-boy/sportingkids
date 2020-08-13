@@ -12,9 +12,9 @@
 // * HOME
 .home{
   margin-top: 230px;
-  .home-section {
-    margin-bottom: 20px;
-  }
+  // .home-section {
+  //   margin-bottom: 20px;
+  // }
   .carousel-wrapper{
     // margin: auto;
     // width: 100%;
@@ -75,16 +75,30 @@
         background-color: rgba(87, 245, 171, 0.4);
     }
   }
-  .animate__animated.animate__fadeInUp {
-    --animate-duration: 3s;
-    margin-bottom: 40px;
-    .s-kids-name {
-      color: rgba(207, 55, 44, 1);
+  .welcome {
+    background-color: #fce8d5;
+    .animate__animated.animate__heartBeat {
+      --animate-duration: 3s;
+      margin-bottom: 40px;
+      font-size: 44px;
+      span {
+        color: rgba(207, 55, 44, 1);
+      }
     }
-  }
-  .home-subtitle {
-    width: 65%;
-    margin: auto;
+    .home-subtitle {
+      width: 65%;
+      margin: auto;
+    }
+    .ruler::after {
+      display: block;
+      height: 3px;
+      background-color: #ff847c;
+      content: " ";
+      width: 150px;
+      margin: auto;
+      margin-top: 28px;
+      margin-bottom: 28px;
+    }
   }
 }
 
@@ -115,14 +129,17 @@
     .facebook:hover,
     .facebook:active {
     color: #3b5998;
+    transition: color 2s;
     }
     .twitter:hover,
     .twitter:active {
     color: #55acee;
+    transition: color 2s;
     }
     .instagram:hover,
     .instagram:active {
     color: #e95950;
+    transition: color 2s;
     }
   }
 
@@ -135,10 +152,15 @@
       margin-right: 24px;
       margin-bottom: 20px;
       text-decoration: underline;
+      color: white;
     }
     p:last-child{
-      margin-left: 8px;
+      margin-left: 12px;
       margin-right: 0;
+    }
+    p:hover {
+      color: #318fb5;
+      transition: color 1s;
     }
   }
 }
@@ -208,11 +230,21 @@
     width: 30%
   }
   .school-services-background {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('https://images.myguide-cdn.com/algarve/events/large/multi-sports-activities-for-the-kids-at-the-campus-608635.jpg');
+    background-image: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('https://images.myguide-cdn.com/algarve/events/large/multi-sports-activities-for-the-kids-at-the-campus-608635.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
     padding: 40px;
+  }
+  .title, .subtitle {
+    color: #ffffff;
+  }
+  .title {
+    margin-top: 70px;
+    font-size: 44px;
+  }
+  .subtitle {
+    font-size: 26px;
   }
 }
 
@@ -354,10 +386,12 @@
         display: flex;
 	      flex-direction: row;
 	      flex-wrap: nowrap;
-	      justify-content: center;
+	      justify-content: space-between;
         align-items: center;
         font-weight: 500;
         font-size: large;
+        margin-top: 28px;
+        margin-bottom: 8px;
         // .nav-link{
         //   text-decoration: none;
         // }
@@ -587,6 +621,13 @@ margin-top: 300px;
 
 // * BOX CARDS
 
+.box-one:hover,
+.box-three:hover,
+.box-four:hover,
+.box-six:hover {
+  animation: headShake;
+  animation-duration: 3s;
+}
 .after-school {
   background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://thelittlesandme.com/wp-content/uploads/2018/04/ChalkPromptsCards-8-of-7.jpg');
   height: 150px;

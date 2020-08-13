@@ -18,7 +18,7 @@ class BoxThreeCard extends React.Component {
       <>
 
 
-        <article onClick={toggleModal} className="message is-dark" id="box3">
+        <article onClick={toggleModal} className="box-three message is-dark" id="box3">
           <div className="small-groups message-body">
             <p><strong>SMALL GROUPS</strong></p>
           </div>
