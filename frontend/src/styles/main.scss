@@ -312,10 +312,15 @@
       }
     }
     #sk-logo{
-      margin: 30px 0 0 30px;
-      height: 7em;
+      margin: 10px 0 0 40px;
+      height: 6em;
       padding: 6px 10px;
     }
+  }
+  hr.nav-divider{
+    margin:0;
+    width:96%;
+    margin-left: 2%;
   }
   .nav-bottom{
     .menu-port{
@@ -334,7 +339,9 @@
 	      flex-direction: row;
 	      flex-wrap: nowrap;
 	      justify-content: center;
-	      align-items: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: large;
         // .nav-link{
         //   text-decoration: none;
         // }

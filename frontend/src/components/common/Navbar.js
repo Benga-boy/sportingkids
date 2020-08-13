@@ -40,6 +40,7 @@ const Navbar = () => {
 
         </div>
       </div>
+      <hr className="nav-divider"></hr>
       <div className="nav-bottom">
         <div className ="menu-port">
           {/* <div className="links">
