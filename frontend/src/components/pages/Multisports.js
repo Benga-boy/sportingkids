@@ -36,7 +36,7 @@ const Multisports = () => {
             <div className="message-header">
               <p>Jane Doe, Parent</p>
             </div>
-            <div class="message-body">
+            <div className="message-body">
               <em>"Thank you sporting kids Ryan never really liked playing football with his friends and often missed out on sports, its so great to see him enjoying your lunchtime tennis lessons. All schools should introduce lunchtime classes like this!"</em>
             </div>
           </article>
