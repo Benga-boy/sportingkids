@@ -40,9 +40,10 @@ class Home extends React.Component {
           {/* </div> */}
           {/* </div> */}
         </section>
-        <section className="section">
+        <section className="welcome section">
           <div className="container">
-            <h1 className="animate__animated animate__fadeInUp title has-text-centered">WELCOME TO <span className="s-kids-name">SPORTING KIDS</span></h1>
+            <h1 className="animate__animated animate__heartBeat title has-text-centered">WELCOME TO <span>SPORTING KIDS</span></h1>
+            <p className="ruler"></p>
             <h2 className="home-subtitle subtitle has-text-centered">
               Sporting Kids is an independent sports coaching company that has been working with children and schools across Hertfordshire
             </h2>
@@ -54,7 +55,7 @@ class Home extends React.Component {
               <Player
                 src={video}
                 playsInline
-                autoPlay
+                // autoPlay
                 className="video-player"
               />
             </div>
@@ -63,7 +64,8 @@ class Home extends React.Component {
         <section class="section">
           <div class="container">
             <div className="offerings">
-              <Boxes />
+              <Boxes
+              />
             </div>
           </div>
         </section>

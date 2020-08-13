@@ -18,7 +18,7 @@ class BoxFourCard extends React.Component {
       <>
 
 
-        <article onClick={toggleModal} className="message is-success" id="box4">
+        <article onClick={toggleModal} className="box-four message is-success" id="box4">
           <div className="one-to-one message-body">
             <p><strong>ONE TO ONE <br/> COACHING</strong></p>
           </div>

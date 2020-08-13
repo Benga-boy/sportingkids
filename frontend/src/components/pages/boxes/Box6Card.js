@@ -19,7 +19,7 @@ class BoxSixCard extends React.Component {
 
 
 
-        <article onClick={toggleModal} className="message is-primary" id="box6">
+        <article onClick={toggleModal} className="box-six message is-primary" id="box6">
           <div className="breakfast-club message-body">
             <p><strong>BREAKFAST CLUB</strong></p> 
           </div>

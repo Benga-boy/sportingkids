@@ -10,10 +10,10 @@ const SchoolServices = () => {
         <div className="hero-body">
           <div className="container">
             <h1 className="title">
-              School Services
+              SCHOOL SERVICES
             </h1>
             <h2 className="subtitle">
-              something or other
+              SPORTS DAY ETC
             </h2>
           </div>
         </div>
