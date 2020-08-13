@@ -37,7 +37,7 @@ class WhatsOn extends React.Component {
 
   render() {
     if (!this.state.event) return <div className="no-event"><h1>No event at this current time</h1>
-    {isAuthenticated && <Link to={`/whatson/create`} className="button is-link">Create Event</Link>}</div>
+      {isAuthenticated && <Link to={'/whatson/create'} className="button is-link">Create Event</Link>}</div>
     
     const { event } = this.state
     console.log(event)
@@ -72,17 +72,17 @@ class WhatsOn extends React.Component {
             {isAuthenticated() && <Link to={`/whatson/${event._id}/edit`} className="button is-link">Edit</Link>}
             {isAuthenticated() && <button onClick={this.handleDelete} className="button is-danger">Delete</button>}
           </div>
-            <div className="divider"></div>
-            <div className="whatson-directions">
-              <article className="message is-warning">
-                <div className="message-header">
-                  <p>Directions</p>
-                </div>
-                <div className="message-body">
+          <div className="divider"></div>
+          <div className="whatson-directions">
+            <article className="message is-warning">
+              <div className="message-header">
+                <p>Directions</p>
+              </div>
+              <div className="message-body">
                   map corordinates (if we are using map) and directions sent from the backend here
               </div>
-              </article>
-            </div>
+            </article>
+          </div>
         </section>
       </div>
       

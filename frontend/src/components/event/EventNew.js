@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { createEvent } from '../../lib/api'
-import EventForm from './EventForm'
+import EventNewForm from './EventNewForm'
 
 class EventNew extends React.Component {
   state = {
@@ -23,21 +23,24 @@ class EventNew extends React.Component {
     event.preventDefault()
     try {
       const res = await createEvent(this.state.formData)
-      this.props.history.push(`/whatson`)
+      console.log(res)
+      this.props.history.push('/whatson')
     } catch (err) {
       console.log(err)
     }
   }
 
   render() {
+    console.log(this.state.formData)
+    console.log('from event new js')
     return (
       <div className="event-new">
         <section className="section">
-          <EventForm
-          formData={this.state.formData}
-          handleChange={this.handleChange}
-          handleSubmit={this.handleSubmit}
-          buttonText="Make Event"
+          <EventNewForm
+            formData={this.state.formData}
+            handleChange={this.handleChange}
+            handleSubmit={this.handleSubmit}
+            buttonText="Make Event"
           />
         </section>
       </div>

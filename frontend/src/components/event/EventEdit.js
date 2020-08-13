@@ -43,16 +43,17 @@ class EventEdit extends React.Component {
   }
 
   render() {
+    console.log(this.state.formData, 'from event edit')
     return (
       <div className="event-edit">
-      <section className="section">
-      <EventForm
-      formData={this.state.formData}
-      handleChange={this.handleChange}
-      handleSubmit={this.handleSubmit}
-      buttonText="Edit Event"
-      />
-      </section>
+        <section className="section">
+          <EventForm
+            formData={this.state.formData}
+            handleChange={this.handleChange}
+            handleSubmit={this.handleSubmit}
+            buttonText="Edit Event"
+          />
+        </section>
       </div>
       
     )
