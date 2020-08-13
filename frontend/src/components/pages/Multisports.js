@@ -7,7 +7,7 @@ const Multisports = () => {
         <div className="hero-body">
           <div className="container">
             <h1 className="title">
-              Tennis and Co
+              MULTI SPORTS COACHING
             </h1>
             <h2 className="subtitle">
               All sports

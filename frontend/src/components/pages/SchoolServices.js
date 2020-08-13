@@ -6,7 +6,7 @@ import Blank from '../../styles/assets/logos/blank.png'
 const SchoolServices = () => {
   return (
     <div className="school-services">
-      <section className="school-services-background hero is-warning has-text-centered">
+      <section className="school-services-background hero has-text-centered">
         <div className="hero-body">
           <div className="container">
             <h1 className="title">
@@ -59,7 +59,7 @@ const SchoolServices = () => {
             </div>
           </article>
         </div>
-        
+
       </section>
     </div>
 
