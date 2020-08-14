@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="foot footer">
       {/* <div className="content has-text-centered">
         <p>
           <strong>&#169; 2018 Sporting Kids</strong> by Rene and Ola
