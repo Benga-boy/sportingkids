@@ -10,6 +10,7 @@ class EventEdit extends React.Component {
       title: '',
       subtitle: '',
       description: '',
+      image: '',
       date: '',
       time: ''
     }

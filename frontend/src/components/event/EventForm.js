@@ -29,6 +29,18 @@ const EventForm = ({ formData, handleChange, handleSubmit, buttonText }) =>
               />
             </div>
           </div>
+            <div className="field">
+            <label className="label">Image</label>
+            <div className="control">
+              <input
+                className="input"
+                placeholder="Image"
+                name="image"
+                onChange={handleChange}
+                value={formData.image}
+              />
+            </div> 
+            </div>
           <div className="field">
             <label className="label">Description</label>
             <div className="control">
