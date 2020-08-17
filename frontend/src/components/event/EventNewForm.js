@@ -1,7 +1,7 @@
 import React from 'react'
 
 const EventNewForm = ({ formData, handleChange, handleSubmit, buttonText }) => (
-  <div className="event-form">
+  <div className="event-new-form">
     <div className="columns">
       <form onSubmit={handleSubmit} className="column is-half is-offset-one-quarter box">
         <div className="field">
@@ -12,7 +12,7 @@ const EventNewForm = ({ formData, handleChange, handleSubmit, buttonText }) => (
               placeholder="Title"
               name="title"
               onChange={handleChange}
-              // value={formData.title}
+              value={formData.title}
             />
           </div>
         </div>
@@ -24,7 +24,7 @@ const EventNewForm = ({ formData, handleChange, handleSubmit, buttonText }) => (
               placeholder="Subtitle"
               name="subtitle"
               onChange={handleChange}
-              // value={formData.subtitle}
+              value={formData.subtitle}
             />
           </div>
         </div>
@@ -36,7 +36,7 @@ const EventNewForm = ({ formData, handleChange, handleSubmit, buttonText }) => (
               placeholder="Description"
               name="description"
               onChange={handleChange}
-              // value={formData.description}
+              value={formData.description}
             />
           </div>
         </div>
@@ -48,7 +48,7 @@ const EventNewForm = ({ formData, handleChange, handleSubmit, buttonText }) => (
               placeholder="Date"
               name="date"
               onChange={handleChange}
-              // value={formData.date}
+              value={formData.date}
             />
           </div>
         </div>
@@ -60,7 +60,7 @@ const EventNewForm = ({ formData, handleChange, handleSubmit, buttonText }) => (
               placeholder="Time"
               name="time"
               onChange={handleChange}
-              // value={formData.time}
+              value={formData.time}
             />
           </div>
           <button type="submit" className="button is-fullwidth is-link">{buttonText}</button>

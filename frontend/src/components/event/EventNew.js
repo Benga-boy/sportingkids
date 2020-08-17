@@ -32,7 +32,6 @@ class EventNew extends React.Component {
 
   render() {
     console.log(this.state.formData)
-    console.log('from event new js')
     return (
       <div className="event-new">
         <section className="section">
