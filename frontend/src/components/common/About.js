@@ -12,9 +12,7 @@ const About = () => {
             <h1 className="title">
               ABOUT US
             </h1>
-            <h2 className="subtitle">
-              Rene and Ola
-            </h2>
+            <p className="ruler"></p>
           </div>
         </div>
       </section>
@@ -26,9 +24,20 @@ const About = () => {
             </div>
             <div className="divider"></div>
             <div className="column">
-              <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-            </p>
+              <div className="content about-content">
+                  <p>
+                    Sporting Kids was founded in 2018, our vision is to provide a chance for children and young people
+                    to explore new sports, improve their skills and most importantly, have fun!
+                  </p>
+                <p>
+                    We pride ourselves on striving to meet the interests and needs of the children and young people we
+                    work with, through various sports such as football, basketball, tennis, cricket, gymnastics and more.
+                </p>
+                <p>
+                    Our sessions are tailored to build upon existing skills as well as developing new skills to improve
+                    communication, confidence, independence and promote the benefits of exercise.
+                </p>
+              </div>
             </div>
           </div>
         </div>
