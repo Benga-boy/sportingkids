@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f7f2e7;
+}
+
 // * HOME
 .home{
   margin-top: 230px;
@@ -29,20 +33,13 @@
       background-size: cover;
     }
     .carousel-image {
-      height: 350px;
+      height: 400px;
     }
-  }
-  .video-wrapper{
-    margin-bottom: 10px;
-    margin: auto;
-    padding: 10px;
-    width: 70%;
-    border: 2px solid black;
   }
   .offerings{
     margin: auto;
-    width: 90%;
-    margin-top: 10px;
+    width: 80%;
+    margin-top: 0;
     article.message#box1:hover{
         background-color: rgba(253, 253, 150, 1);
     }
@@ -77,17 +74,94 @@
       width: 65%;
       margin: auto;
     }
-    .ruler::after {
-      display: block;
-      height: 3px;
-      background-color: #ff5722;
-      content: " ";
-      width: 150px;
-      margin: auto;
-      margin-top: 20px;
-      margin-bottom: 28px;
+  }
+  #container {
+    max-width: 1024px;
+    margin: auto;
+  }
+  
+  #monitor {
+    background: #000; 
+    position: relative;
+    border-top: 3px solid #888; 
+    margin: 5%;
+    padding: 2% 2% 4% 2%; 
+    border-radius: 10px; 
+    border-bottom-left-radius: 50% 2%; 
+    border-bottom-right-radius: 50% 2%; 
+    transition: margin-right 1s;
+  }
+  
+  #monitor:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3%;
+    left: 36%;
+    height: .5%; 
+    width: 28%;
+    background: #ddd; 
+    border-radius: 50%; 
+    box-shadow: 0 0 3px 0 white; 
+  }
+  
+  #monitorscreen {
+    position: relative;
+    background-color: #777;
+    background-size: cover; 
+    background-position: top center;
+    height: 0; 
+    padding-bottom: 56.25%; 
+    position: relative;
+    overflow: hidden;
+    .video {
+      width: 100%;
+      background-color: #ffffff;
+      video {
+        width: 100%;
+        height: 500px;
+      }
     }
   }
+  
+  
+  @media all and (min-width: 960px) {
+    #monitor {
+      -webkit-animation: tvflicker .2s infinite alternate; 
+      -moz-animation:    tvflicker .5s infinite alternate; 
+      -o-animation:      tvflicker .5s infinite alternate; 
+      animation:         tvflicker .5s infinite alternate; 
+    }
+  
+    @-webkit-keyframes tvflicker {
+      0%   { box-shadow: 0 0 100px 0 rgba(200,235,255,0.4); }
+      100% { box-shadow: 0 0 95px 0 rgba(200,230,255,0.45); }
+    }
+    @-moz-keyframes tvflicker {
+      0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+      100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+    }
+    @-o-keyframes tvflicker {
+      0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+      100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+    }
+    @keyframes tvflicker {
+      0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+      100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+    }
+  }
+}
+
+// * RULER
+.ruler::after {
+  display: block;
+  height: 3px;
+  background-color: #ff5722;
+  content: " ";
+  width: 150px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 28px;
 }
 
 
@@ -105,52 +179,57 @@
     margin: auto;
     width: 90%;
     margin-top: 20px;
-  }
-  .social-links li{
-    display: inline-block;
-    margin-right: 24px;
-    font-size: 65px;
-    position: relative;
-    top: -24px;
-    left: 2px;
-    a {
-      color: #ffffff;
+    div .skcopyright strong {
+      color: #fddb3a;
+      text-align: center;
+      margin-left: 70px;
     }
-    .facebook:hover,
-    .facebook:active {
-    color: #3b5998;
-    transition: color 1s;
-    }
-    .twitter:hover,
-    .twitter:active {
-    color: #55acee;
-    transition: color 1s;
-    }
-    .instagram:hover,
-    .instagram:active {
-    color: #e95950;
-    transition: color 1s;
-    }
-  }
-
-  .social-links li :last-child {
-    margin-right: 0;
-  }
-  .policy {
-    p{
+    .social-links li{
       display: inline-block;
       margin-right: 24px;
-      margin-bottom: 20px;
-      text-decoration: underline;
-      color: white;
+      font-size: 65px;
+      position: relative;
+      top: -24px;
+      left: 2px;
+      a {
+        color: #ffffff;
+      }
+      .facebook:hover,
+      .facebook:active {
+      color: #3b5998;
+      transition: color 1s;
+      }
+      .twitter:hover,
+      .twitter:active {
+      color: #55acee;
+      transition: color 1s;
+      }
+      .instagram:hover,
+      .instagram:active {
+      color: #e95950;
+      transition: color 1s;
+      }
     }
-    p:last-child{
-      margin-left: 12px;
+    .social-links li :last-child {
       margin-right: 0;
     }
-    p:hover {
-      color: #318fb5;
-      transition: color 1s;
+    .policy {
+      margin-left: 20px;
+      p{
+        display: inline-block;
+        margin-right: 24px;
+        margin-bottom: 28px;
+        text-decoration: underline;
+        color: white;
+      }
+      p:last-child{
+        margin-left: 12px;
+        margin-right: 0;
+      }
+      p:hover {
+        color: #318fb5;
+        transition: color 1s;
+      }
     }
   }
 }
@@ -179,6 +258,9 @@
   .coaches {
     text-align: center;
   }
+  .about-content {
+    padding: 0 16px 0 10px;
+  }
 }
 
 
@@ -187,9 +269,20 @@
   margin-top: 218px;
   .school-services-carousel{
     width: 50em;
-    margin: 0 auto;
     padding-bottom: 50px;
     margin-top: 30px;
+    .content {
+      margin-left: 5%;
+      margin-top: 24px;
+      .enquire {
+        margin-top: 30px;
+        strong {
+          text-decoration: underline;
+          cursor: pointer;
+          color: #000;
+        }
+      }
+    }
     #image0{
       background-image: url('./assets//homeCarousel/image0.jpeg');
       background-repeat: no-repeat;
@@ -205,36 +298,42 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
-    .school-carousel-image {
-      height: 500px;
+    .school-carousel{
+      width: 80%;
+      margin: auto;
+      .school-carousel-image {
+        height: 400px;
+      }
     }
   }
   .info-and-testimonial{
-  display: flex;
-  margin: 0 30px 0 30px;
+  margin: 60px 30px 0 30px;
   }
   .school-services-info{
-    width: 70%;
+    width: 90%;
+    .content {
+      margin-left: 5%;
+    }
   }
   .school-services-testimonial{
-    width: 30%
+    width: 85%;
   }
   .school-services-background {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('https://images.myguide-cdn.com/algarve/events/large/multi-sports-activities-for-the-kids-at-the-campus-608635.jpg');
+    background-image: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('https://images.myguide-cdn.com/algarve/events/large/multi-sports-activities-for-the-kids-at-the-campus-608635.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
     padding: 40px;
-  }
-  .title, .subtitle {
-    color: #ffffff;
+    .ss-text {
+      color: #ffffff;
+      width: 70%;
+      margin: auto;
+    }
   }
   .title {
-    margin-top: 70px;
+    margin-top: 20px;
     font-size: 44px;
-  }
-  .subtitle {
-    font-size: 26px;
+    color: #ffffff;
   }
 }
 
@@ -274,25 +373,46 @@
 .multisports{
   margin-top: 218px;
   .infos-and-testimonial{
-    display: flex;
-    margin: 0 30px 0 30px;
+    margin: 60px 30px 0 30px;
     }
     .multisports-info{
-      width: 70%;
-      margin: auto;
-      display: flex;
-      img {
-        width: 400px;
-        height: 300px;
-        margin: auto;
+      margin-left: 20px;
+      margin-right: 0;
+      .ms-click strong {
+        text-decoration: none;
+      }
+      .ms-click strong span {
+        text-decoration: underline;
+      }
+      .multi-sport-image {
+        margin-left: 0;
+      }
+      .multi-sport-image img {
+        width: 100%;
+      }
+      h3 {
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 16px;
       }
       p {
-        width: 50%;
-        margin: auto;
+        width: 95%;
+        margin-bottom: 20px;
+      }
+      p strong {
+        text-decoration: underline;
+        cursor: pointer;
+        color: #000;
+      }
+      img {
+        height: 350px;
+        width: 425px;
+        margin-bottom: 12px;
       }
     }
     .multisports-services-testimonial{
-      width: 30%
+      width: 85%;
+      margin-left: 0;
     }
     .multi-sports-background {
       background-image: linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('https://sportforlife.ca/wp-content/uploads/2018/09/Multisport.jpg');
@@ -300,6 +420,9 @@
       background-size: cover;
       padding: 24px;
       height: 300px;
+      h1 {
+        margin-top: 40px;
+      }
     }
 }
 
@@ -559,18 +682,22 @@
     width: 570px;
     height: 550px;
     margin: auto;
-    padding: 12px;
+    padding: 16px;
+  }
+  .container h1 {
+    margin-top: 28px;
   }
   .contact-form {
-    margin: auto;
-    padding: 12px;
-    width: 100%;
+    margin: 24px 24px 0 0;
+    padding: 30px;
+    width: 90%;
+    background-color: #ffffff;
   }
   .contact-background {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url('https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/cloud/cumulus-cloud.jpg/cumulus-cloud.jpg/metofficegovuk%3AheroMedium');
+    background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('https://www.moorgateacoustics.co.uk/wp-content/uploads/2015/01/contact_1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 300px;
     opacity: 1;
   }
 }

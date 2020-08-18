@@ -9,3 +9,4 @@ export const homeCarousel = [
 export const video = require('../others/Video.MOV')
 export const rene = require('../others/rene.jpeg')
 export const ola = require('../others/ola.jpeg')
+export const oneTwoOne = require('../homeCarousel/image1-2-1.jpeg')

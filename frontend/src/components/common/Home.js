@@ -2,8 +2,9 @@ import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { homeCarousel, video } from '../../styles/assets/homeCarousel/homeCarousel-data'
-import { Player } from 'video-react'
 import Blank from '../../styles/assets/logos/blank.png'
+
+
 
 import Boxes from '../pages/Boxes'
 
@@ -33,7 +34,7 @@ class Home extends React.Component {
               centerSlidePercentage={100}
             >
               {homeCarousel.map(image => <div key={image.name} id={image.name} className="carousel-item" >
-                <img src={Blank} className="carousel-image" alt="" />
+                <img src={Blank} className="carousel-image" alt="Sporting Kids" />
               </div>)}
             </Carousel>
           </div>
@@ -50,14 +51,13 @@ class Home extends React.Component {
           </div>
         </section>
         <section class="section">
-          <div class="container">
-            <div className="video-wrapper">
-              <Player
-                src={video}
-                playsInline
-                // autoPlay
-                className="video-player"
-              />
+          <div id="container" class="container">
+            <div id="monitor">
+              <div id="monitorscreen">
+                <div className="video">
+                  <video src={video} autoPlay controls muted/>
+                </div>
+              </div>
             </div>
           </div>
         </section>

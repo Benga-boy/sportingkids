@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import {oneTwoOne} from '../../styles/assets/homeCarousel/homeCarousel-data'
 
 const Multisports = () => {
   return (
@@ -9,37 +11,57 @@ const Multisports = () => {
             <h1 className="title">
               MULTI SPORTS COACHING
             </h1>
-            <h2 className="subtitle">
-              All sports
-            </h2>
+            <p className="ruler"></p>
           </div>
         </div>
       </section>
-      <section className="section">
-        <div className="container">
-          <h1 className="title">Section</h1>
-          <h2 className="subtitle">
-            A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-          </h2>
-        </div>
-      </section>
       <section className="infos-and-testimonial">
-        <div className="multisports-info">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          </p>
-          <img src="https://static.wixstatic.com/media/1a0189_f288ece6945247a7a8d88fdce15c77ae~mv2_d_5184_3456_s_4_2.jpg/v1/crop/x_145,y_0,w_4894,h_3456/fill/w_1082,h_764,al_c,q_85,usm_0.66_1.00_0.01/IMG_1576_JPG.webp" alt="Sporting Kids Multisports Services" />
+        <div className="columns is-mobile">
+          <div className="column is-three-quarters">
+            <div className="columns">
+              <div className="column is-three-fifths multisports-info">
+                <h3>One to One and small groups coaching</h3>
+                <p>
+                  We offer private 1:1 coaching sessions for individuals who want to improve their skills, confidence
+                  and overall performance in a chosen sport or just want to have fun and stay active through multi
+                  sports. As well as 1:1 sessions, why not bring some friends along for a group session! <Link to="/contact"><strong>Get in touch  </strong></Link>
+                  and ask us about our block booking discounts for our one to one and small group coaching.
+                </p>
+                <h3>Birthday Parties</h3>
+                <p>
+                  Our parties are tailored to suit your birthday wishes no matter how big or small, they are fun filled
+                  with multi-sports and games. We have the bronze, silver and gold packages to choose from or you
+                  can customise your party to make it a birthday to remember! Enquire here for prices
+                </p>
+                <img src={oneTwoOne} alt="Sporting Kids one to one coaching" />
+                <p className="ms-click"><strong>Click <span>here</span> for after school clubs and Sporting Kids events near you!</strong></p>
+              </div>
+              <div className="column multi-sport-image">
+                <img src="https://static.wixstatic.com/media/1a0189_f288ece6945247a7a8d88fdce15c77ae~mv2_d_5184_3456_s_4_2.jpg/v1/crop/x_145,y_0,w_4894,h_3456/fill/w_1082,h_764,al_c,q_85,usm_0.66_1.00_0.01/IMG_1576_JPG.webp" alt="Sporting Kids Multisports Services" />
+              </div>
+          </div>
         </div>
         <div className="divider"></div>
-        <div className="multisports-services-testimonial">
-          <article className="message is-success">
-            <div className="message-header">
-              <p>Jane Doe, Parent</p>
-            </div>
-            <div className="message-body">
-              <em>"Thank you sporting kids Ryan never really liked playing football with his friends and often missed out on sports, its so great to see him enjoying your lunchtime tennis lessons. All schools should introduce lunchtime classes like this!"</em>
-            </div>
-          </article>
+        <div className="column is-one-quarter">
+          <div className="multisports-services-testimonial">
+            <article className="message is-success">
+              <div className="message-header">
+                <p>Jane Doe, Parent</p>
+              </div>
+              <div className="message-body">
+                <em>"Thank you sporting kids Ryan never really liked playing football with his friends and often missed out on sports, its so great to see him enjoying your lunchtime tennis lessons. All schools should introduce lunchtime classes like this!"</em>
+              </div>
+            </article>
+            <article className="message is-success">
+              <div className="message-header">
+                <p>Jane Doe, Parent</p>
+              </div>
+              <div className="message-body">
+                <em>"Thank you sporting kids Ryan never really liked playing football with his friends and often missed out on sports, its so great to see him enjoying your lunchtime tennis lessons. All schools should introduce lunchtime classes like this!"</em>
+              </div>
+            </article>
+          </div>
+        </div>
         </div>
       </section>
     </div>

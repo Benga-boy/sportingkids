@@ -6,16 +6,17 @@ const Contact = () => {
       <section className="contact-background hero is-danger">
         <div className="hero-body">
           <div className="container">
-            <h1 className="title has-text-centered">
+            {/* <h1 className="title has-text-centered">
               We will love to hear from you!
             </h1>
+            <p className="ruler"></p> */}
           </div>
         </div>
       </section>
       <section className="section">
         <div className="container">
           <div className="columns is-mobile">
-            <div className="column is-one-third">
+            <div className="column is-half">
               <div className="contact-form">
               <h1 className="title">CONTACT US</h1>
                 <form method="POST" action="https://formspree.io/mknqkgww">
@@ -43,7 +44,7 @@ const Contact = () => {
                       <textarea className="textarea is-medium is-link" placeholder="Message" name="message" required />
                     </div>
                   </div>
-                  <button className="button is-rounded is-small is-link">SEND</button>
+                  <button className="button is-rounded is-medium is-link">SEND</button>
                 </form>
               </div>
             </div>
