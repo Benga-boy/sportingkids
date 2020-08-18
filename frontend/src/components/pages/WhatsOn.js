@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import Map from '../event/Map'
 
 import { getEvent, deleteEvent } from '../../lib/api'
 import { isAuthenticated } from '../../lib/auth'
@@ -25,16 +25,16 @@ class WhatsOn extends React.Component {
     }
   }
 
-//* Transforms binary data to string to be able to render image.
+  //* Transforms binary data to string to be able to render image.
   async arrayBufferToBase64(data) {
-    let binary = '';
-    let bytes = await new Uint8Array( data );
-    let len = bytes.byteLength;
+    let binary = ''
+    const bytes = await new Uint8Array( data )
+    const len = bytes.byteLength
     for (let i = 0; i < len; i++) {
-        binary += String.fromCharCode( bytes[ i ] );
+      binary += String.fromCharCode( bytes[ i ] )
     }
     return binary
-}
+  }
 
 
   // * Function to handle deleting an event!
@@ -76,10 +76,10 @@ class WhatsOn extends React.Component {
           
             <figure className="image is-16by9">
               <img className="has-ratio" width="640" height="360"
-              src={this.state.renderedImage}
-              frameBorder="0" allowFullScreen/>
+                src={this.state.renderedImage}
+                frameBorder="0" allowFullScreen/>
             </figure>
-             <br/>
+            <br/>
             <div className="content is-small">
               <h5 className="title">Description</h5>
               <p>{event.description} </p>
@@ -88,19 +88,27 @@ class WhatsOn extends React.Component {
               <h5 className="title">Time</h5>
               <p>{event.time} </p>
             </div>
-            {isAuthenticated() && <Link to={`/whatson/${event._id}/edit`} className="button is-link" style={{marginRight: '5px'}}>Edit</Link>}
+            {isAuthenticated() && <Link to={`/whatson/${event._id}/edit`} className="button is-link" style={{ marginRight: '5px' }}>Edit</Link>}
             {isAuthenticated() && <button onClick={this.handleDelete} className="button is-danger">Delete</button>}
           </div>
           <div className="divider"></div>
           <div className="whatson-directions">
-            <article className="message is-warning">
-              <div className="message-header">
-                <p>Directions</p>
-              </div>
-              <div className="message-body">
-                  map corordinates (if we are using map) and directions sent from the backend here
-              </div>
-            </article>
+            <div className="map">
+              <Map />
+            </div>
+
+            <div className="map-directions">
+              <article className="message is-warning" style={{ width: '505px', marginTop: '10px' }}>
+                <div className="message-header">
+                  <p>Directions</p>
+                </div>
+                <div className="message-body">
+                  get bus number ect ect, parking, tube stations ect ect
+                </div>
+              </article>
+            </div>
+
+           
           </div>
         </section>
       </div>
