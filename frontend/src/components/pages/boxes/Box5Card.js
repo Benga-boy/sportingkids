@@ -27,7 +27,8 @@ class BoxFiveCard extends React.Component {
 
 
         <div className={this.state.isActive}>
-          <div className="modal-background"></div>
+          <div onClick={toggleModal} className="modal-background"></div>
+          <div className="animate__animated animate__backInUp">
           <div className="modal-card">
             <header className="modal-card-head">
               <p className="modal-card-title">BIRTHDAY PARTIES</p>
@@ -41,6 +42,7 @@ class BoxFiveCard extends React.Component {
             <footer className="modal-card-foot">
               FOOTER
             </footer>
+          </div>
           </div>
         </div>
       </>

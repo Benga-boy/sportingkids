@@ -50,14 +50,14 @@ const SchoolServices = () => {
                   make valuable use of your Primary PE and Sport Premium funding budgets.<br/><br/>
                   By choosing Sporting Kids for your PPA cover and PE lessons, you can rest assured that we will
                   provide your school with the following benefits:
-                  <ul>
+                </p>
+                <ul>
                     <li>A cost-effective service</li>
                     <li>Quality lessons in line with PE curriculum objectives</li>
                     <li>Effective differentiation to enable progression for all abilities</li>
                     <li>Staff continuity</li>
                     <li>Termly or half-termly assessments and feedback</li>
                   </ul>
-                </p>
               </div>
             </div>
           </div>

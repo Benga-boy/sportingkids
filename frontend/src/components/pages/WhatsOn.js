@@ -50,7 +50,7 @@ class WhatsOn extends React.Component {
 
   render() {
     if (!this.state.event) return <div className="no-event"><h1>No event at this current time</h1>
-      {isAuthenticated && <Link to={'/whatson/create'} className="button is-link">Create Event</Link>}</div>
+      {isAuthenticated() && <Link to={'/whatson/create'} className="button is-link">Create Event</Link>}</div>
     
     const { event } = this.state
     console.log(event.image.data)
@@ -77,7 +77,7 @@ class WhatsOn extends React.Component {
             <figure className="image is-16by9">
               <img className="has-ratio" width="640" height="360"
                 src={this.state.renderedImage}
-                frameBorder="0" allowFullScreen/>
+                frameBorder="0" allowFullScreen alt="Sporting Kids event"/>
             </figure>
             <br/>
             <div className="content is-small">
@@ -107,8 +107,6 @@ class WhatsOn extends React.Component {
                 </div>
               </article>
             </div>
-
-           
           </div>
         </section>
       </div>

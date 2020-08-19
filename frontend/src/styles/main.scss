@@ -261,6 +261,25 @@ body {
   .about-content {
     padding: 0 16px 0 10px;
   }
+  .more {
+    cursor: pointer;
+    color: #0000ff;
+  }
+  .more:hover {
+    text-decoration: underline;
+    transition: text-decoration 2s;
+  }
+  .rene-modal {
+    header {
+      background-color: chocolate;
+      p {
+        color: #ffffff;
+      }
+      button:hover {
+        background-color: #ff0000;
+      }
+    }
+  }
 }
 
 
