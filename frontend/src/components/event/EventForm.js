@@ -5,6 +5,14 @@ const EventForm = ({ formData, handleChange, handleSubmit, buttonText }) =>
     <div className="event-form">
       <div className="columns">
         <form onSubmit={handleSubmit} className="column is-half is-offset-one-quarter box">
+        <article className="message is-success">
+                <div className="message-header">
+                  <p> Site to convert addresses to Lat/Long for precise map location.</p>
+                </div>
+                <div className="message-body">
+                <a target="_blank" href="https://www.latlong.net/convert-address-to-lat-long.html">Click Here</a>
+                </div>
+              </article>
           <div className="field">
             <label className="label">Title</label>
             <div className="control">
@@ -66,7 +74,7 @@ const EventForm = ({ formData, handleChange, handleSubmit, buttonText }) =>
             </div>
           </div>
           <div className="field">
-            <label className="label">Time</label>
+                <label className="label">Time</label>
             <div className="control">
               <input
                 className="input"
@@ -75,6 +83,42 @@ const EventForm = ({ formData, handleChange, handleSubmit, buttonText }) =>
                 onChange={handleChange}
                 value={formData.time}
               />
+            </div>
+          </div>
+          <div className="field">
+            <label className="label">Directions</label>
+            <div className="control">
+              <input
+                className="input"
+                placeholder="Directions"
+                name="directions"
+                onChange={handleChange}
+                value={formData.directions}
+              />
+            </div>
+          </div>
+          <div className="field">
+            <label className="label">Latitude</label>
+            <div className="control">
+              <input
+                className="input"
+                placeholder="Latitude"
+                name="latitude"
+                onChange={handleChange}
+                value={formData.latitude}
+              />
+            </div>
+          </div>
+          <div className="field">
+          <label className="label">Longitude</label>
+            <div className="control">
+              <input
+                className="input"
+                placeholder="Longitude"
+                name="longitude"
+                onChange={handleChange}
+                value={formData.longitude}
+                />
             </div>
             <button type="submit" className="button is-fullwidth is-link">{buttonText}</button>
           </div>
