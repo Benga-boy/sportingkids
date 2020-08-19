@@ -6,6 +6,9 @@ const eventSchema = new mongoose.Schema({
   description: { type: String, trim: true },
   date: { type: String, required: true },
   time: { type: String },
+  longitude: { type: Number },
+  latitude: { type: Number },
+  directions: { type: String },
   image: { type: Buffer },
   user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true }
 }, {

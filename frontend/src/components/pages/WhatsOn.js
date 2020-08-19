@@ -53,7 +53,7 @@ class WhatsOn extends React.Component {
       {isAuthenticated() && <Link to={'/whatson/create'} className="button is-link">Create Event</Link>}</div>
     
     const { event } = this.state
-    console.log(event.image.data)
+    console.log(event)
 
     return (
       <div className="whatson">
@@ -80,7 +80,7 @@ class WhatsOn extends React.Component {
                 frameBorder="0" allowFullScreen alt="Sporting Kids event"/>
             </figure>
             <br/>
-            <div className="content is-small">
+            <div className="content is-medium">
               <h5 className="title">Description</h5>
               <p>{event.description} </p>
               <h5 className="title">Date</h5>
@@ -91,19 +91,26 @@ class WhatsOn extends React.Component {
             {isAuthenticated() && <Link to={`/whatson/${event._id}/edit`} className="button is-link" style={{ marginRight: '5px' }}>Edit</Link>}
             {isAuthenticated() && <button onClick={this.handleDelete} className="button is-danger">Delete</button>}
           </div>
+
+
           <div className="divider"></div>
+
+          
           <div className="whatson-directions">
             <div className="map">
-              <Map />
+              <Map
+              longitude={event.longitude}
+              latitude={event.latitude}
+              />
             </div>
 
             <div className="map-directions">
-              <article className="message is-warning" style={{ width: '505px', marginTop: '10px' }}>
+              <article className="message is-warning" style={{ width: '480px', marginTop: '50px' }}>
                 <div className="message-header">
                   <p>Directions</p>
                 </div>
                 <div className="message-body">
-                  get bus number ect ect, parking, tube stations ect ect
+                  {event.directions}
                 </div>
               </article>
             </div>
