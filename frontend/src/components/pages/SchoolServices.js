@@ -13,7 +13,6 @@ const SchoolServices = () => {
             <h1 className="title">
               SCHOOL SERVICES
             </h1>
-            <p className="ruler"></p>
             <p className="ss-text">
               We provide multisport sessions for children aged 4-11, our aim is for young people to be given high quality opportunities to access sport in a safe, fun and challenging environment. Our services include breakfast, lunch and after school clubs as well as PPA, maternity, paternity and illness cover.
             </p>
@@ -66,12 +65,10 @@ const SchoolServices = () => {
             <div className="school-services-testimonial">
               <article className="message is-success">
                 <div className="message-header">
-                  <p>Derek Junior, Beekeeper</p>
+                  <p>Johanna Hopkins, Parent,</p>
                 </div>
                 <div className="message-body">
-                  <em>Why is she gonna get angry with you? Oh honey, he's teasing you, nobody has two television sets. Great good, good, Lorraine, I had a feeling about you two. Marty, will we ever see you again? Hey boy, are you alright?
-
-                  Marty, you didn't fall asleep, did you? C'mon. Yeah. Silence Earthling. my name is Darth Vader. I'm am an extra-terrestrial from the planet Vulcan. I have to tell you about the future.</em>
+                  <em>What a fantastic team! The kids had so much fun and you made taylens day. You have the most patience to look after 25 eight year olds! I take my hat off to you! Thank you again for the best party!</em>
                 </div>
               </article>
               <article className="message is-success">

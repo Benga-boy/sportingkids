@@ -61,18 +61,22 @@ body {
     }
   }
   .welcome {
-    background-color: #f2a365;
+    background-color: #ea5455;
     .animate__animated.animate__heartBeat {
       --animate-duration: 3s;
       margin-bottom: 40px;
       font-size: 44px;
-      span {
-        color: rgba(207, 55, 44, 1);
-      }
+      color: #ffffff;
+      font-weight: bold;
+    }
+    div span {
+      color: #ffffff;
     }
     .home-subtitle {
       width: 65%;
       margin: auto;
+      color: #ffffff;
+      font-weight: bold;
     }
   }
   #container {
@@ -156,7 +160,7 @@ body {
 .ruler::after {
   display: block;
   height: 3px;
-  background-color: #ff5722;
+  background-color: #000;
   content: " ";
   width: 150px;
   margin: auto;
@@ -252,6 +256,13 @@ body {
     margin-top: 60px;
     margin-left: 60px;
   }
+  .about-background .hero-body .container h1,
+  .about-background .hero-body .container h4 {
+    font-weight: bold;
+  }
+  .about-background .hero-body .container h1 {
+    font-size: 44px;
+  }
   .about-ola {
     margin-right: 40px;
   }
@@ -271,9 +282,10 @@ body {
   }
   .rene-modal {
     header {
-      background-color: #ef962d;
+      background-color: #ea5455;
       p {
         color: #ffffff;
+        font-weight: bold;
       }
       button:hover {
         background-color: #ff0000;
@@ -315,9 +327,10 @@ body {
   }
   .ola-modal {
     header {
-      background-color: #ef962d;
+      background-color: #ea5455;
       p {
         color: #ffffff;
+        font-weight: bold;
       }
       button:hover {
         background-color: #ff0000;
@@ -415,19 +428,20 @@ body {
     width: 85%;
   }
   .school-services-background {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('https://images.myguide-cdn.com/algarve/events/large/multi-sports-activities-for-the-kids-at-the-campus-608635.jpg');
+    background-image: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('https://bcuassets.blob.core.windows.net/img/pgce-secondary-pe-132240719124082009.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 300px;
     padding: 40px;
     .ss-text {
       color: #ffffff;
       width: 70%;
       margin: auto;
+      font-weight: bold;
     }
   }
   .title {
-    margin-top: 20px;
+    margin-bottom: 12px;
     font-size: 44px;
     color: #ffffff;
   }
@@ -511,13 +525,16 @@ body {
       margin-left: 0;
     }
     .multi-sports-background {
-      background-image: linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('https://sportforlife.ca/wp-content/uploads/2018/09/Multisport.jpg');
+      background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('./assets/homeCarousel/multisports-background.jpeg');
       background-repeat: no-repeat;
       background-size: cover;
       padding: 24px;
       height: 300px;
+      opacity: 1;
       h1 {
         margin-top: 40px;
+        font-weight: bold;
+        font-size: 44px;
       }
     }
 }
@@ -592,6 +609,8 @@ body {
         align-items: center;
         font-weight: 500;
         font-size: large;
+        margin-top: 12px;
+        font-weight: bold;
         //* Removed the is:active and Ive also commented out the bits that arent having an effect.
         .nav-link-home{
           display: flex;
@@ -606,6 +625,7 @@ body {
           transition: background-color 0.80s;
           .nav-link{
             margin-left: -3px;
+            color: #000;
           }
         }
         .nav-link-about{
@@ -621,6 +641,7 @@ body {
           transition: background-color 0.80s;
           .nav-link{
             margin-left: -3px;
+            color: #000;
           }
         }
         .nav-link-multi-sport-services{
@@ -637,6 +658,7 @@ body {
           transition: background-color 0.80s;
           .nav-link{
             margin-left: -3px;
+            color: #000;
           }
         }
         .nav-link-school-services{
@@ -653,6 +675,7 @@ body {
           transition: background-color 0.80s;
           .nav-link{
             margin-left: -3px;
+            color: #000;
           }
         }
         .nav-link-whats-on{
@@ -669,6 +692,7 @@ body {
           transition: background-color 0.80s;
           .nav-link{
             margin-left: -3px;
+            color: #000;
           }
         }
         .nav-link-contact-us{
@@ -685,6 +709,7 @@ body {
           transition: background-color 0.80s;
           .nav-link{
             margin-left: -3px;
+            color: #000;
           }
         }
       }
@@ -785,16 +810,25 @@ body {
   }
   .contact-form {
     margin: 24px 24px 0 0;
-    padding: 30px;
+    padding: 12px 24px;
     width: 90%;
     background-color: #ffffff;
+    h1 {
+      font-weight: bold;
+      font-size: 2em;
+    }
+    form div label {
+      font-weight: bold;
+    }
   }
   .contact-background {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('https://www.moorgateacoustics.co.uk/wp-content/uploads/2015/01/contact_1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    opacity: 1;
+    // background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('https://www.moorgateacoustics.co.uk/wp-content/uploads/2015/01/contact_1.jpg');
+    background-color: #86c4ba;
+    height: 200px;
+    .hero-body .container h1 {
+      font-weight: bold;
+      font-size: 44px;
+    }
   }
 }
 

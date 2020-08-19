@@ -21,7 +21,7 @@ class BoxSixCard extends React.Component {
 
         <article onClick={toggleModal} className="box-six message is-primary" id="box6">
           <div className="breakfast-club message-body">
-            <p><strong>BREAKFAST CLUB</strong></p> 
+            <p><strong>MULTI-SPORTS CAMPS</strong></p> 
           </div>
         </article>
 
@@ -31,7 +31,7 @@ class BoxSixCard extends React.Component {
           <div className="animate__animated animate__backInUp">
           <div className="modal-card">
             <header className="modal-card-head">
-              <p className="modal-card-title">BREAKFAST</p>
+              <p className="modal-card-title">MULTI-SPORTS CAMPS</p>
               <button className="delete" aria-label="close" onClick={toggleModal}></button>
             </header>
             <section className="modal-card-body">

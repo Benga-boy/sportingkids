@@ -6,10 +6,9 @@ const Contact = () => {
       <section className="contact-background hero is-danger">
         <div className="hero-body">
           <div className="container">
-            {/* <h1 className="title has-text-centered">
-              We will love to hear from you!
+            <h1 className="title has-text-centered">
+              WE WILL LOVE TO HEAR FROM YOU!
             </h1>
-            <p className="ruler"></p> */}
           </div>
         </div>
       </section>
@@ -23,28 +22,28 @@ const Contact = () => {
                   <div className="field">
                     <label className="label">Name</label>
                     <div className="control">
-                      <input className="input is-small is-link" type="text" placeholder="Full Name" name="name" required />
+                      <input className="input is-small" type="text" placeholder="Full Name" name="name" required />
                     </div>
                   </div>
                   <div className="field">
                     <label className="label">Email</label>
                     <div className="control">
-                      <input className="input is-small is-link" type="text" placeholder="Email Address" name="email" required />
+                      <input className="input is-small" type="text" placeholder="Email Address" name="email" required />
                     </div>
                   </div>
                   <div className="field">
                     <label className="label">Subject</label>
                     <div className="control">
-                      <input className="input is-small is-link" type="text" placeholder="Subject" name="subject" required />
+                      <input className="input is-small" type="text" placeholder="Subject" name="subject" required />
                     </div>
                   </div>
                   <div className="field">
                     <label className="label">Message</label>
                     <div className="control">
-                      <textarea className="textarea is-medium is-link" placeholder="Message" name="message" required />
+                      <textarea className="textarea is-medium" placeholder="Message" name="message" required />
                     </div>
                   </div>
-                  <button className="button is-rounded is-medium is-link">SEND</button>
+                  <button className="button is-rounded is-medium is-success">SEND</button>
                 </form>
               </div>
             </div>

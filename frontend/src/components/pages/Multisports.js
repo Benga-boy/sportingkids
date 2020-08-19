@@ -11,7 +11,6 @@ const Multisports = () => {
             <h1 className="title">
               MULTI SPORTS COACHING
             </h1>
-            <p className="ruler"></p>
           </div>
         </div>
       </section>
@@ -34,7 +33,7 @@ const Multisports = () => {
                   can customise your party to make it a birthday to remember! Enquire here for prices
                 </p>
                 <img src={oneTwoOne} alt="Sporting Kids one to one coaching" />
-                <p className="ms-click"><strong>Click <span>here</span> for after school clubs and Sporting Kids events near you!</strong></p>
+                <p className="ms-click"><strong>Click <Link to="/whatson"><span>here</span></Link> for after school clubs and Sporting Kids events near you!</strong></p>
               </div>
               <div className="column multi-sport-image">
                 <img src="https://static.wixstatic.com/media/1a0189_f288ece6945247a7a8d88fdce15c77ae~mv2_d_5184_3456_s_4_2.jpg/v1/crop/x_145,y_0,w_4894,h_3456/fill/w_1082,h_764,al_c,q_85,usm_0.66_1.00_0.01/IMG_1576_JPG.webp" alt="Sporting Kids Multisports Services" />
@@ -46,18 +45,18 @@ const Multisports = () => {
           <div className="multisports-services-testimonial">
             <article className="message is-success">
               <div className="message-header">
-                <p>Jane Doe, Parent</p>
+                <p>Tanasheh Abrahams, Parent</p>
               </div>
               <div className="message-body">
-                <em>"Thank you sporting kids Ryan never really liked playing football with his friends and often missed out on sports, its so great to see him enjoying your lunchtime tennis lessons. All schools should introduce lunchtime classes like this!"</em>
+                <em>"Fantastic training, games and activities for all kids and all abilities, they provide different sports for all interests and a space where children will grow in self-esteem and confidence."</em>
               </div>
             </article>
             <article className="message is-success">
               <div className="message-header">
-                <p>Jane Doe, Parent</p>
+                <p>Johanna Hopkins, Parent</p>
               </div>
               <div className="message-body">
-                <em>"Thank you sporting kids Ryan never really liked playing football with his friends and often missed out on sports, its so great to see him enjoying your lunchtime tennis lessons. All schools should introduce lunchtime classes like this!"</em>
+                <em>"What a fantastic team! The kids had so much fun and you made taylens day. You have the most patience to look after 25 eight year olds! I take my hat off to you! Thank you again for the best party!"</em>
               </div>
             </article>
           </div>
