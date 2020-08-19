@@ -13,7 +13,6 @@ class Home extends React.Component {
     showModal: false
   }
   render() {
-    console.log(homeCarousel)
 
     return (
       <div className="home">
@@ -50,8 +49,8 @@ class Home extends React.Component {
             </h2>
           </div>
         </section>
-        <section class="section">
-          <div id="container" class="container">
+        <section className="section">
+          <div id="container" className="container">
             <div id="monitor">
               <div id="monitorscreen">
                 <div className="video">
@@ -61,8 +60,8 @@ class Home extends React.Component {
             </div>
           </div>
         </section>
-        <section class="section">
-          <div class="container">
+        <section className="section">
+          <div className="container">
             <div className="offerings">
               <Boxes
               />

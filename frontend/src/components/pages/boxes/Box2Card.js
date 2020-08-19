@@ -26,7 +26,8 @@ class BoxTwoCard extends React.Component {
 
 
         <div className={this.state.isActive}>
-          <div className="modal-background"></div>
+          <div onClick={toggleModal} className="modal-background"></div>
+          <div className="animate__animated animate__backInDown">
           <div className="modal-card">
             <header className="modal-card-head">
               <p className="modal-card-title">SPORTS COACHING</p>
@@ -40,6 +41,7 @@ class BoxTwoCard extends React.Component {
             <footer className="modal-card-foot">
               FOOTER
             </footer>
+          </div>
           </div>
         </div>
 

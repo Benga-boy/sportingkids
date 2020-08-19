@@ -169,7 +169,7 @@ body {
 .foot {
   background-color: rgba(207, 55, 44, 1);
   margin-top: 20px;
-  height: 180px;
+  height: 175px;
   position: static;
   left: 0;
   bottom: 0;
@@ -260,6 +260,102 @@ body {
   }
   .about-content {
     padding: 0 16px 0 10px;
+  }
+  .more {
+    cursor: pointer;
+    color: #0000ff;
+  }
+  .more:hover {
+    text-decoration: underline;
+    transition: text-decoration 2s;
+  }
+  .rene-modal {
+    header {
+      background-color: #ef962d;
+      p {
+        color: #ffffff;
+      }
+      button:hover {
+        background-color: #ff0000;
+      }
+    }
+    section figure {
+      width: 200px;
+      margin-bottom: 24px;
+      margin-top: 16px;
+      padding: 0 12px;
+      img {
+        border: solid 4px #000;
+      }
+    }
+    section div p {
+      padding: 0 12px;
+      width: 95%;
+    }
+    footer ul li {
+      display: inline-block;
+      font-size: 1.8em;
+      .rene-twitter:hover,
+      .rene-twitter:active {
+        color: #55acee;
+        transition: color 1s;
+      }
+      .rene-instagram:hover,
+      .rene-instagram:active {
+      color: #e95950;
+      transition: color 1s;
+      }
+    }
+    footer ul li:last-child {
+      margin-left: 18px;
+    }
+    footer ul li a{
+      color: #000;
+    }
+  }
+  .ola-modal {
+    header {
+      background-color: #ef962d;
+      p {
+        color: #ffffff;
+      }
+      button:hover {
+        background-color: #ff0000;
+      }
+    }
+    section figure {
+      width: 200px;
+      margin-top: 16px;
+      margin-bottom: 24px;
+      padding: 0 12px;
+      img {
+        border: solid 4px #000;
+      }
+    }
+    section div p {
+      padding: 0 12px;
+      width: 95%;
+    }
+    footer ul li {
+      display: inline-block;
+      font-size: 1.8em;
+      .ola-twitter:hover,
+      .ola-twitter:active {
+        color: #55acee;
+        transition: color 1s;
+      }
+      .ola-instagram:hover,
+      .ola-instagram:active {
+      color: #e95950;
+      transition: color 1s;
+      }
+    }
+    footer ul li:last-child {
+      margin-left: 18px;
+    }
+    footer ul li a{
+      color: #000;
+    }
   }
 }
 
