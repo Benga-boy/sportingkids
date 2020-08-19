@@ -136,7 +136,18 @@ class About extends React.Component {
                 </div>
               </section>
               <footer className="modal-card-foot">
-                Renes Contact
+                <ul>
+                    <li>
+                      <a className="rene-twitter" href="https://twitter.com/sportingkidsltd" target="_blank" rel="noopener noreferrer">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="rene-instagram" href="https://www.instagram.com/sporting_kids/" target="_blank" rel="noopener noreferrer">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                      </a>
+                    </li>
+                  </ul>
               </footer>
             </div>
           </div>
@@ -165,12 +176,23 @@ class About extends React.Component {
                     Throughout his coaching career Ola has worked towards various coaching qualifications such as the FA Level 1 in coaching football and a Level 3 Diploma in Sport and Exercise Sciences.
                   </p>
                   <p>
-                    Ola's vision is for Sporting Kids is to enable children to experience and enjoy all different types of sports, we want to encourage children to have fun and bring the community together.
+                    Ola's vision for Sporting Kids is to enable children to experience and enjoy all different types of sports, we want to encourage children to have fun and bring the community together.
                   </p>
                 </div>
               </section>
               <footer className="modal-card-foot">
-                Olas Contact
+                <ul>
+                  <li>
+                    <a className="ola-twitter" href="https://twitter.com/sportingkidsltd" target="_blank" rel="noopener noreferrer">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="ola-instagram" href="https://www.instagram.com/sporting_kids/" target="_blank" rel="noopener noreferrer">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+                </ul>
               </footer>
             </div>
           </div>
