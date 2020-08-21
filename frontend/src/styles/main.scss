@@ -11,6 +11,7 @@
 
 body {
   background-color: #f7f2e7;
+  height: auto;
 }
 
 // * HOME
@@ -69,9 +70,9 @@ body {
       color: #ffffff;
       font-weight: bold;
     }
-    div span {
-      color: #ffffff;
-    }
+    // div span {
+    //   color: #ffffff;
+    // }
     .home-subtitle {
       width: 65%;
       margin: auto;
@@ -157,16 +158,16 @@ body {
 }
 
 // * RULER
-.ruler::after {
-  display: block;
-  height: 3px;
-  background-color: #000;
-  content: " ";
-  width: 150px;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 28px;
-}
+// .ruler::after {
+//   display: block;
+//   height: 3px;
+//   background-color: #000;
+//   content: " ";
+//   width: 150px;
+//   margin: auto;
+//   margin-top: 20px;
+//   margin-bottom: 28px;
+// }
 
 
 // * FOOTER
@@ -271,6 +272,8 @@ body {
   }
   .about-content {
     padding: 0 16px 0 10px;
+    width: 60%;
+    margin: auto;
   }
   .more {
     cursor: pointer;
@@ -370,6 +373,9 @@ body {
       color: #000;
     }
   }
+  .about-background  {
+    background-color: #00bcd4;
+  }
 }
 
 
@@ -426,6 +432,15 @@ body {
   }
   .school-services-testimonial{
     width: 85%;
+    h4{
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 20px;
+      border: solid 4px #00bcd4;
+      background-color: #00bcd4;
+      color: #ffffff;
+      border-radius: 3px;
+    }
   }
   .school-services-background {
     background-image: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('https://bcuassets.blob.core.windows.net/img/pgce-secondary-pe-132240719124082009.jpg');
@@ -524,6 +539,15 @@ body {
     .multisports-services-testimonial{
       width: 85%;
       margin-left: 0;
+      h4{
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 20px;
+        border: solid 4px #00bcd4;
+        background-color: #00bcd4;
+        color: #ffffff;
+        border-radius: 3px;
+      }
     }
     .multi-sports-background {
       background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('./assets/homeCarousel/multisports-background.jpeg');
@@ -606,112 +630,21 @@ body {
         display: flex;
 	      flex-direction: row;
 	      flex-wrap: nowrap;
-	      justify-content: center;
+	      justify-content: flex-end;
         align-items: center;
-        font-weight: 500;
-        font-size: large;
         margin-top: 12px;
         font-weight: bold;
+        margin-left: 15%;
+        margin-right: 3%;
         //* Removed the is:active and Ive also commented out the bits that arent having an effect.
-        .nav-link-home{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width:16%;
-          height: 50px;
+        .navbar-item {
+          color: #0000ff;
+          background-color: #ffffff;
         }
-        .nav-link-home:hover{
-          background-color: rgba(241, 120, 55, 0.6);
-          border-left: rgba(241, 120, 55, 1) solid 3px;
-          transition: background-color 0.80s;
-          .nav-link{
-            margin-left: -3px;
-            color: #000;
-          }
-        }
-        .nav-link-about{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width:16%;
-          height: 50px;
-        }
-        .nav-link-about:hover{
-          background-color: rgba(255, 239, 0, 0.4);
-          border-left: rgba(255, 239, 0, 1) solid 3px;
-          transition: background-color 0.80s;
-          .nav-link{
-            margin-left: -3px;
-            color: #000;
-          }
-        }
-        .nav-link-multi-sport-services{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width:16%;
-          height: 50px;
-        }
-        .nav-link-multi-sport-services:hover{
-          background-color: rgba(22, 227, 40, 0.4);
-          border-left: rgba(22, 227, 40, 1) solid 3px;
-          // color: white;
-          transition: background-color 0.80s;
-          .nav-link{
-            margin-left: -3px;
-            color: #000;
-          }
-        }
-        .nav-link-school-services{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width:16%;
-          height: 50px;
-        }
-        .nav-link-school-services:hover{
-          background-color: rgba(23, 124, 232, 0.5);
-          border-left: rgba(23, 124, 232, 1) solid 3px;
-          // color: white;
-          transition: background-color 0.80s;
-          .nav-link{
-            margin-left: -3px;
-            color: #000;
-          }
-        }
-        .nav-link-whats-on{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width:16%;
-          height: 50px;
-        }
-        .nav-link-whats-on:hover{
-          background-color: rgba(232, 107, 23, 0.6);
-          border-left: rgba(232, 107, 23, 1) solid 3px;
-          // color: white;
-          transition: background-color 0.80s;
-          .nav-link{
-            margin-left: -3px;
-            color: #000;
-          }
-        }
-        .nav-link-contact-us{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width:16%;
-          height: 50px;
-        }
-        .nav-link-contact-us:hover{
-          background-color: rgba(176, 125, 242, 0.7);
-          border-left: rgba(119, 32, 233, 1) solid 3px;
-          // color: white;
-          transition: background-color 0.80s;
-          .nav-link{
-            margin-left: -3px;
-            color: #000;
-          }
+        .navbar-item span:hover,
+        .navbar-item span:active {
+          background-color: #ea5455;
+          color: white;
         }
       }
     }
@@ -800,11 +733,18 @@ body {
 // * CONTACT
 .contact-us {
   margin-top: 225px;
-  .sub-form iframe {
-    width: 570px;
-    height: 550px;
-    margin: auto;
-    padding: 16px;
+  .sub-form {
+    overflow-y: hidden;
+    iframe {
+      width: 570px;
+      height: 550px;
+      padding: 16px;
+      margin-bottom: 50px;
+    }
+    .title {
+      margin-bottom: 0px;
+      margin-left: 60px;
+    }
   }
   .container h1 {
     margin-top: 28px;
@@ -824,7 +764,7 @@ body {
   }
   .contact-background {
     // background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('https://www.moorgateacoustics.co.uk/wp-content/uploads/2015/01/contact_1.jpg');
-    background-color: #86c4ba;
+    background-color: #00bcd4;
     height: 200px;
     .hero-body .container h1 {
       font-weight: bold;

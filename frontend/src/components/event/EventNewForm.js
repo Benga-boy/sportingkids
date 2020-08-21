@@ -9,7 +9,7 @@ const EventNewForm = ({ formData, handleChange, handleSubmit, buttonText }) => (
                   <p> Site to convert addresses to Lat/Long for precise map location.</p>
                 </div>
                 <div className="message-body">
-                <a target="_blank" href="https://www.latlong.net/convert-address-to-lat-long.html">Click Here</a>
+                <a target="_blank" href="https://www.latlong.net/convert-address-to-lat-long.html" rel="noopener noreferrer">Click Here</a>
                 </div>
               </article>
           <div className="field">

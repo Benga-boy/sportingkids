@@ -42,9 +42,9 @@ class Home extends React.Component {
         </section>
         <section className="welcome section">
           <div className="container">
-            <h1 className="animate__animated animate__heartBeat title has-text-centered">WELCOME TO <span>SPORTING KIDS</span></h1>
+            <h1 className="animate__animated animate__heartBeat title has-text-centered">WELCOME TO SPORTING KIDS</h1>
             <h2 className="home-subtitle subtitle has-text-centered">
-              Sporting Kids is an independent sports coaching company that has been working with children and schools across Hertfordshire
+              Sporting Kids is an independent sports coaching company that has been working with children and schools across London and sorrounding counties
             </h2>
           </div>
         </section>

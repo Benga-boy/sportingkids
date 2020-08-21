@@ -1,0 +1,81 @@
+/* from big tablets to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* small tablets to big tablets 768 - 1023px */
+@media only screen and (max-width: 1023px) {
+
+
+}
+
+/* small phones to small tablets 481 - 767px */
+@media only screen and (max-width: 767px) {
+
+}
+
+
+/* small phones 0 - 480px */
+@media only screen and (max-width: 480px) {
+  // * HOME
+  .home {
+    .welcome {
+      .animate__animated.animate__heartBeat {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+      }
+      .home-subtitle {
+        width: 100%;
+        font-size: 0.8em;
+      }
+    }
+    #monitorscreen {
+      .video {
+        width: 100%;
+        background-color: #ffffff;
+        video {
+          width: 55%;
+          height: auto;
+          margin-left: 22.5%;
+        }
+      }
+    }
+    .offerings {
+      width: 100%;
+      .columns .column {
+        margin: auto;
+        width: 50%;
+      }
+    }
+  }
+
+  // * NAVBAR
+  .navbar {
+    .nav-top {
+      display: block;
+      width: 80%;
+      img {
+        width: 100%;
+      }
+      .contact {
+        display: block;
+        .email {
+          p {
+            font-size: 0.8em;
+            ion-icon {
+              font-size: 1em;
+            }
+          }
+        }
+        .phone-number {
+          p {
+            font-size: 0.8em;
+            ion-icon {
+              font-size: 1em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

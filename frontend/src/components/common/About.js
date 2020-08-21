@@ -35,6 +35,49 @@ class About extends React.Component {
           </div>
         </section>
         <section className="section">
+          <div className="container">
+            <div className="columns">
+              {/* <div className="column">
+                <img src="https://static.wixstatic.com/media/1a0189_8f00a4cd2e9e4684a39c90b603af02db~mv2.jpg/v1/fill/w_680,h_680,al_c,q_85,usm_0.66_1.00_0.01/ABOUT%20US.webp" alt="Rene and Ola Sporting Kids" />
+              </div>
+              <div className="divider"></div> */}
+              <div className="column is-four-fifth">
+                <div className="content about-content">
+                  <p>
+                    <strong>
+                      <em>
+                      Sporting Kids was founded in 2018. Our mission is to empower our future leaders through sports by giving them a platform to have fun and engage in sports.
+                      </em>
+                    </strong>
+                    </p>
+                  <p>
+                    <strong>
+                      <em>
+                      We pride ourselves on striving to meet the interests and needs of the children and young people we
+                      work with, through various sports such as football, basketball, tennis, cricket, gymnastics and more.
+                      </em>
+                    </strong>
+                  </p>
+                  <p>
+                    <strong>
+                      <em>
+                      Our sessions are tailored to fully engage every participant. We build on existing skills as well as coach new skills, such as communication, making new friends, being a team player and a leader. All whilst having fun and promoting the benefits of sports.
+                      </em>
+                    </strong>
+                  </p>
+                  <p>
+                    <strong>
+                      <em>
+                      The company was founded by directors, Rene Steer and Ola Williams. Both Rene and Ola currently play football at a Semi Professional level.
+                      </em>
+                    </strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="section">
           <div>
             <h1 className="title coaches">COACHES</h1>
           </div>
@@ -80,38 +123,6 @@ class About extends React.Component {
                       Ola Williams co-founded Sporting Kids alongside his partner Rene Steer <span className="more" onClick={this.toggleOlaModal}>more...</span></p>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="section">
-          <div className="container">
-            <div className="columns">
-              {/* <div className="column">
-                <img src="https://static.wixstatic.com/media/1a0189_8f00a4cd2e9e4684a39c90b603af02db~mv2.jpg/v1/fill/w_680,h_680,al_c,q_85,usm_0.66_1.00_0.01/ABOUT%20US.webp" alt="Rene and Ola Sporting Kids" />
-              </div>
-              <div className="divider"></div> */}
-              <div className="column is-four-fifth">
-                <div className="content about-content">
-                  <p>
-                    Sporting Kids was founded in 2018, our vision is to provide a chance for children and young people
-                    to explore new sports, improve their skills and most importantly, have fun!
-                    </p>
-                  <p>
-                    We pride ourselves on striving to meet the interests and needs of the children and young people we
-                    work with, through various sports such as football, basketball, tennis, cricket, gymnastics and more.
-                  </p>
-                  <p>
-                    Our sessions are tailored to build upon existing skills as well as developing new skills to improve
-                    communication, confidence, independence and promote the benefits of exercise.
-                  </p>
-                  <p>
-                    The company was founded by directors Rene Steer who is a former Arsenal prospect who has featured on the bench for arsenal in the champions league, premier league and carling cup and Ola Williams who started his playing career at 16 years old at Boreham wood fc. Both Rene and Ola are still currently playing football at a Semi Professional level.
-                  </p>
-                  <p>
-                    Together they have over 10 years of coaching experience working with young people in London and surrounding counties.
-                  </p>
                 </div>
               </div>
             </div>

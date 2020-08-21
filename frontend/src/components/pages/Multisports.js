@@ -43,20 +43,23 @@ const Multisports = () => {
         <div className="divider"></div>
         <div className="column is-one-quarter">
           <div className="multisports-services-testimonial">
+            <h4 className="has-text-centered">Testimonials</h4>
             <article className="message is-success">
               <div className="message-header">
-                <p>Tanasheh Abrahams, Parent</p>
+                <p>Tanasheh, Parent</p>
               </div>
               <div className="message-body">
-                <em>"Fantastic training, games and activities for all kids and all abilities, they provide different sports for all interests and a space where children will grow in self-esteem and confidence."</em>
+                <em>
+                  <strong>"Fantastic training, games and activities for all kids and all abilities, they provide different sports for all interests and a space where children will grow in self-esteem and confidence."</strong></em>
               </div>
             </article>
             <article className="message is-success">
               <div className="message-header">
-                <p>Johanna Hopkins, Parent</p>
+                <p>Johanna, Parent</p>
               </div>
               <div className="message-body">
-                <em>"What a fantastic team! The kids had so much fun and you made taylens day. You have the most patience to look after 25 eight year olds! I take my hat off to you! Thank you again for the best party!"</em>
+                <em>
+                  <strong>"What a fantastic team! The kids had so much fun and you made taylens day. You have the most patience to look after 25 eight year olds! I take my hat off to you! Thank you again for the best party!"</strong></em>
               </div>
             </article>
           </div>

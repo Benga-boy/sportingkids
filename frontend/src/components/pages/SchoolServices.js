@@ -63,22 +63,30 @@ const SchoolServices = () => {
           <div className="divider"></div>
           <div className="column is-one-third">
             <div className="school-services-testimonial">
+              <h4 className="has-text-centered">Testimonials</h4>
               <article className="message is-success">
                 <div className="message-header">
-                  <p>Johanna Hopkins, Parent,</p>
+                  <p><strong>Johanna, Parent</strong></p>
                 </div>
                 <div className="message-body">
-                  <em>What a fantastic team! The kids had so much fun and you made taylens day. You have the most patience to look after 25 eight year olds! I take my hat off to you! Thank you again for the best party!</em>
+                  <em>
+                    <strong>
+                      What a fantastic team! The kids had so much fun and you made taylens day. You have the most patience to look after 25 eight year olds! I take my hat off to you! Thank you again for the best party!
+                    </strong>
+                    </em>
                 </div>
               </article>
               <article className="message is-success">
                 <div className="message-header">
-                  <p>Derek Junior, Beekeeper</p>
+                  <p><strong>Derek Junior, Beekeeper</strong></p>
                 </div>
                 <div className="message-body">
-                  <em>Why is she gonna get angry with you? Oh honey, he's teasing you, nobody has two television sets. Great good, good, Lorraine, I had a feeling about you two. Marty, will we ever see you again? Hey boy, are you alright?
-
-                  Marty, you didn't fall asleep, did you? C'mon. Yeah. Silence Earthling. my name is Darth Vader. I'm am an extra-terrestrial from the planet Vulcan. I have to tell you about the future.</em>
+                  <em>
+                    <strong>
+                    Why is she gonna get angry with you? Oh honey, he's teasing you, nobody has two television sets. Great good, good, Lorraine, I had a feeling about you two. Marty, will we ever see you again? Hey boy, are you alright?
+                    Marty, you didn't fall asleep, did you? C'mon. Yeah. Silence Earthling. my name is Darth Vader. I'm am an extra-terrestrial from the planet Vulcan. I have to tell you about the future.
+                    </strong>
+                  </em>
                 </div>
               </article>
             </div>
