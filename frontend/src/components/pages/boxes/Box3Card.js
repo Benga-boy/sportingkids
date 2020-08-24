@@ -28,20 +28,20 @@ class BoxThreeCard extends React.Component {
         <div className={this.state.isActive}>
           <div onClick={toggleModal} className="modal-background"></div>
           <div className="animate__animated animate__backInDown">
-          <div className="modal-card">
-            <header className="modal-card-head">
-              <p className="modal-card-title">SMALL GROUPS</p>
-              <button className="delete" aria-label="close" onClick={toggleModal}></button>
-            </header>
-            <section className="modal-card-body">
-              <p>
+            <div className="modal-card">
+              <header className="modal-card-head">
+                <p className="modal-card-title">SMALL GROUPS</p>
+                <button className="delete" aria-label="close" onClick={toggleModal}></button>
+              </header>
+              <section className="modal-card-body">
+                <p>
               Perfect for a group of siblings or friends! These fun sessions aim to improve skills, confidence and overall performance in a chosen sport or multi sports.
-              </p>
-            </section>
-            <footer className="modal-card-foot">
-              FOOTER
-            </footer>
-          </div>
+                </p>
+              </section>
+              <footer className="modal-card-foot">
+              
+              </footer>
+            </div>
           </div>
         </div>
 

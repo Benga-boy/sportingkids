@@ -398,6 +398,9 @@ body {
         }
       }
     }
+    .workshops{
+      margin-left: 10%;
+    }
     #image0{
       background-image: url('./assets//homeCarousel/image0.jpeg');
       background-repeat: no-repeat;
@@ -634,7 +637,7 @@ body {
         align-items: center;
         margin-top: 12px;
         font-weight: bold;
-        margin-left: 15%;
+        margin-left: 20%;
         margin-right: 3%;
         //* Removed the is:active and Ive also commented out the bits that arent having an effect.
         .navbar-item {

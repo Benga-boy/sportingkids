@@ -35,11 +35,11 @@ class BoxFourCard extends React.Component {
               <section className="modal-card-body">
                 <p>
                   One to one sports coaching with Sporting Kids provide personalised sessions which aim to improve skills, confidence and overall performance in a chosen sport.
-              </p>
+                </p>
               </section>
               <footer className="modal-card-foot">
-                FOOTER
-            </footer>
+                
+              </footer>
             </div>
           </div>
         </div>

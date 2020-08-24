@@ -2,7 +2,7 @@ import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
 import { homeCarousel } from '../../styles/assets/homeCarousel/homeCarousel-data'
 import Blank from '../../styles/assets/logos/blank.png'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const SchoolServices = () => {
   return (
@@ -51,12 +51,12 @@ const SchoolServices = () => {
                   provide your school with the following benefits:
                 </p>
                 <ul>
-                    <li>A cost-effective service</li>
-                    <li>Quality lessons in line with PE curriculum objectives</li>
-                    <li>Effective differentiation to enable progression for all abilities</li>
-                    <li>Staff continuity</li>
-                    <li>Termly or half-termly assessments and feedback</li>
-                  </ul>
+                  <li>A cost-effective service</li>
+                  <li>Quality lessons in line with PE curriculum objectives</li>
+                  <li>Effective differentiation to enable progression for all abilities</li>
+                  <li>Staff continuity</li>
+                  <li>Termly or half-termly assessments and feedback</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ const SchoolServices = () => {
                     <strong>
                       What a fantastic team! The kids had so much fun and you made taylens day. You have the most patience to look after 25 eight year olds! I take my hat off to you! Thank you again for the best party!
                     </strong>
-                    </em>
+                  </em>
                 </div>
               </article>
               <article className="message is-success">
@@ -112,7 +112,7 @@ const SchoolServices = () => {
             </div>)}
           </Carousel>
         </div>
-        <div className="content">
+        <div className="content workshops">
           <h3>Wellbeing Workshops</h3>
           <p>
             Sporting Kids have experience of working in a range of settings including SEN provisions, youth clubs

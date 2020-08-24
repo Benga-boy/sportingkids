@@ -1,18 +1,18 @@
 import React from 'react'
 
-const EventForm = ({ formData, handleChange, handleSubmit, buttonText }) =>
+const EventForm = ({ formData, handleChange, handleSubmit, buttonText, renderedImage }) =>
   (
     <div className="event-form">
       <div className="columns">
         <form onSubmit={handleSubmit} className="column is-half is-offset-one-quarter box">
-        <article className="message is-success">
-                <div className="message-header">
-                  <p> Site to convert addresses to Lat/Long for precise map location.</p>
-                </div>
-                <div className="message-body">
-                <a target="_blank" href="https://www.latlong.net/convert-address-to-lat-long.html" rel="noopener noreferrer">Click Here</a>
-                </div>
-              </article>
+          <article className="message is-success">
+            <div className="message-header">
+              <p> Site to convert addresses to Lat/Long for precise map location.</p>
+            </div>
+            <div className="message-body">
+              <a target="_blank" href="https://www.latlong.net/convert-address-to-lat-long.html" rel="noopener noreferrer">Click Here</a>
+            </div>
+          </article>
           <div className="field">
             <label className="label">Title</label>
             <div className="control">
@@ -37,23 +37,23 @@ const EventForm = ({ formData, handleChange, handleSubmit, buttonText }) =>
               />
             </div>
           </div>
-            <div className="field">
+          <div className="field">
             <label className="label">Image</label>
             <div className="control">
               <input
                 className="input"
-                placeholder="Image"
+                placeholder={renderedImage}
                 name="image"
                 onChange={handleChange}
-                value={formData.image}
+                value={null}
               />
             </div> 
-            </div>
+          </div>
           <div className="field">
             <label className="label">Description</label>
             <div className="control">
-              <input
-                className="input"
+              <textarea
+                className="textarea"
                 placeholder="Description"
                 name="description"
                 onChange={handleChange}
@@ -74,7 +74,7 @@ const EventForm = ({ formData, handleChange, handleSubmit, buttonText }) =>
             </div>
           </div>
           <div className="field">
-                <label className="label">Time</label>
+            <label className="label">Time</label>
             <div className="control">
               <input
                 className="input"
@@ -88,8 +88,8 @@ const EventForm = ({ formData, handleChange, handleSubmit, buttonText }) =>
           <div className="field">
             <label className="label">Directions</label>
             <div className="control">
-              <input
-                className="input"
+              <textarea
+                className="textarea"
                 placeholder="Directions"
                 name="directions"
                 onChange={handleChange}
@@ -110,7 +110,7 @@ const EventForm = ({ formData, handleChange, handleSubmit, buttonText }) =>
             </div>
           </div>
           <div className="field">
-          <label className="label">Longitude</label>
+            <label className="label">Longitude</label>
             <div className="control">
               <input
                 className="input"
@@ -118,7 +118,7 @@ const EventForm = ({ formData, handleChange, handleSubmit, buttonText }) =>
                 name="longitude"
                 onChange={handleChange}
                 value={formData.longitude}
-                />
+              />
             </div>
             <button type="submit" className="button is-fullwidth is-link">{buttonText}</button>
           </div>

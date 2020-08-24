@@ -21,7 +21,6 @@ class WhatsOn extends React.Component {
       this.setState({ event: data, renderedImage: binary })
     } catch (err) {
       console.log(err)
-      this.props.history.push('/notfound')
     }
   }
 
@@ -53,7 +52,6 @@ class WhatsOn extends React.Component {
       {isAuthenticated() && <Link to={'/whatson/create'} className="button is-link">Create Event</Link>}</div>
     
     const { event } = this.state
-    console.log(event)
 
     return (
       <div className="whatson">
@@ -99,8 +97,8 @@ class WhatsOn extends React.Component {
           <div className="whatson-directions">
             <div className="map">
               <Map
-              longitude={event.longitude}
-              latitude={event.latitude}
+                longitude={event.longitude}
+                latitude={event.latitude}
               />
             </div>
 

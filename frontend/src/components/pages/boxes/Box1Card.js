@@ -37,11 +37,11 @@ class BoxOneCard extends React.Component {
               <section className="modal-card-body">
                 <p>
                   After school club - normally runs for an hour 3.30pm until 4.30pm. These clubs give pupils the chance to further develop their skills in an activity outside school hours. All pupils participating in After School Clubs receive a medal, and trophies are given out in the final week’s presentation.
-              </p>
+                </p>
               </section>
               <footer className="modal-card-foot">
-                FOOTER
-            </footer>
+                
+              </footer>
             </div>
           </div>
         </div>

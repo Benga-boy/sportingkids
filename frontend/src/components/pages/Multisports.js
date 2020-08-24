@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import {oneTwoOne} from '../../styles/assets/homeCarousel/homeCarousel-data'
+import { oneTwoOne } from '../../styles/assets/homeCarousel/homeCarousel-data'
 
 const Multisports = () => {
   return (
@@ -32,38 +32,39 @@ const Multisports = () => {
                   with multi-sports and games. We have the bronze, silver and gold packages to choose from or you
                   can customise your party to make it a birthday to remember! Enquire here for prices
                 </p>
+                
                 <img src={oneTwoOne} alt="Sporting Kids one to one coaching" />
                 <p className="ms-click"><strong>Click <Link to="/whatson"><span>here</span></Link> for after school clubs and Sporting Kids events near you!</strong></p>
               </div>
               <div className="column multi-sport-image">
                 <img src="https://static.wixstatic.com/media/1a0189_f288ece6945247a7a8d88fdce15c77ae~mv2_d_5184_3456_s_4_2.jpg/v1/crop/x_145,y_0,w_4894,h_3456/fill/w_1082,h_764,al_c,q_85,usm_0.66_1.00_0.01/IMG_1576_JPG.webp" alt="Sporting Kids Multisports Services" />
               </div>
+            </div>
           </div>
-        </div>
-        <div className="divider"></div>
-        <div className="column is-one-quarter">
-          <div className="multisports-services-testimonial">
-            <h4 className="has-text-centered">Testimonials</h4>
-            <article className="message is-success">
-              <div className="message-header">
-                <p>Tanasheh, Parent</p>
-              </div>
-              <div className="message-body">
-                <em>
-                  <strong>"Fantastic training, games and activities for all kids and all abilities, they provide different sports for all interests and a space where children will grow in self-esteem and confidence."</strong></em>
-              </div>
-            </article>
-            <article className="message is-success">
-              <div className="message-header">
-                <p>Johanna, Parent</p>
-              </div>
-              <div className="message-body">
-                <em>
-                  <strong>"What a fantastic team! The kids had so much fun and you made taylens day. You have the most patience to look after 25 eight year olds! I take my hat off to you! Thank you again for the best party!"</strong></em>
-              </div>
-            </article>
+          <div className="divider"></div>
+          <div className="column is-one-quarter">
+            <div className="multisports-services-testimonial">
+              <h4 className="has-text-centered">Testimonials</h4>
+              <article className="message is-success">
+                <div className="message-header">
+                  <p>Tanasheh, Parent</p>
+                </div>
+                <div className="message-body">
+                  <em>
+                    <strong>"Fantastic training, games and activities for all kids and all abilities, they provide different sports for all interests and a space where children will grow in self-esteem and confidence."</strong></em>
+                </div>
+              </article>
+              <article className="message is-success">
+                <div className="message-header">
+                  <p>Johanna, Parent</p>
+                </div>
+                <div className="message-body">
+                  <em>
+                    <strong>"What a fantastic team! The kids had so much fun and you made taylens day. You have the most patience to look after 25 eight year olds! I take my hat off to you! Thank you again for the best party!"</strong></em>
+                </div>
+              </article>
+            </div>
           </div>
-        </div>
         </div>
       </section>
     </div>
