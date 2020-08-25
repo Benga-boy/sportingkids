@@ -22,7 +22,7 @@
     .welcome {
       .animate__animated.animate__heartBeat {
         font-size: 1.2em;
-        margin-bottom: 20px;
+        margin-bottom: 1.4em;
       }
       .home-subtitle {
         width: 100%;
@@ -75,6 +75,246 @@
             }
           }
         }
+      }
+    }
+  }
+  // * FOOTER
+  .foot {
+    .footer-container {
+      width: 100%;
+      
+      .social-links li {
+        font-size: 1.4em;
+        margin-right: 0.3em;
+        margin-top: 2rem;
+      }
+      div .skcopyright strong {
+        font-size: 0.7em;
+        margin-left: 0;
+        margin-top: 10rem;
+      }
+      .policy {
+        margin-left: 0;
+        p {
+          font-size: 0.6em;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .about {
+    margin-top: 17rem;
+    .about-background .hero-body .container h1 {
+      font-size: 2em;
+    }
+    .about-background .hero-body .container h4 {
+      font-size: 0.95em;
+    }
+    .about-content {
+      width: 100%;
+      p strong em {
+        font-size: 0.9em;
+      }
+    }
+    .about-rene, .about-ola {
+      margin: auto;
+      width: 75%;
+    }
+    .about-rene {
+      margin-bottom: 2rem;
+      margin-top: 3rem;
+    }
+    .rene-modal, .ola-modal {
+      height: 90%;
+      width: 90%;
+      margin: auto;
+      header p {
+        font-size: 1.2em;
+      }
+      section figure {
+        width: 12rem;
+      }
+      section div p {
+        font-size: 0.9em;
+        width: 100%;
+      }
+    }
+  }
+
+  // * MULTISPORTS SERVICES
+  .multisports {
+    margin-right: 0;
+    .multi-sports-background {
+      width: 100%;
+      background-size: cover;
+      h1 {
+        font-size: 1.8em;
+        margin-top: 5rem;
+      }
+    }
+    .infos-and-testimonial {
+      width: 100%;
+      .multisports-info {
+        h3 {
+          font-size: 1.1em;
+        }
+        h3:first-child {
+          width: 90%;
+        }
+        p {
+          font-size: 0.9em;
+          width: 80%;
+        }
+        .ms-click strong {
+          font-size: 0.9em;
+          width: 100%;
+        }
+        img {
+          height: 13rem;
+          width: 70%;
+        }
+      }
+      .multi-sport-image {
+        margin-left: 1rem;
+      }
+      .multi-sport-image img {
+        width: 70%;
+      }
+      .multisports-services-testimonial {
+        width: 70%;
+        margin-left: 1rem;
+        h4 {
+          font-size: 0.8em;
+        }
+        .testimonial-box{
+          height: 40%;
+          article {
+            width: 100%;
+            height: 10%;
+            p {
+              font-size: 0.8em;
+            }
+            em {
+              font-size: 0.75em;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // * SCHOOL SERVICES
+  .school-services {
+    .school-services-background {
+      width: 100%;
+      .ss-text {
+        font-size: 0.8em;
+        width: 100%;
+      }
+      .title {
+        font-size: 1.4em;
+      }
+    }
+    .school-services-info {
+      width: 100%;
+      .content {
+        h3 {
+          font-size: 1.2em;
+        }
+        p {
+          font-size: 0.9em;
+        }
+        ul li {
+          font-size: 0.9em;
+        }
+      }
+    }
+    .school-services-testimonial {
+      width: 100%;
+      margin-left: 1rem;
+      h4 {
+        font-size: 1.2em;
+        width: 90%;
+      }
+      article {
+        width: 90%;
+        p strong {
+          font-size: 0.9em;
+        }
+        em strong {
+          font-size: 0.8em;
+          margin: auto;
+        }
+      }
+    }
+    .school-services-carousel {
+      width: 100%;
+      margin-left: 0.85rem;
+      .school-carousel {
+        width: 80%;
+        .carousel-school-services {
+          width: 100%;
+        }
+      }
+      .workshops {
+        h3 {
+          font-size: 1.2em;
+        }
+        p {
+          font-size: 0.9em;
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  // * WHATS ON
+  .non-event {
+    .title {
+      font-size: 1.4em;
+      margin-top: 15rem;
+      width: 100%;
+    }
+  }
+
+  // * CONTACT
+  .contact-us {
+    margin-top: 17rem;
+    .title {
+      font-size: 1.4em;
+    }
+    .contact-background {
+      height: 10rem;
+      .hero-body{
+        .container {
+          h1{
+            font-size: 1.6em;
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+    .contact-form {
+      width: 100%;
+      form div label {
+        font-size: 0.9em;
+      }
+      form button {
+        font-size: 0.9em;
+      }
+    }
+    .sub-form {
+      margin-left: 0;
+      width: 100%;
+      margin-top: 2rem;
+      iframe {
+        width: 20rem;
+        margin-bottom: 0.5rem;
+      }
+      .title {
+        margin-left: 0;
       }
     }
   }

@@ -6,7 +6,7 @@ const Contact = () => {
       <section className="contact-background hero is-danger">
         <div className="hero-body">
           <div className="container">
-            <h1 className="title has-text-centered">
+            <h1>
               WE WILL LOVE TO HEAR FROM YOU!
             </h1>
           </div>
@@ -14,7 +14,7 @@ const Contact = () => {
       </section>
       <section className="section">
         <div className="container">
-          <div className="columns is-mobile">
+          <div className="columns">
             <div className="column is-half">
             <h1 className="title">CONTACT US</h1>
               <div className="contact-form">

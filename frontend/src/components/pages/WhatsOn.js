@@ -47,9 +47,19 @@ class WhatsOn extends React.Component {
     }
   }
 
+
+  
   render() {
-    if (!this.state.event) return <div className="no-event"><h1>No event at this current time</h1>
-      {isAuthenticated() && <Link to={'/whatson/create'} className="button is-link">Create Event</Link>}</div>
+    if (!this.state.event) return <section class="non-event hero is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          WE ARE WORKING ON SOME NEW EVENTS! PLEASE CHECK BACK SOONEST
+          {isAuthenticated() && <Link to={'/whatson/create'} className="button is-link">Create Event</Link>}
+        </h1>
+      </div>
+    </div>
+  </section>
     
     const { event } = this.state
 

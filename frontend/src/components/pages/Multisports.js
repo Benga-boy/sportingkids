@@ -5,7 +5,7 @@ import { oneTwoOne } from '../../styles/assets/homeCarousel/homeCarousel-data'
 const Multisports = () => {
   return (
     <div className="multisports">
-      <section className="multi-sports-background hero is-danger has-text-centered">
+      <section className="multi-sports-background hero has-text-centered">
         <div className="hero-body">
           <div className="container">
             <h1 className="title">
@@ -15,8 +15,8 @@ const Multisports = () => {
         </div>
       </section>
       <section className="infos-and-testimonial">
-        <div className="columns is-mobile">
-          <div className="column is-three-quarters">
+        <div className="columns">
+          <div className="column is-two-thirds">
             <div className="columns">
               <div className="column is-three-fifths multisports-info">
                 <h3>One to One and small groups coaching</h3>
@@ -42,27 +42,31 @@ const Multisports = () => {
             </div>
           </div>
           <div className="divider"></div>
-          <div className="column is-one-quarter">
+          <div className="column is-one-third">
             <div className="multisports-services-testimonial">
               <h4 className="has-text-centered">Testimonials</h4>
-              <article className="message is-success">
-                <div className="message-header">
-                  <p>Tanasheh, Parent</p>
-                </div>
-                <div className="message-body">
-                  <em>
-                    <strong>"Fantastic training, games and activities for all kids and all abilities, they provide different sports for all interests and a space where children will grow in self-esteem and confidence."</strong></em>
-                </div>
-              </article>
-              <article className="message is-success">
-                <div className="message-header">
-                  <p>Johanna, Parent</p>
-                </div>
-                <div className="message-body">
-                  <em>
-                    <strong>"What a fantastic team! The kids had so much fun and you made taylens day. You have the most patience to look after 25 eight year olds! I take my hat off to you! Thank you again for the best party!"</strong></em>
-                </div>
-              </article>
+              <div className="testimonial-box">
+                <article className="message is-success">
+                  <div className="message-header">
+                    <p>Tanasheh, Parent</p>
+                  </div>
+                  <div className="message-body">
+                    <em>
+                      <strong>"Fantastic training, games and activities for all kids and all abilities, they provide different sports for all interests and a space where children will grow in self-esteem and confidence."</strong></em>
+                  </div>
+                </article>
+              </div>
+              <div className="testimonial-box">
+                <article className="message is-success">
+                  <div className="message-header">
+                    <p>Johanna, Parent</p>
+                  </div>
+                  <div className="message-body">
+                    <em>
+                      <strong>"What a fantastic team! The kids had so much fun and you made taylens day. You have the most patience to look after 25 eight year olds! I take my hat off to you! Thank you again for the best party!"</strong></em>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
         </div>
