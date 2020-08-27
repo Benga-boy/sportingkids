@@ -14,7 +14,7 @@ const SchoolServices = () => {
               SCHOOL SERVICES
             </h1>
             <p className="ss-text">
-              We provide multisport sessions for children aged 4-11, our aim is for young people to be given high quality opportunities to access sport in a safe, fun and challenging environment. Our services include breakfast, lunch and after school clubs as well as PPA, maternity, paternity and illness cover.
+              We provide multisport sessions for children, with the aim of having fun in a fun, safe and challenging environment.
             </p>
           </div>
         </div>

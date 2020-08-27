@@ -41,6 +41,16 @@ body {
     margin: auto;
     width: 80%;
     margin-top: 0;
+    .modal {
+      .modal-card {
+        header {
+          background-color: #ede682;
+        }
+        section {
+          background-color: #f7f2e7;
+        }
+      }
+    }
     article.message#box1:hover{
         background-color: rgba(253, 253, 150, 1);
     }
@@ -400,7 +410,10 @@ body {
       }
     }
     .workshops{
-      margin-left: 10%;
+      margin-left: 7%;
+      p {
+        width: 80%;
+      }
     }
     #image0{
       background-image: url('./assets//homeCarousel/image0.jpeg');
@@ -418,8 +431,8 @@ body {
       background-size: cover;
     }
     .school-carousel{
-      width: 80%;
-      margin: auto;
+      width: 75%;
+      margin-left: 60px;
       .school-carousel-image {
         height: 400px;
       }
@@ -650,7 +663,7 @@ body {
         align-items: center;
         margin-top: 12px;
         font-weight: bold;
-        margin-left: 20%;
+        margin-left: 15%;
         margin-right: 3%;
         //* Removed the is:active and Ive also commented out the bits that arent having an effect.
         .navbar-item {
@@ -773,6 +786,9 @@ body {
     }
     form div label {
       font-weight: bold;
+    }
+    form button{
+      font-size: 16px;
     }
   }
   .contact-background {
