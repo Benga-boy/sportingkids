@@ -5,6 +5,7 @@ const { secret } = require('../config/environment')
 async function register(req, res){
   try {
     const user = await User.create(req.body)
+    await user.save()
     res.status(201).json({ message: `Welcome ${user.username}` })
   } catch (err){
     res.status(422).json(err)
