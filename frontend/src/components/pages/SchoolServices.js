@@ -19,9 +19,9 @@ const SchoolServices = () => {
           </div>
         </div>
       </section>
-      <section className="info-and-testimonial">
-        <div className="columns">
-          <div className="column is-two-thirds">
+      <div className="columns">
+        <div className="column is-two-thirds">
+          <section className="info-and-testimonial">
             <div className="school-services-info">
               <div className="content">
                 <h3>Breakfast Club</h3>
@@ -46,7 +46,7 @@ const SchoolServices = () => {
                 <p>
                   We know how vital PPA time is and how expensive and time-consuming managing external cover
                   can be. This is considered when tailoring our PPA packages so we can offer affordable cover and
-                  make valuable use of your Primary PE and Sport Premium funding budgets.<br/><br/>
+                  make valuable use of your Primary PE and Sport Premium funding budgets.<br /><br />
                   By choosing Sporting Kids for your PPA cover and PE lessons, you can rest assured that we will
                   provide your school with the following benefits:
                 </p>
@@ -59,6 +59,38 @@ const SchoolServices = () => {
                 </ul>
               </div>
             </div>
+            <div className="school-services-carousel">
+            <div className="school-carousel">
+              <Carousel
+                infiniteLoop
+                centerMode
+                autoPlay
+                dynamicHeight={true}
+                showThumbs={false}
+                showArrows={false}
+                interval={3500}
+                showStatus={false}
+                transitionTime={750}
+                centerSlidePercentage={100}
+              >
+                {homeCarousel.map(image => <div key={image.name} id={image.name} className="carousel-school-services" >
+                  <img src={Blank} className="school-carousel-image" alt={image.name} />
+                </div>)}
+              </Carousel>
+            </div>
+            <div className="content workshops">
+              <h3>Wellbeing Workshops</h3>
+              <p>
+                Sporting Kids have experience of working in a range of settings including SEN provisions, youth clubs
+                and Pupil Referral Units. Through working with children and young people with social, emotional and
+            mental health needs we have developed our Wellbeing Workshops.<br /><br />
+            These workshops incorporate mentoring sessions, discussion-based activities and mental health
+            awareness alongside promoting the importance of keeping active through sports.
+          </p>
+              <p className="enquire">Enquire <Link to="/contact"><strong>here</strong></Link> for more information about our school services</p>
+            </div>
+            </div>
+          </section>
           </div>
           <div className="divider"></div>
           <div className="column is-one-third">
@@ -71,7 +103,7 @@ const SchoolServices = () => {
                 <div className="message-body">
                   <em>
                     <strong>
-                    The Sporting Kids coaches put on fantastic sports sessions for the young people attending our summer programme. Over the 10 sessions they built positive professional relationships with the kids, which I haven’t seen other sports coaches do with such success- it proved to be a valuable approach which set them apart from sport companies I have previously worked with. I look forward to working with you again in the near future
+                      The Sporting Kids coaches put on fantastic sports sessions for the young people attending our summer programme. Over the 10 sessions they built positive professional relationships with the kids, which I haven’t seen other sports coaches do with such success- it proved to be a valuable approach which set them apart from sport companies I have previously worked with. I look forward to working with you again in the near future
                     </strong>
                   </em>
                 </div>
@@ -83,47 +115,15 @@ const SchoolServices = () => {
                 <div className="message-body">
                   <em>
                     <strong>
-                    Why is she gonna get angry with you? Oh honey, he's teasing you, nobody has two television sets. Great good, good, Lorraine, I had a feeling about you two. Marty, will we ever see you again? Hey boy, are you alright?
-                    Marty, you didn't fall asleep, did you? C'mon. Yeah. Silence Earthling. my name is Darth Vader. I'm am an extra-terrestrial from the planet Vulcan. I have to tell you about the future.
+                      Why is she gonna get angry with you? Oh honey, he's teasing you, nobody has two television sets. Great good, good, Lorraine, I had a feeling about you two. Marty, will we ever see you again? Hey boy, are you alright?
+                      Marty, you didn't fall asleep, did you? C'mon. Yeah. Silence Earthling. my name is Darth Vader. I'm am an extra-terrestrial from the planet Vulcan. I have to tell you about the future.
                     </strong>
                   </em>
                 </div>
               </article>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="school-services-carousel">
-        <div className="school-carousel">
-          <Carousel
-            infiniteLoop
-            centerMode
-            autoPlay
-            dynamicHeight={true}
-            showThumbs={false}
-            showArrows={false}
-            interval={3500}
-            showStatus={false}
-            transitionTime={750}
-            centerSlidePercentage={100}
-          >
-            {homeCarousel.map(image => <div key={image.name} id={image.name} className="carousel-school-services" >
-              <img src={Blank} className="school-carousel-image" alt={image.name} />
-            </div>)}
-          </Carousel>
-        </div>
-        <div className="content workshops">
-          <h3>Wellbeing Workshops</h3>
-          <p>
-            Sporting Kids have experience of working in a range of settings including SEN provisions, youth clubs
-            and Pupil Referral Units. Through working with children and young people with social, emotional and
-            mental health needs we have developed our Wellbeing Workshops.<br/><br />
-            These workshops incorporate mentoring sessions, discussion-based activities and mental health
-            awareness alongside promoting the importance of keeping active through sports.
-          </p>
-          <p className="enquire">Enquire <Link to="/contact"><strong>here</strong></Link> for more information about our school services</p>
-        </div>
-      </section>
+      </div>
     </div>
 
   )
