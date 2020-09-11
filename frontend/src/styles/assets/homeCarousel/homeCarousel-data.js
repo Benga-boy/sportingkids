@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 export const homeCarousel = [
   {name: 'image0', value: require('../homeCarousel/image0.jpeg')},

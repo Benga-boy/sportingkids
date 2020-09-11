@@ -142,13 +142,13 @@ class About extends React.Component {
                 </figure>
                 <div className="content">
                   <p>
-                  Rene Steer founded Sporting Kids in 2018, his sporting story started in his early years as a youngster at the Arsenal Academy under Arsene Wenger. He worked his way up from the age of 12 and in 2008 was included in the first team in the Premier League for nine matches. He was also on the bench for Champions League and Carling Cup games. While playing professional football Rene started his started his Level 2 Football Coaching course with the FA which lead to Rene beginning his coaching career.
+                  Rene Steer founded Sporting Kids in 2018, his sporting journey began as a youngster when Rene played at the Arsenal Academy under Arsene Wenger. Rene continues to play football at a semi-professional level.
                   </p>
                   <p>
-                  Rene has worked and developed his coaching skills with children and young people aged 4-25 over the years in various contexts, some of these include Sporting Opportunities For All, Rachael Yankey, Elms Tennis Club, Jason Roberts Foundation, Arsenal Development Centre and Norwich FC, as a scout.
+                  As well as football, Rene found a passion for coaching and over the years has worked and developed his coaching skills with children and young people in various settings.
                   </p>
                   <p>
-                  Rene found a passion for coaching and went on to further his knowledge by obtaining his FA UEFA B License. He continues to play football for Maidenhead United FC but wants to share his passion for coaching through Sporting Kids with his vision for the company being to "provide a chance for children to experience new sports, make new friends and most importantly, have fun!"
+                  My vision for the company is being able to "provide a chance for children to experience new sports, learn new skills, be active and most importantly, have fun!"
                   </p>
                 </div>
               </section>
@@ -179,21 +179,21 @@ class About extends React.Component {
               </header>
               <section className="modal-card-body">
                 <figure className="image is-128x128">
-                  <img src={ola} alt="Rene Steer" />
+                  <img src={ola} alt="Ola Williams" />
                 </figure>
                 <div className="content">
                   <p>
-                    Ola Williams co-founded Sporting Kids alongside his partner Rene Steer. His sporting story began playing football at the age of 11 for his local Sunday League team Pinnacle Youth.
-
-                    Following this, Ola's football career continued to grow, playing semi professional football from the age of 16 where he made his first team debut for Borehamwood FC. He has since played for Billericay FC and currently plays at a semi professional level for Finchley and Wingate FC.
+                    Ola Williams is a co founder of sporting kids. 
+                    <br/><br/>
+                    Ola is also a semi professional football player. He started playing at this level from the age of 16 where he made his first team debut for Borehamwood FC. He has since played for Harrow borough, Billericay fc, Hampton and Richmond, Wingate and Finchley and is currently playing for cheshunt fc. 
                   </p>
                   <p>
-                    Ola’s coaching career started working part time at Borehamwood FC where he began his work with children, coaching during half term football camps. He has also worked alongside ex Arsenal legend- Rachel Yankee, coaching in primary schools in North West London. More recently, Ola broadened his experience working with 16-18 year olds as Head of Recruitment for London Rangers FC.   
-
-                    Throughout his coaching career Ola has worked towards various coaching qualifications such as the FA Level 1 in coaching football and a Level 3 Diploma in Sport and Exercise Sciences.
+                    Ola’s coaching career started working part time at Borehamwood which he helped out coaching kids at the half term football camps, He has also worked along side woman’s football legend and ex Arsenal player Rachel Yankee coaching in primary school kids around the north west London area. He has also worked with London rangers FC as the Head of recruitment for their football college scholarship scheme for 16-18 years old. 
+                    <br/><br/>
+                    Ola has received good sporting qualifications  such as football level 1 coaching badge, certificate and diploma in sports, general sports and training and fitness in sports.
                   </p>
                   <p>
-                    Ola's vision for Sporting Kids is to enable children to experience and enjoy all different types of sports, we want to encourage children to have fun and bring the community together.
+                    <a href="https://www.hamhigh.co.uk/sport/football/former-wingate-defender-williams-is-empowering-young-people-with-sports-1-6818140" target="_blank" rel="noopener noreferrer">Check out</a> a recent article on how Ola and sporting kids help empower young people in the community
                   </p>
                 </div>
               </section>

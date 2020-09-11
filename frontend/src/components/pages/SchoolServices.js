@@ -66,12 +66,12 @@ const SchoolServices = () => {
               <h4 className="has-text-centered">Testimonials</h4>
               <article className="message is-success">
                 <div className="message-header">
-                  <p><strong>Johanna, Parent</strong></p>
+                  <p><strong>YC HERTFORDSHIRE</strong></p>
                 </div>
                 <div className="message-body">
                   <em>
                     <strong>
-                      What a fantastic team! The kids had so much fun and you made taylens day. You have the most patience to look after 25 eight year olds! I take my hat off to you! Thank you again for the best party!
+                    The Sporting Kids coaches put on fantastic sports sessions for the young people attending our summer programme. Over the 10 sessions they built positive professional relationships with the kids, which I haven’t seen other sports coaches do with such success- it proved to be a valuable approach which set them apart from sport companies I have previously worked with. I look forward to working with you again in the near future
                     </strong>
                   </em>
                 </div>
