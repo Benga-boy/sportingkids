@@ -15,6 +15,7 @@ import PrivacyPolicy from './components/pages/PrivacyPolicy'
 import Contact from './components/pages/Contact'
 import Login from './components/authentication/Login'
 import Error from './components/common/Error'
+import SecureRoute from './components/common/SecureRoute'
 
 const App = () => {
   return (
@@ -24,8 +25,8 @@ const App = () => {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/schoolservices" component={SchoolServices} />
-        <Route path="/whatson/:id/edit" component={EventEdit} />
-        <Route path="/whatson/create" component={EventNew} />
+        <SecureRoute path="/whatson/:id/edit" component={EventEdit} />
+        <SecureRoute path="/whatson/create" component={EventNew} />
         <Route path="/whatson" component={WhatsOn} />
         <Route path="/multisports" component={Multisports} />
         <Route path="/childprotection" component={ChildProtection} />

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const EventNewForm = ({ formData, handleChange, handleSubmit, buttonText }) => (
+const EventNewForm = ({ formData, image, handleImage, handleChange, handleSubmit, buttonText }) => (
   <div className="event-new-form">
     <div className="columns">
-      <form onSubmit={handleSubmit} className="column is-half is-offset-one-quarter box">
+      <form encType="multipart/form-data" onSubmit={handleSubmit} className="column is-half is-offset-one-quarter box">
         <article className="message is-success">
           <div className="message-header">
             <p> Site to convert addresses to Lat/Long for precise map location.</p>
@@ -25,26 +25,14 @@ const EventNewForm = ({ formData, handleChange, handleSubmit, buttonText }) => (
           </div>
         </div>
         <div className="field">
-          <label className="label">Subtitle</label>
-          <div className="control">
-            <input
-              className="input"
-              placeholder="Subtitle"
-              name="subtitle"
-              onChange={handleChange}
-              value={formData.subtitle}
-            />
-          </div>
-        </div>
-        <div className="field">
           <label className="label">Image</label>
           <div className="control">
             <input
               className="input"
               placeholder="Image"
               name="image"
-              onChange={handleChange}
-              value={formData.image}
+              onChange={handleImage}
+              type="file"
             />
           </div> 
         </div>
@@ -69,6 +57,7 @@ const EventNewForm = ({ formData, handleChange, handleSubmit, buttonText }) => (
               name="date"
               onChange={handleChange}
               value={formData.date}
+              type="date"
             />
           </div>
         </div>
@@ -81,18 +70,7 @@ const EventNewForm = ({ formData, handleChange, handleSubmit, buttonText }) => (
               name="time"
               onChange={handleChange}
               value={formData.time}
-            />
-          </div>
-        </div>
-        <div className="field">
-          <label className="label">Directions</label>
-          <div className="control">
-            <textarea
-              className="textarea"
-              placeholder="Directions"
-              name="directions"
-              onChange={handleChange}
-              value={formData.directions}
+              type="time"
             />
           </div>
         </div>

@@ -2,6 +2,9 @@ const Event = require('../models/event')
 const { notFound, unauthorized } = require('../lib/errorMessages')
 
 
+
+
+
 // * Function to get all created events!
 async function eventIndex(req, res, next) {
   try {
@@ -16,10 +19,14 @@ async function eventIndex(req, res, next) {
 // * Function to create an event!!!!
 async function eventCreate(req, res, next) {
   try {
-    req.body.user = req.currentUser
-    const createdEvent = await Event.create(req.body)
-    await createdEvent.save()
-    res.status(201).json(createdEvent)
+    // req.body.user = req.currentUser
+    // const createdEvent = await Event.create(req.body)
+    // await createdEvent.save()
+    // res.status(201).json(createdEvent)
+
+    const event = await Event.create(req.body)
+    await event.save()
+    res.json(event)
   } catch (err) {
     next(err)
   }
@@ -67,6 +74,18 @@ async function eventDelete(req, res, next) {
   }
 }
 
+// Upload an image to events
+async function imageUpload(req, res, next) {
+  try {
+    const eventId = req.params.id
+    const event = await Event.findById(eventId)
+    event.image = req.file.buffer
+    await event.save()
+    res.send()
+  } catch (err) {
+    next(err)
+  }
+}
 // async function
 
 module.exports = {
@@ -74,5 +93,6 @@ module.exports = {
   create: eventCreate,
   show: eventShow,
   update: eventUpdate,
-  delete: eventDelete
+  delete: eventDelete,
+  uploadImage: imageUpload
 }

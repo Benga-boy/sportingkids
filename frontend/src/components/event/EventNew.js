@@ -7,11 +7,14 @@ class EventNew extends React.Component {
   state = {
     formData: {
       title: '',
-      subtitle: '',
-      desciption: '',
+      description: '',
       date: '',
-      time: ''
-    }
+      time: '',
+      longitude: '',
+      latitude: '',
+      image: ''
+    },
+    fileInput: ''
   }
 
   handleChange = event => {
@@ -21,8 +24,22 @@ class EventNew extends React.Component {
 
   handleSubmit = async event => {
     event.preventDefault()
+    let formData = new FormData()
+    formData.append('image', this.state.image)
+    
+    const newEvent = {
+      title: this.state.formData.title,
+      description: this.state.formData.description,
+      date: this.state.formData.date,
+      time: this.state.formData.time,
+      longitude: this.state.formData.longitude,
+      latitude: this.state.formData.latitude,
+      image: this.state.fileInput
+    }
+
+    console.log(newEvent.image)
     try {
-      const res = await createEvent(this.state.formData)
+      const res = await createEvent(newEvent)
       console.log(res)
       this.props.history.push('/whatson')
     } catch (err) {
@@ -30,8 +47,18 @@ class EventNew extends React.Component {
     }
   }
 
+  handleImageChange = event => {
+    const file = event.target.files[0]
+    const reader = new FileReader()
+    reader.readAsDataURL(file)
+    reader.onloadend = () => {
+      this.setState({fileInput: reader.result})
+    }
+  }
+
+
   render() {
-    console.log(this.state.formData)
+    console.log(this.state.fileInput)
     return (
       <div className="event-new">
         <section className="section">
@@ -40,8 +67,11 @@ class EventNew extends React.Component {
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
             buttonText="Make Event"
+            handleImage = {this.handleImageChange}
           />
         </section>
+
+        {this.state.fileInput && (<img src={this.state.fileInput} alt="Chosen" style={{height: '300px'}}/>)}
       </div>
     )
   }

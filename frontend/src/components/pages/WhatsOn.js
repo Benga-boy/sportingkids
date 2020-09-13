@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Map from '../event/Map'
+// import Map from '../event/Map'
+
 
 import { getEvent, deleteEvent } from '../../lib/api'
 import { isAuthenticated } from '../../lib/auth'
@@ -16,6 +17,7 @@ class WhatsOn extends React.Component {
   async componentDidMount() {
     try {
       const res = await getEvent()
+      console.log(res.data)
       const data = res.data[0]
       const binary = await this.arrayBufferToBase64(res.data[0].image.data)
       this.setState({ event: data, renderedImage: binary })
@@ -84,7 +86,7 @@ class WhatsOn extends React.Component {
           
             <figure className="image is-16by9">
               <img className="has-ratio" width="640" height="360"
-                src={this.state.renderedImage}
+                src={event.image}
                 frameBorder="0" allowFullScreen alt="Sporting Kids event"/>
             </figure>
             <br/>
@@ -105,12 +107,12 @@ class WhatsOn extends React.Component {
 
           
           <div className="whatson-directions">
-            <div className="map">
+            {/* <div className="map">
               <Map
                 longitude={event.longitude}
                 latitude={event.latitude}
               />
-            </div>
+            </div> */}
 
             <div className="map-directions">
               <article className="message is-warning" style={{ width: '480px', marginTop: '50px' }}>

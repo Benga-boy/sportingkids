@@ -1,7 +1,7 @@
 import React from 'react'
 import { loginUser } from '../../lib/api'
 import { setToken } from '../../lib/auth'
-import { toast } from '../../lib/notifications'
+
 
 class Login extends React.Component {
   state = {
