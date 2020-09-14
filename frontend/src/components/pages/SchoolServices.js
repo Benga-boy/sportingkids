@@ -1,10 +1,23 @@
 import React from 'react'
-import { Carousel } from 'react-responsive-carousel'
-import { homeCarousel } from '../../styles/assets/homeCarousel/homeCarousel-data'
-import Blank from '../../styles/assets/logos/blank.png'
+import { schoolCarousel } from '../../styles/assets/homeCarousel/homeCarousel-data'
 import { Link } from 'react-router-dom'
+import Slider from 'react-slick'
+
 
 const SchoolServices = () => {
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 3000
+  }
+
+
   return (
     <div className="school-services">
       <section className="school-services-background hero has-text-centered">
@@ -61,31 +74,22 @@ const SchoolServices = () => {
             </div>
             <div className="school-services-carousel">
             <div className="school-carousel">
-              <Carousel
-                infiniteLoop
-                centerMode
-                autoPlay
-                dynamicHeight={true}
-                showThumbs={false}
-                showArrows={false}
-                interval={3500}
-                showStatus={false}
-                transitionTime={750}
-                centerSlidePercentage={100}
-              >
-                {homeCarousel.map(image => <div key={image.name} id={image.name} className="carousel-school-services" >
-                  <img src={Blank} className="school-carousel-image" alt={image.name} />
-                </div>)}
-              </Carousel>
+              <Slider {...settings} >
+                {
+                  schoolCarousel.map(image => <div className="school-slideshow" key={image.name}>
+                    <img src={image.value} alt="Sporting kids having fun" />
+                  </div>)
+                }
+              </Slider>
             </div>
             <div className="content workshops">
               <h3>Wellbeing Workshops</h3>
               <p>
                 Sporting Kids have experience of working in a range of settings including SEN provisions, youth clubs
                 and Pupil Referral Units. Through working with children and young people with social, emotional and
-            mental health needs we have developed our Wellbeing Workshops.<br /><br />
-            These workshops incorporate mentoring sessions, discussion-based activities and mental health
-            awareness alongside promoting the importance of keeping active through sports.
+                mental health needs we have developed our Wellbeing Workshops.<br /><br />
+                These workshops incorporate mentoring sessions, discussion-based activities and mental health
+                awareness alongside promoting the importance of keeping active through sports.
           </p>
               <p className="enquire">Enquire <Link to="/contact"><strong>here</strong></Link> for more information about our school services</p>
             </div>

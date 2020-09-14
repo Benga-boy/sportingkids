@@ -32,7 +32,7 @@ const Multisports = () => {
                   with multi-sports and games. We have the bronze, silver and gold packages to choose from or you
                   can customise your party to make it a birthday to remember! Enquire here for prices
                 </p>
-                
+
                 <img src={oneTwoOne} alt="Sporting Kids one to one coaching" />
                 <p className="ms-click"><strong>Click <Link to="/whatson"><span>here</span></Link> for after school clubs and Sporting Kids events near you!</strong></p>
               </div>

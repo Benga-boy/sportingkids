@@ -3,7 +3,7 @@ import React from 'react'
 const ChildProtection = () => {
   return (
     <div className="childprotection">
-      <section className="hero is-primary">
+      <section className="hero is-link">
         <div className="hero-body">
           <div className="container">
             <h1 className="title">
@@ -18,7 +18,7 @@ const ChildProtection = () => {
         </div>
       </section>
       <section className="section">
-    <div class="container">
+    <div className="container">
       <article className="cp-statements">
         <div className="believe">
         <h3>

@@ -1,42 +1,33 @@
 import React from 'react'
 
-import { getEvent, editEvent } from '../../lib/api'
+import { getSingleEvent, editEvent } from '../../lib/api'
 
 import EventForm from './EventForm'
 
-class EventEdit extends React.Component {
+class EventNew extends React.Component {
   state = {
     formData: {
       title: '',
-      subtitle: '',
       description: '',
-      image: '',
       date: '',
-      time: ''
+      time: '',
+      longitude: '',
+      latitude: '',
+      image: ''
     },
-    renderedImage: null
+    fileInput: ''
   }
 
+
+  // on mount - Update state with current event info
   async componentDidMount() {
     const eventId = this.props.match.params.id
     try {
-      const res = await getEvent(eventId)
-      const binary = await this.arrayBufferToBase64(res.data[0].image.data)
-      this.setState({ formData: res.data[0], renderedImage: binary })
+      const res = await getSingleEvent(eventId)
+      this.setState({ formData: res.data})
     } catch (err) {
       console.log(err.response)
-      this.props.history.push('/notfound')
     }
-  }
-
-  async arrayBufferToBase64(data) {
-    let binary = ''
-    const bytes = await new Uint8Array( data )
-    const len = bytes.byteLength
-    for (let i = 0; i < len; i++) {
-      binary += String.fromCharCode( bytes[ i ] )
-    }
-    return binary
   }
 
   handleChange = event => {
@@ -46,33 +37,54 @@ class EventEdit extends React.Component {
 
   handleSubmit = async event => {
     event.preventDefault()
+    
     const eventId = this.props.match.params.id
+
+    const newEvent = {
+      title: this.state.formData.title,
+      description: this.state.formData.description,
+      date: this.state.formData.date,
+      time: this.state.formData.time,
+      longitude: this.state.formData.longitude,
+      latitude: this.state.formData.latitude,
+      image: this.state.fileInput
+    }
+
     try {
-      await editEvent(eventId, this.state.formData)
+      await editEvent(eventId, newEvent)
       this.props.history.push('/whatson')
     } catch (err) {
-      console.log(err.response)
+      console.log(err)
     }
   }
 
+  handleImageChange = event => {
+    const file = event.target.files[0]
+    const reader = new FileReader()
+    reader.readAsDataURL(file)
+    reader.onloadend = () => {
+      this.setState({fileInput: reader.result})
+    }
+  }
+
+
   render() {
-    console.log(this.state.formData, 'from event edit')
-    console.log(this.state.renderedImage)
+    console.log(this.state.fileInput)
     return (
-      <div className="event-edit">
+      <div className="event-new">
         <section className="section">
           <EventForm
             formData={this.state.formData}
-            renderedImage={this.state.renderedImage}
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
-            buttonText="Edit Event"
+            handleImage = {this.handleImageChange}
           />
         </section>
+
+        {this.state.fileInput && (<img src={this.state.fileInput} alt="Chosen" style={{height: '300px'}}/>)}
       </div>
-      
     )
   }
 }
 
-export default EventEdit
+export default EventNew

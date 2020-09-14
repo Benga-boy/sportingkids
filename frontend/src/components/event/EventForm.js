@@ -1,130 +1,108 @@
 import React from 'react'
 
-const EventForm = ({ formData, handleChange, handleSubmit, buttonText, renderedImage }) =>
+const EventForm = ({ formData, handleChange, handleSubmit, handleImage}) =>
   (
-    <div className="event-form">
-      <div className="columns">
-        <form onSubmit={handleSubmit} className="column is-half is-offset-one-quarter box">
-          <article className="message is-success">
-            <div className="message-header">
-              <p> Site to convert addresses to Lat/Long for precise map location.</p>
-            </div>
-            <div className="message-body">
-              <a target="_blank" href="https://www.latlong.net/convert-address-to-lat-long.html" rel="noopener noreferrer">Click Here</a>
-            </div>
-          </article>
-          <div className="field">
-            <label className="label">Title</label>
-            <div className="control">
-              <input
-                className="input"
-                placeholder="Title"
-                name="title"
-                onChange={handleChange}
-                value={formData.title}
-              />
-            </div>
+    <div className="event-new-form">
+    <div className="columns">
+      <form encType="multipart/form-data" onSubmit={handleSubmit} className="column is-half is-offset-one-quarter box">
+        <article className="message is-success">
+          <div className="message-header">
+            <p> Site to convert addresses to Lat/Long for precise map location.</p>
           </div>
-          <div className="field">
-            <label className="label">Subtitle</label>
-            <div className="control">
-              <input
-                className="input"
-                placeholder="Subtitle"
-                name="subtitle"
-                onChange={handleChange}
-                value={formData.subtitle}
-              />
-            </div>
+          <div className="message-body">
+            <a target="_blank" href="https://www.latlong.net/convert-address-to-lat-long.html" rel="noopener noreferrer">Click Here</a>
           </div>
-          <div className="field">
-            <label className="label">Image</label>
-            <div className="control">
-              <input
-                className="input"
-                placeholder={renderedImage}
-                name="image"
-                onChange={handleChange}
-                value={null}
-              />
-            </div> 
+        </article>
+        <div className="field">
+          <label className="label">Title</label>
+          <div className="control">
+            <input
+              className="input"
+              placeholder="Title"
+              name="title"
+              onChange={handleChange}
+              value={formData.title}
+            />
           </div>
-          <div className="field">
-            <label className="label">Description</label>
-            <div className="control">
-              <textarea
-                className="textarea"
-                placeholder="Description"
-                name="description"
-                onChange={handleChange}
-                value={formData.description}
-              />
-            </div>
+        </div>
+        <div className="field">
+          <label className="label">Image</label>
+          <div className="control">
+            <input
+              className="input"
+              placeholder="Image"
+              name="image"
+              onChange={handleImage}
+              type="file"
+            />
+          </div> 
+        </div>
+        <div className="field">
+          <label className="label">Description</label>
+          <div className="control">
+            <textarea
+              className="textarea"
+              placeholder="Description"
+              name="description"
+              onChange={handleChange}
+              value={formData.description}
+            />
           </div>
-          <div className="field">
-            <label className="label">Date</label>
-            <div className="control">
-              <input
-                className="input"
-                placeholder="Date"
-                name="date"
-                onChange={handleChange}
-                value={formData.date}
-              />
-            </div>
+        </div>
+        <div className="field">
+          <label className="label">Date</label>
+          <div className="control">
+            <input
+              className="input"
+              placeholder="Date"
+              name="date"
+              onChange={handleChange}
+              value={formData.date}
+              type="date"
+            />
           </div>
-          <div className="field">
-            <label className="label">Time</label>
-            <div className="control">
-              <input
-                className="input"
-                placeholder="Time"
-                name="time"
-                onChange={handleChange}
-                value={formData.time}
-              />
-            </div>
+        </div>
+        <div className="field">
+          <label className="label">Time</label>
+          <div className="control">
+            <input
+              className="input"
+              placeholder="Time"
+              name="time"
+              onChange={handleChange}
+              value={formData.time}
+              type="time"
+            />
           </div>
-          <div className="field">
-            <label className="label">Directions</label>
-            <div className="control">
-              <textarea
-                className="textarea"
-                placeholder="Directions"
-                name="directions"
-                onChange={handleChange}
-                value={formData.directions}
-              />
-            </div>
+        </div>
+        <div className="field">
+          <label className="label">Latitude</label>
+          <div className="control">
+            <input
+              className="input"
+              placeholder="Latitude"
+              name="latitude"
+              onChange={handleChange}
+              value={formData.latitude}
+            />
           </div>
-          <div className="field">
-            <label className="label">Latitude</label>
-            <div className="control">
-              <input
-                className="input"
-                placeholder="Latitude"
-                name="latitude"
-                onChange={handleChange}
-                value={formData.latitude}
-              />
-            </div>
+        </div>
+        <div className="field">
+          <label className="label">Longitude</label>
+          <div className="control">
+            <input
+              className="input"
+              placeholder="Longitude"
+              name="longitude"
+              onChange={handleChange}
+              value={formData.longitude}
+            />
           </div>
-          <div className="field">
-            <label className="label">Longitude</label>
-            <div className="control">
-              <input
-                className="input"
-                placeholder="Longitude"
-                name="longitude"
-                onChange={handleChange}
-                value={formData.longitude}
-              />
-            </div>
-            <button type="submit" className="button is-fullwidth is-link">{buttonText}</button>
-          </div>
-        </form>
-      </div>
+          <button type="submit" className="button is-fullwidth is-link">Edit Button</button>
+        </div>
+      </form>
     </div>
+  </div>
   )
 
 export default EventForm

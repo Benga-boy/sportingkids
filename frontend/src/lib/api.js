@@ -14,6 +14,9 @@ export const getEvent = () => {
   return axios.get(`${skUrl}/events`)
 }
 
+export const getSingleEvent = (id) => {
+  return axios.get(`${skUrl}/events/${id}`)
+}
 
 // * Function to create an event
 export const createEvent = (file, formData) => {

@@ -24,8 +24,6 @@ class EventNew extends React.Component {
 
   handleSubmit = async event => {
     event.preventDefault()
-    let formData = new FormData()
-    formData.append('image', this.state.image)
     
     const newEvent = {
       title: this.state.formData.title,
@@ -37,7 +35,6 @@ class EventNew extends React.Component {
       image: this.state.fileInput
     }
 
-    console.log(newEvent.image)
     try {
       const res = await createEvent(newEvent)
       console.log(res)
@@ -66,7 +63,6 @@ class EventNew extends React.Component {
             formData={this.state.formData}
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
-            buttonText="Make Event"
             handleImage = {this.handleImageChange}
           />
         </section>

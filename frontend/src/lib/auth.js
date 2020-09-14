@@ -15,10 +15,11 @@ const getPayload = () => {
   return JSON.parse(window.atob(parts[1]))
 }
 
-export const isOwner = id => {
-  const userId = getPayload().sub
-  return userId === id
+// * Function to log user out
+export const logout = () => {
+  localStorage.removeItem('token')
 }
+
 
 export const isAuthenticated = () => {
   const payload = getPayload()

@@ -62,19 +62,15 @@ class WhatsOn extends React.Component {
           <div className="change hero-body">
             <div className="container">
               <h1 className="title">
-                Whats on
+                {event.title}
               </h1>
-              <h2 className="subtitle">
-                something or other
-              </h2>
             </div>
           </div>
         </section>
         <section className="whatson-info">
           <div className="whatson-event">
-            <h1 className="title">{event.title}</h1> <br/>
-            <h2 className="subtitle">{event.subtitle}</h2>
-          
+            {/* <h1 className="title">{event.title}</h1> <br/>
+            <h2 className="subtitle">{event.subtitle}</h2> */}
             <figure className="image is-16by9">
               <img className="has-ratio" width="640" height="360"
                 src={event.image}
@@ -94,7 +90,7 @@ class WhatsOn extends React.Component {
           </div>
 
 
-          <div className="divider"></div>
+          {/* <div className="divider"></div> */}
 
           
           <div className="whatson-directions">
@@ -105,7 +101,7 @@ class WhatsOn extends React.Component {
               />
             </div> */}
 
-            <div className="map-directions">
+            {/* <div className="map-directions">
               <article className="message is-warning" style={{ width: '480px', marginTop: '50px' }}>
                 <div className="message-header">
                   <p>Directions</p>
@@ -114,7 +110,7 @@ class WhatsOn extends React.Component {
                   {event.directions}
                 </div>
               </article>
-            </div>
+            </div> */}
           </div>
         </section>
       </div>

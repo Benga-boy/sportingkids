@@ -1,7 +1,7 @@
 // * OVERRIDE BULMA CLASSES HERE
 
 @import '~bulma/bulma.sass';
-@import "~video-react/styles/scss/video-react";
+
 
 * {
   margin: 0;
@@ -10,31 +10,25 @@
 }
 
 body {
-  background-color: #f7f2e7;
+  background-color: #fafafa;
   height: auto;
 }
 
-// * HOME
+// ! HOME PAGE
 .home{
   margin-top: 230px;
-  .carousel-wrapper{
-    #image0{
-      background-image: url('./assets//homeCarousel/image0.jpeg');
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    #image1{
-      background-image: url('./assets//homeCarousel/image1.jpeg');
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    #image3{
-      background-image: url('./assets//homeCarousel/image3.jpeg');
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    .carousel-image {
-      height: 400px;
+  width: 100%;
+  .home-section{
+    .carousel-wrapper {
+      width: 100%;
+      .home-slideshow {
+        height: 310px;
+        width: 100%;
+        img {
+          height: 380px;
+          width: 100%;
+        }
+      }
     }
   }
   .offerings{
@@ -72,17 +66,15 @@ body {
     }
   }
   .welcome {
-    background-color: #ea5455;
+    background-color: #fd0054;
     .animate__animated.animate__heartBeat {
       --animate-duration: 3s;
       margin-bottom: 40px;
-      font-size: 44px;
-      color: #ffffff;
+      font-size: 48px;
+      color: #f2f4fb;
       font-weight: bold;
     }
-    // div span {
-    //   color: #ffffff;
-    // }
+
     .home-subtitle {
       width: 65%;
       margin: auto;
@@ -180,9 +172,9 @@ body {
 // }
 
 
-// * FOOTER
+// ! FOOTER
 .foot {
-  background-color: rgba(207, 55, 44, 1);
+  background-color: #a80038;
   margin-top: 20px;
   height: 177px;
   position: static;
@@ -250,7 +242,7 @@ body {
   }
 }
 
-// * DIVIDER
+// ! DIVIDER
 .divider{
   position: relative;
   min-width:2px;
@@ -261,7 +253,7 @@ body {
 }
 
 
-// * ABOUT
+// ! ABOUT
 .about {
   margin-top: 218px;
   .about-rene, .about-ola{
@@ -390,7 +382,7 @@ body {
 }
 
 
-//* SCHOOL SERVICES
+//! SCHOOL SERVICES
 .school-services{
   margin-top: 218px;
   width: 100%;
@@ -416,26 +408,12 @@ body {
         width: 80%;
       }
     }
-    #image0{
-      background-image: url('./assets//homeCarousel/image0.jpeg');
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    #image1{
-      background-image: url('./assets//homeCarousel/image1.jpeg');
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    #image3{
-      background-image: url('./assets//homeCarousel/image3.jpeg');
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
     .school-carousel{
       width: 75%;
       margin-left: 60px;
-      .school-carousel-image {
+      .school-slideshow img {
         height: 400px;
+        width: 100%;
       }
     }
   }
@@ -527,7 +505,7 @@ body {
   margin-top: 225px;
 }
 
-// * MULTISPORTS
+// ! MULTISPORTS
 .multisports{
   margin-top: 218px;
   .infos-and-testimonial{
@@ -601,7 +579,7 @@ body {
 }
 
 
-// * NAVBAR
+// ! NAVBAR
 .navbar{
   font-family: 'Work Sans', sans-serif;
   left: 0;
@@ -688,9 +666,17 @@ body {
 }
 
 
-// * CHILD PROTECTION
+// ! CHILD PROTECTION
 .childprotection{
   margin-top: 218px;
+  .hero .hero-body .container .title {
+    font-size: 44px;
+    font-weight: bold;
+  }
+  .hero .hero-body .container h3{
+    font-weight: bold;
+    width: 80%;
+  }
   // * Beliefs
   .believe{
     margin-bottom: 20px;
@@ -724,7 +710,7 @@ body {
       padding: 4px;
     }
   }
-  // * CONDUCTS
+  // ! CONDUCTS
   .conduct{
     margin-top: 24px;
     ol {
@@ -744,9 +730,17 @@ body {
   }
 }
 
-// * PRIVACY POLICY
+// ! PRIVACY POLICY
 .privacy {
   margin-top: 220px;
+  .hero .hero-body .container .title {
+    font-size: 44px;
+    font-weight: bold;
+  }
+  .hero .hero-body .container h3{
+    font-weight: bold;
+    width: 80%;
+  }
   .p-statements p {
     margin-bottom: 16px;
     padding: 4px;
@@ -763,10 +757,10 @@ body {
   }
 }
 
-// * EVENT
+// ! EVENT
 
 
-// * CONTACT
+// ! CONTACT
 .contact-us {
   margin-top: 225px;
   .sub-form {
@@ -812,17 +806,17 @@ body {
 }
 
 
-//* LOGIN
+//! LOGIN
 .login{
 margin-top: 300px;
 }
 
-//* EVENT EDIT
+//! EVENT EDIT
 .event-edit{
   margin-top: 200px;
 }
 
-// * BOX CARDS
+// ! BOX CARDS
 
 .box-one:hover,
 .box-three:hover,

@@ -61,12 +61,26 @@ async function eventShow(req, res, next) {
 
 // * Function to update an event!
 async function eventUpdate(req, res, next) {
+  // Upload the file to cloudinary!
+  const uploadResponse = await cloudinary.uploader.upload(req.body.image, {
+    upload_preset: 'sporting-kids'
+  })
+
+  const newEvent = {
+    title: req.body.title,
+    description: req.body.description,
+    date: req.body.date,
+    time: req.body.time,
+    image: uploadResponse.url,
+    latitude: req.body.latitude,
+    longitude: req.body.longitude
+  }
+
   const eventId = req.params.id
   try {
     const event = await Event.findById(eventId)
     if (!event) throw new Error(notFound)
-    if (!event.user.equals(req.currentUser._id)) throw new Error(unauthorized)
-    Object.assign(event, req.body)
+    Object.assign(event, newEvent)
     await event.save()
     res.status(202).json(event)
   } catch (err) {

@@ -1,9 +1,6 @@
 import React from 'react'
-import { Carousel } from 'react-responsive-carousel'
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { homeCarousel, video } from '../../styles/assets/homeCarousel/homeCarousel-data'
-import Blank from '../../styles/assets/logos/blank.png'
-
+import Slider from 'react-slick'
 
 
 import Boxes from '../pages/Boxes'
@@ -13,32 +10,27 @@ class Home extends React.Component {
     showModal: false
   }
   render() {
-
+    const settings = {
+      infinite: true,
+      speed: 1000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      adaptiveHeight: true,
+      autoplay: true,
+      autoplaySpeed: 3000
+    }
     return (
       <div className="home">
         <section className="home-section hero is-primary has-text-centered">
-          {/* <div className="hero-body">
-            <div className="container"> */}
           <div className="carousel-wrapper">
-            <Carousel
-              infiniteLoop
-              centerMode
-              autoPlay
-              dynamicHeight={true}
-              showThumbs={false}
-              interval={3500}
-              showStatus={false}
-              showArrows={false}
-              transitionTime={750}
-              centerSlidePercentage={100}
-            >
-              {homeCarousel.map(image => <div key={image.name} id={image.name} className="carousel-item" >
-                <img src={Blank} className="carousel-image" alt="Sporting Kids" />
-              </div>)}
-            </Carousel>
+            <Slider {...settings}>
+              {
+                homeCarousel.map(image => <div className="home-slideshow" key={image.name}>
+                  <img src={image.value} alt="Sporting kids having fun" />
+                </div>)
+              }
+            </Slider>
           </div>
-          {/* </div> */}
-          {/* </div> */}
         </section>
         <section className="welcome section">
           <div className="container">

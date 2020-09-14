@@ -1,6 +1,6 @@
 import React from 'react'
 
-const EventNewForm = ({ formData, image, handleImage, handleChange, handleSubmit, buttonText }) => (
+const EventNewForm = ({ formData, handleImage, handleChange, handleSubmit}) => (
   <div className="event-new-form">
     <div className="columns">
       <form encType="multipart/form-data" onSubmit={handleSubmit} className="column is-half is-offset-one-quarter box">
@@ -97,7 +97,7 @@ const EventNewForm = ({ formData, image, handleImage, handleChange, handleSubmit
               value={formData.longitude}
             />
           </div>
-          <button type="submit" className="button is-fullwidth is-link">{buttonText}</button>
+          <button type="submit" className="button is-fullwidth is-link">Create Event</button>
         </div>
       </form>
     </div>
