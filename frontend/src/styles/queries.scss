@@ -76,8 +76,8 @@
   .welcome {
     height: 12rem;
     margin-bottom: 0;
-    .animate__animated.animate__heartBeat {
-      font-size: 2em;
+    .animate__animated .animate__bounceInUp {
+      font-size: 1.8em;
       margin-bottom: 1rem;
     }
     .home-subtitle {
@@ -317,10 +317,25 @@
 @media only screen and (max-width: 480px) {
   // * HOME
   .home {
+    width: 100%;
+    margin-right: 0;
+    .home-section{
+      .carousel-wrapper {
+        width: 100%;
+        .home-slideshow {
+          height: 13rem;
+          width: 100%;
+          img {
+            height: 15rem;
+            width: 100%;
+          }
+        }
+      }
+    }
     .welcome {
       height: 9rem;
       .animate__animated.animate__heartBeat {
-        font-size: 1.4em;
+        font-size: 1.5em;
         margin-bottom: 0.8em;
       }
       .home-subtitle {
@@ -371,6 +386,7 @@
 
   // * NAVBAR
   .navbar {
+    width: 100%;
     .nav-top {
       display: block;
       width: 80%;
@@ -555,6 +571,7 @@
 
   // * SCHOOL SERVICES
   .school-services {
+    margin-right: 0;
     .school-services-background {
       width: 100%;
       .ss-text {
@@ -600,15 +617,22 @@
       }
     }
     .school-services-carousel {
-      width: 90%;
+      width: 100%;
       .school-carousel {
-        margin-right: 8rem;
-        width: 70%;
-        .carousel-school-services {
+        margin: auto;
+        width: 90%;
+        .school-slideshow {
           width: 100%;
+          height: 15rem;
+          img{
+            height: 18rem;
+            width: 100%;
+          }
         }
       }
       .workshops {
+        margin-top: 4rem;
+        margin-bottom: 0;
         h3 {
           font-size: 1em;
         }
@@ -618,6 +642,17 @@
         }
       }
     }
+    .school-services-testimonial{
+      h4{
+        margin: 0% 6%;        
+      }
+      article{
+        margin: 3% 6%;
+      }
+    }
+    .divider{
+      display: none;
+    }
   }
 
   // * WHATS ON
@@ -626,6 +661,42 @@
       font-size: 1.4em;
       margin-top: 15rem;
       width: 100%;
+    }
+  }
+
+  .whatson{
+    .hero .change .container .title{
+      font-size: 1.6rem;
+    }
+    margin-top: 17rem;
+    .whatson-info{
+      .whatson-event{
+        margin-right: 22.5%;
+        figure{
+          height: 18rem;
+          width: 20rem;
+          margin-top: 2rem;
+        }
+        h1 strong{
+          font-size: 1.6rem;
+          width: 100%;
+          margin-bottom: 5rem;
+        }
+      }
+    }
+    .map{
+      width: 30rem;
+      MAP{
+        width: 20rem;
+      }
+    }
+    .content{
+      h3{
+        font-size: 1.2rem;
+      }
+      p{
+        font-size: 0.9rem;
+      }
     }
   }
 
@@ -656,16 +727,7 @@
       }
     }
     .sub-form {
-      margin-left: 0;
-      width: 100%;
-      margin-top: 2rem;
-      iframe {
-        width: 20rem;
-        margin-bottom: 0.5rem;
-      }
-      .title {
-        margin-left: 0;
-      }
+      display: none;
     }
   }
 }

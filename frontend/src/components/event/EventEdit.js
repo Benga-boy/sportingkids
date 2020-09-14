@@ -58,6 +58,7 @@ class EventNew extends React.Component {
     }
   }
 
+  // Handle file input image upload
   handleImageChange = event => {
     const file = event.target.files[0]
     const reader = new FileReader()
