@@ -6,6 +6,7 @@ const router = require('./config/routes')
 const errorHandler = require('./lib/errorHandler')
 const { dbURI, port } = require('./config/environment')
 const path = require('path')
+require('dotenv').config()
 
 mongoose.connect(
   dbURI,
