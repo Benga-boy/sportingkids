@@ -5,8 +5,8 @@ const eventSchema = new mongoose.Schema({
   description: { type: String, trim: true },
   date: { type: Date, required: true },
   time: { type: String },
-  longitude: { type: Number },
-  latitude: { type: Number },
+  longitude: { type: String },
+  latitude: { type: String },
   image: { type: String, required: true }
 }, {
   timestamps: true

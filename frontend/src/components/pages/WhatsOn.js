@@ -2,6 +2,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 // import Map from '../event/Map'
+import moment from 'moment'
 
 
 import { getEvent, deleteEvent } from '../../lib/api'
@@ -9,8 +10,7 @@ import { isAuthenticated } from '../../lib/auth'
 
 class WhatsOn extends React.Component {
   state = {
-    event: null,
-    renderedImage: null
+    event: null
   }
 
   // * Get Event at index 0 as they wish to post one at a time - so latest event
@@ -19,22 +19,10 @@ class WhatsOn extends React.Component {
       const res = await getEvent()
       console.log(res.data)
       const data = res.data[0]
-      const binary = await this.arrayBufferToBase64(res.data[0].image.data)
-      this.setState({ event: data, renderedImage: binary })
+      this.setState({ event: data})
     } catch (err) {
       console.log(err)
     }
-  }
-
-  //* Transforms binary data to string to be able to render image.
-  async arrayBufferToBase64(data) {
-    let binary = ''
-    const bytes = await new Uint8Array( data )
-    const len = bytes.byteLength
-    for (let i = 0; i < len; i++) {
-      binary += String.fromCharCode( bytes[ i ] )
-    }
-    return binary
   }
 
 
@@ -65,6 +53,9 @@ class WhatsOn extends React.Component {
     
     const { event } = this.state
 
+
+    // Convert date using moment
+    const date = moment(event.date).format('LL')
     return (
       <div className="whatson">
         <section className="hero is-link has-text-centered">
@@ -94,7 +85,7 @@ class WhatsOn extends React.Component {
               <h5 className="title">Description</h5>
               <p>{event.description} </p>
               <h5 className="title">Date</h5>
-              <p>{event.date} </p>
+              <p>{date} </p>
               <h5 className="title">Time</h5>
               <p>{event.time} </p>
             </div>

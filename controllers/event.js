@@ -1,6 +1,6 @@
 const Event = require('../models/event')
 const { notFound, unauthorized } = require('../lib/errorMessages')
-
+const { cloudinary } = require('../utils/cloudinary')
 
 
 
@@ -19,14 +19,28 @@ async function eventIndex(req, res, next) {
 // * Function to create an event!!!!
 async function eventCreate(req, res, next) {
   try {
-    // req.body.user = req.currentUser
-    // const createdEvent = await Event.create(req.body)
-    // await createdEvent.save()
-    // res.status(201).json(createdEvent)
+    // Upload the file to cloudinary!
+    const uploadResponse = await cloudinary.uploader.upload(req.body.image, {
+      upload_preset: 'sporting-kids'
+    })
 
-    const event = await Event.create(req.body)
+    // Create instance of new event object
+    const newEvent = {
+      title: req.body.title,
+      description: req.body.description,
+      date: req.body.date,
+      time: req.body.time,
+      image: uploadResponse.url,
+      latitude: req.body.latitude,
+      longitude: req.body.longitude
+    }
+
+    // Create the event
+    const event = await Event.create(newEvent)
     await event.save()
     res.json(event)
+
+    console.log(req.body.data)
   } catch (err) {
     next(err)
   }
