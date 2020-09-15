@@ -73,60 +73,60 @@ const SchoolServices = () => {
               </div>
             </div>
             <div className="school-services-carousel">
-              <div className="school-carousel">
-                <Slider {...settings} >
-                  {
-                    schoolCarousel.map(image => <div className="school-slideshow" key={image.name}>
-                      <img src={image.value} alt="Sporting kids having fun" />
-                    </div>)
-                  }
-                </Slider>
-              </div>
-              <div className="content workshops">
-                <h3>Wellbeing Workshops</h3>
-                <p>
-                  Sporting Kids have experience of working in a range of settings including SEN provisions, youth clubs
-                  and Pupil Referral Units. Through working with children and young people with social, emotional and
+            <div className="school-carousel">
+              <Slider {...settings} >
+                {
+                  schoolCarousel.map(image => <div className="school-slideshow" key={image.name}>
+                    <img src={image.value} alt="Sporting kids having fun" />
+                  </div>)
+                }
+              </Slider>
+            </div>
+            <div className="content workshops">
+              <h3>Wellbeing Workshops</h3>
+              <p>
+                Sporting Kids have experience of working in a range of settings including SEN provisions, youth clubs
+                and Pupil Referral Units. Through working with children and young people with social, emotional and
                 mental health needs we have developed our Wellbeing Workshops.<br /><br />
                 These workshops incorporate mentoring sessions, discussion-based activities and mental health
                 awareness alongside promoting the importance of keeping active through sports.
-                </p>
-                <p className="enquire">Enquire <Link to="/contact"><strong>here</strong></Link> for more information about our school services</p>
-              </div>
+          </p>
+              <p className="enquire">Enquire <Link to="/contact"><strong>here</strong></Link> for more information about our school services</p>
+            </div>
             </div>
           </section>
-        </div>
-        <div className="divider"></div>
-        <div className="column is-one-third">
-          <div className="school-services-testimonial">
-            <h4 className="has-text-centered">Testimonials</h4>
-            <article className="message is-success">
-              <div className="message-header">
-                <p><strong>YC HERTFORDSHIRE</strong></p>
-              </div>
-              <div className="message-body">
-                <em>
-                  <strong>
-                    The Sporting Kids coaches put on fantastic sports sessions for the young people attending our summer programme. Over the 10 sessions they built positive professional relationships with the kids, which I haven’t seen other sports coaches do with such success- it proved to be a valuable approach which set them apart from sport companies I have previously worked with. I look forward to working with you again in the near future
-                    </strong>
-                </em>
-              </div>
-            </article>
-            <article className="message is-success">
-              <div className="message-header">
-                <p><strong>Derek Junior, Beekeeper</strong></p>
-              </div>
-              <div className="message-body">
-                <em>
-                  <strong>
-                    Why is she gonna get angry with you? Oh honey, he's teasing you, nobody has two television sets. Great good, good, Lorraine, I had a feeling about you two. Marty, will we ever see you again? Hey boy, are you alright?
-                    Marty, you didn't fall asleep, did you? C'mon. Yeah. Silence Earthling. my name is Darth Vader. I'm am an extra-terrestrial from the planet Vulcan. I have to tell you about the future.
-                    </strong>
-                </em>
-              </div>
-            </article>
           </div>
-        </div>
+          <div className="divider"></div>
+          <div className="column is-one-third">
+            <div className="school-services-testimonial">
+              <h4 className="has-text-centered">Testimonials</h4>
+              <article className="message is-success">
+                <div className="message-header">
+                  <p><strong>YC HERTFORDSHIRE</strong></p>
+                </div>
+                <div className="message-body">
+                  <em>
+                    <strong>
+                      The Sporting Kids coaches put on fantastic sports sessions for the young people attending our summer programme. Over the 10 sessions they built positive professional relationships with the kids, which I haven’t seen other sports coaches do with such success- it proved to be a valuable approach which set them apart from sport companies I have previously worked with. I look forward to working with you again in the near future
+                    </strong>
+                  </em>
+                </div>
+              </article>
+              <article className="message is-success">
+                <div className="message-header">
+                  <p><strong>Derek Junior, Beekeeper</strong></p>
+                </div>
+                <div className="message-body">
+                  <em>
+                    <strong>
+                      Why is she gonna get angry with you? Oh honey, he's teasing you, nobody has two television sets. Great good, good, Lorraine, I had a feeling about you two. Marty, will we ever see you again? Hey boy, are you alright?
+                      Marty, you didn't fall asleep, did you? C'mon. Yeah. Silence Earthling. my name is Darth Vader. I'm am an extra-terrestrial from the planet Vulcan. I have to tell you about the future.
+                    </strong>
+                  </em>
+                </div>
+              </article>
+            </div>
+          </div>
       </div>
     </div>
 

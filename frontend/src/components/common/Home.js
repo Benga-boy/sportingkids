@@ -21,7 +21,7 @@ class Home extends React.Component {
     }
     return (
       <div className="home">
-        <section className="home-section hero has-text-centered">
+        <section className="home-section hero is-primary has-text-centered">
           <div className="carousel-wrapper">
             <Slider {...settings}>
               {
